@@ -52,7 +52,14 @@
         .logo-container {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .logo-image {
+            /* Adjust width/height as needed */
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
         }
 
         .logo-text {
@@ -114,6 +121,14 @@
             padding: 2rem;
             border-radius: 15px;
             margin-top: 1.5rem;
+            text-align: center;
+        }
+
+        .product-logo {
+            /* Adjust width/height as needed */
+            width: 150px;
+            margin-bottom: 1rem;
+            object-fit: contain;
         }
 
         .product-highlight h3 {
@@ -264,6 +279,12 @@
     <header>
         <div class="container">
             <div class="logo-container">
+                <!-- Replace with your actual GitHub repo URL or relative path -->
+                <img 
+                    src="https://github.com/YossiArar/rrk-technologies-website/main/rrk-technologies-logo.png" 
+                    alt="RRK Technologies Logo" 
+                    class="logo-image"
+                />
                 <div class="logo-text">RRK Technologies</div>
             </div>
             <p class="subtitle">Advanced AI & Technology Solutions</p>
@@ -288,9 +309,17 @@
         <section class="section" id="products">
             <h2 class="section-title">Our Product</h2>
             <div class="product-highlight">
-                <h3>Finspark</h3>
+                <!-- Replace with your actual GitHub repo URL or relative path -->
+                <img 
+                    src="https://github.com/YossiArar/rrk-technologies-website/main/stocklight-logo.png" 
+                    alt="StockLight Logo" 
+                    class="product-logo"
+                />
+                <h3>StockLight</h3>
                 <p>
-                    Finspark is specifically designed to make the stock market accessible to the average user. The product utilizes advanced technological tools to provide simple and clear insights, enabling anyone to understand the market in a clear and comprehensible way.
+                    StockLight is specifically designed to make the stock market accessible to the average user. 
+                    The product utilizes advanced technological tools to provide simple and clear insights, 
+                    enabling anyone to understand the market in a comprehensible way.
                 </p>
             </div>
         </section>

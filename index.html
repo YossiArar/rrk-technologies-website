@@ -3,503 +3,1235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RRK Technologies - Revolutionary AI & Automation Solutions</title>
+    <title>RRK Technologies - AI-Powered Business Solutions & StockLight</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
         :root {
-            --primary: #0066cc;
-            --primary-dark: #004999;
-            --primary-light: #e6f0ff;
-            --accent: #ff6b35;
-            --text-dark: #1a1a1a;
-            --text-light: #666;
-            --background: #f8f9fa;
-            --white: #ffffff;
-            --gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            --accent-gradient: linear-gradient(135deg, var(--accent) 0%, #ff8c42 100%);
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --primary-light: #e0e7ff;
+            --secondary: #06b6d4;
+            --secondary-dark: #0891b2;
+            --accent: #f59e0b;
+            --accent-dark: #d97706;
+            --success: #10b981;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --background: #ffffff;
+            --background-alt: #f8fafc;
+            --background-dark: #0f172a;
+            --border: #e2e8f0;
+            --border-light: #f1f5f9;
+            --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #06b6d4 100%);
+            --gradient-secondary: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            scroll-behavior: smooth;
         }
 
         body {
-            font-family: 'Inter', Arial, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
+            color: var(--text-primary);
             background: var(--background);
-            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* Header & Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-light);
+            transition: all 0.3s ease;
+        }
+
+        .nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .cta-nav {
+            background: var(--gradient-primary);
+            color: white !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .cta-nav::after {
+            display: none;
+        }
+
+        .cta-nav:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            color: white !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 8rem 2rem 4rem;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(6, 182, 212, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 60% 20%, rgba(245, 158, 11, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-card {
+            background: white;
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--border-light);
+            position: relative;
+            overflow: hidden;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+        }
+
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .floating-element {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 16px;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(1) {
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            top: 60%;
+            right: 10%;
+            animation-delay: 2s;
+        }
+
+        .floating-element:nth-child(3) {
+            bottom: 20%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--text-primary);
+            border: 2px solid var(--border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-accent {
+            background: var(--gradient-secondary);
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-accent:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 6rem 2rem;
+            position: relative;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 0 20px;
         }
 
-        /* Header Styles */
-        header {
-            background: var(--white);
-            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-            padding: 1.5rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(10px);
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .logo-image {
-            width: 50px;
-            height: 50px;
-            object-fit: contain;
-        }
-
-        .logo-text {
-            font-size: 2.5rem;
-            font-weight: 700;
-            background: var(--gradient);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            transition: transform 0.3s ease;
-        }
-
-        .logo-text:hover {
-            transform: scale(1.02);
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: var(--text-light);
-            margin-top: 0.5rem;
-        }
-
-        /* Main Content Styles */
-        .section {
-            margin: 3rem 0;
-            padding: 3rem;
-            background: var(--white);
-            border-radius: 20px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 25px rgba(0,0,0,0.1);
-        }
-
-        .section-title {
-            font-size: 2.2rem;
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 70%;
-            height: 4px;
-            background: var(--gradient);
-            margin-top: 0.5rem;
-            border-radius: 2px;
-        }
-
-        /* CTA Button Styles */
-        .cta-button {
-            display: inline-block;
-            background: var(--accent-gradient);
-            color: var(--white);
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
-            margin: 1rem 0.5rem;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
-        }
-
-        .cta-button.secondary {
-            background: var(--gradient);
-            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
-        }
-
-        .cta-button.secondary:hover {
-            box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
-        }
-
-        /* Products & Services */
-        .product-highlight {
-            background: var(--primary-light);
-            padding: 2rem;
-            border-radius: 15px;
-            margin-top: 1.5rem;
+        .section-header {
             text-align: center;
+            margin-bottom: 5rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .product-logo {
-            width: 150px;
-            margin-bottom: 1rem;
-            object-fit: contain;
+        .section-badge {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(99, 102, 241, 0.2);
         }
 
-        .product-highlight h3 {
-            color: var(--primary);
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
+        .section h2 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        /* Company Services Section */
+        .services-section {
+            background: var(--background-alt);
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
             gap: 2rem;
-            margin-top: 2rem;
+            margin-top: 3rem;
         }
 
         .service-card {
-            padding: 2rem;
-            background: var(--white);
-            border-radius: 15px;
-            border-left: 4px solid var(--primary);
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-light);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            group: hover;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
         }
 
         .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-            border-left-width: 8px;
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary);
         }
 
-        .service-card h3 {
-            color: var(--primary);
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        /* Discord Community Section */
-        .discord-section {
-            background: linear-gradient(135deg, #5865f2 0%, #7289da 100%);
-            color: var(--white);
-            text-align: center;
-        }
-
-        .discord-section .section-title {
-            color: var(--white);
-        }
-
-        .discord-section .section-title::after {
-            background: var(--white);
-        }
-
-        /* Contact Section */
-        .contact-info {
-            background: var(--gradient);
-            color: var(--white);
-            padding: 2.5rem;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .contact-item {
-            margin: 1.5rem 0;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            font-size: 1.1rem;
-        }
-
-        .contact-item span {
-            font-size: 1.5rem;
-        }
-
-        /* About Section Enhancement */
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .about-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        .about-image {
-            background: var(--gradient);
-            height: 300px;
-            border-radius: 15px;
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--white);
-            font-size: 2rem;
-            font-weight: bold;
+            margin-bottom: 1.5rem;
+            position: relative;
         }
 
-        /* Footer */
-        footer {
-            background: var(--primary-dark);
-            color: var(--white);
-            padding: 3rem 0;
-            margin-top: 4rem;
+        .service-icon svg {
+            width: 28px;
+            height: 28px;
+            color: white;
         }
 
-        .footer-content {
+        .service-card h3 {
+            font-size: 1.375rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            line-height: 1.3;
+        }
+
+        .service-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        /* Product Section - StockLight */
+        .product-section {
+            background: var(--background-dark);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 30% 20%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .product-content {
+            position: relative;
+            z-index: 1;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .product-text h2 {
+            color: white;
             margin-bottom: 2rem;
         }
 
-        .footer-section h3 {
+        .product-text p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            font-size: 1.125rem;
+            line-height: 1.7;
+        }
+
+        .product-features {
+            list-style: none;
+            margin: 2.5rem 0;
+        }
+
+        .product-features li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.05rem;
+        }
+
+        .product-features li::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: var(--gradient-secondary);
+            border-radius: 50%;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .product-features li::after {
+            content: '✓';
+            position: absolute;
+            left: 6px;
+            color: white;
+            font-weight: bold;
+            font-size: 0.75rem;
+        }
+
+        .product-visual {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            padding: 3rem;
+            text-align: center;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-visual::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-secondary);
+        }
+
+        .product-logo {
+            width: 140px;
+            height: auto;
+            margin-bottom: 1.5rem;
+            filter: brightness(1.1);
+        }
+
+        .product-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-number {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Community Section */
+        .community-section {
+            background: linear-gradient(135deg, #5865f2 0%, #7289da 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .community-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="discord-pattern" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23discord-pattern)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .community-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .community-content h2 {
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .community-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .community-feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: left;
+        }
+
+        .community-feature h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: white;
+        }
+
+        .community-feature p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--background-alt);
+            text-align: center;
+        }
+
+        .cta-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .cta-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 24px;
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .cta-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cta-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
             margin-bottom: 1rem;
-            font-size: 1.2rem;
+            color: var(--text-primary);
+        }
+
+        .cta-card p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--background-dark);
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1.5rem;
+            color: white;
+            font-weight: 700;
+            font-size: 1.125rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            margin-bottom: 0.75rem;
+            display: block;
+            line-height: 1.6;
+            transition: color 0.2s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
         }
 
         .footer-bottom {
-            text-align: center;
+            max-width: 1400px;
+            margin: 0 auto;
             padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
         }
 
         /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+
+            .product-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .cta-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         @media (max-width: 768px) {
-            .container {
+            .nav {
                 padding: 0 1rem;
             }
 
-            .section {
-                padding: 2rem;
+            .nav-links {
+                display: none;
             }
 
-            .about-content {
+            .hero {
+                padding: 6rem 1rem 4rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            .section {
+                padding: 4rem 1rem;
+            }
+
+            .services-grid {
                 grid-template-columns: 1fr;
             }
 
-            .about-image {
-                height: 200px;
+            .community-features {
+                grid-template-columns: 1fr;
             }
 
-            .logo-text {
-                font-size: 2rem;
-            }
-
-            .cta-button {
-                display: block;
-                text-align: center;
-                margin: 1rem 0;
+            .product-stats {
+                grid-template-columns: 1fr;
             }
         }
 
         /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        .section {
-            animation: fadeIn 0.5s ease-out;
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         .service-card {
-            animation: fadeIn 0.5s ease-out;
+            animation: fadeInUp 0.6s ease-out forwards;
         }
 
-        /* Highlight text */
-        .highlight {
-            background: linear-gradient(120deg, var(--accent) 0%, var(--accent) 100%);
-            background-repeat: no-repeat;
-            background-size: 100% 0.2em;
-            background-position: 0 88%;
-            padding: 0 0.2em;
+        .service-card:nth-child(1) { animation-delay: 0.1s; }
+        .service-card:nth-child(2) { animation-delay: 0.2s; }
+        .service-card:nth-child(3) { animation-delay: 0.3s; }
+        .service-card:nth-child(4) { animation-delay: 0.4s; }
+        .service-card:nth-child(5) { animation-delay: 0.5s; }
+        .service-card:nth-child(6) { animation-delay: 0.6s; }
+
+        .hero-text {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+
+        .hero-visual {
+            animation: slideInRight 0.8s ease-out forwards;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <img 
-                    src="https://github.com/YossiArar/rrk-technologies-website/raw/main/rrk-technologies-logo.png" 
-                    alt="RRK Technologies Logo" 
-                    class="logo-image"
-                />
-                <div class="logo-text">RRK Technologies</div>
-            </div>
-            <p class="subtitle">🚀 Revolutionizing Business Through Smart AI & Automation</p>
-        </div>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <img src="https://github.com/YossiArar/rrk-technologies-website/raw/main/rrk-technologies-logo.png" alt="RRK Technologies">
+                RRK Technologies
+            </a>
+            <ul class="nav-links">
+                <li><a href="#automation">Automation Services</a></li>
+                <li><a href="#stocklight">StockLight Product</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://discord.gg/smAyYUf5" class="cta-nav" target="_blank">Join Discord</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container">
-        <section class="section" id="about">
-            <h2 class="section-title">🌟 Transform Your Business Today</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Welcome to the <span class="highlight">future of business automation</span>! RRK Technologies is your ultimate partner in digital transformation, delivering cutting-edge AI solutions that don't just optimize—they revolutionize. 
-                    </p>
-                    <p style="margin-top: 1rem;">
-                        We're not just another tech company. We're <strong>innovation architects</strong> who turn complex challenges into streamlined success stories. From smart automation that works while you sleep to AI-powered insights that predict tomorrow's opportunities, we bring the future to your fingertips—today!
-                    </p>
-                    <p style="margin-top: 1rem;">
-                        <strong>Ready to 10x your efficiency?</strong> Let's make it happen! 🚀
-                    </p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    Next-Generation Business Solutions
                 </div>
-                <div class="about-image">
-                    🤖 AI POWERED
+                <h1>
+                    Innovate. Scale. Dominate.
+                </h1>
+                <p class="hero-subtitle">
+                    RRK Technologies empowers businesses with cutting-edge AI automation services and revolutionary financial intelligence through StockLight. Join thousands of companies already transforming their operations with our game-changing solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#automation" class="btn btn-primary">
+                        Explore Automation Services
+                    </a>
+                    <a href="#stocklight" class="btn btn-secondary">
+                        Discover StockLight
+                    </a>
                 </div>
             </div>
-        </section>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary);">
+                        Dual-Power Solutions
+                    </h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.6;">
+                        Professional automation services for enterprises + StockLight financial intelligence platform
+                    </p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: var(--background-alt); border-radius: 12px;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.25rem; font-weight: 700; color: var(--primary);">Automation</div>
+                            <div style="font-size: 0.875rem; color: var(--text-muted);">Services</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.25rem; font-weight: 700; color: var(--secondary);">StockLight</div>
+                            <div style="font-size: 0.875rem; color: var(--text-muted);">Platform</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="section" id="services">
-            <h2 class="section-title">⚡ Our Game-Changing Solutions</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem; text-align: center;">
-                <strong>Unleash the power of next-generation technology with solutions that actually work!</strong>
-            </p>
+    <!-- Automation Services Section -->
+    <section class="section services-section" id="automation">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">RRK Technologies Services</div>
+                <h2>Enterprise Automation Solutions</h2>
+                <p class="section-subtitle">
+                    Transform your business operations with our comprehensive suite of AI-powered automation services. From simple task automation to complex enterprise workflows, cloud solutions, and AI integration, we deliver solutions that scale with your ambitions.
+                </p>
+            </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>🎯 Advanced UI/API Automation</h3>
-                    <p>Forget complex setups! Our intuitive automation tools are so easy to use, you'll wonder how you ever worked without them. Automate everything from simple tasks to complex workflows with zero coding required.</p>
+                    <div class="service-icon">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M13 3L4 14h7v7l9-11h-7V3z"/>
+                        </svg>
+                    </div>
+                    <h3>Advanced UI/API Automation</h3>
+                    <p>Revolutionary automation tools that eliminate repetitive tasks and streamline complex workflows. Our intuitive platform requires zero coding knowledge while delivering enterprise-grade reliability and performance.</p>
                 </div>
                 <div class="service-card">
-                    <h3>📊 Comprehensive CI/CD Solutions</h3>
-                    <p>Deploy with confidence using our bulletproof CI/CD pipelines featuring stunning visual test reports (powered by Allure). See your code quality at a glance and ship faster than ever!</p>
+                    <div class="service-icon">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                        </svg>
+                    </div>
+                    <h3>Comprehensive CI/CD Solutions</h3>
+                    <p>Deploy with absolute confidence using our bulletproof continuous integration and deployment pipelines. Beautiful visual test reports powered by Allure give you instant insights into code quality and performance metrics.</p>
                 </div>
                 <div class="service-card">
-                    <h3>🎓 Professional Training & Recruitment</h3>
-                    <p>Build your dream automation team! We don't just find talent—we create automation specialists through our intensive training programs. Your future automation experts are waiting!</p>
+                    <div class="service-icon">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3>Professional Training & Recruitment</h3>
+                    <p>Build your dream automation team with our comprehensive talent solutions. We don't just find specialists—we create automation experts through intensive, hands-on training programs that deliver immediate results.</p>
                 </div>
                 <div class="service-card">
-                    <h3>🧠 Custom AI Integration</h3>
-                    <p>Transform your business with AI that actually understands your needs. From predictive analytics to intelligent automation, we make AI work for YOU.</p>
+                    <div class="service-icon">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 11H7v9a2 2 0 002 2h8a2 2 0 002-2V9a2 2 0 00-2-2h-3V5a2 2 0 00-2-2H9a2 2 0 00-2 2v6zm0-6h3v2H9V5z"/>
+                        </svg>
+                    </div>
+                    <h3>AI & Cloud Integration</h3>
+                    <p>Harness the power of artificial intelligence and cloud technology tailored specifically to your business needs. From predictive analytics to intelligent process automation and cloud migration, we create comprehensive solutions that deliver measurable ROI and competitive advantages.</p>
                 </div>
                 <div class="service-card">
-                    <h3>⚙️ Smart Process Optimization</h3>
-                    <p>Watch your productivity soar! We identify bottlenecks you didn't even know existed and eliminate them with surgical precision.</p>
+                    <div class="service-icon">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Smart Process Optimization</h3>
+                    <p>Unlock hidden productivity gains with our intelligent process analysis and optimization. We identify bottlenecks you never knew existed and eliminate them with surgical precision, boosting efficiency by up to 300%.</p>
                 </div>
                 <div class="service-card">
-                    <h3>💡 Strategic Tech Consulting</h3>
-                    <p>Stop guessing, start winning! Our experts guide you through the tech maze, ensuring every decision drives real results and ROI.</p>
+                    <div class="service-icon">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                        </svg>
+                    </div>
+                    <h3>Strategic Technology Consulting</h3>
+                    <p>Navigate the complex technology landscape with confidence. Our expert consultants provide strategic guidance that ensures every technology decision drives real business results and delivers exceptional return on investment.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section discord-section" id="community">
-            <h2 class="section-title">🎮 Join Our Thriving Discord Community!</h2>
-            <p style="font-size: 1.3rem; margin-bottom: 2rem;">
-                <strong>Connect. Learn. Grow. Succeed.</strong>
-            </p>
-            <p style="font-size: 1.1rem; margin-bottom: 2rem;">
-                Step into the most vibrant automation community on Discord! Network with industry leaders, collaborate on cutting-edge projects, and accelerate your learning with like-minded innovators. From beginner tips to advanced strategies, our community is your gateway to automation mastery.
-            </p>
-            <p style="font-size: 1.1rem; margin-bottom: 2rem;">
-                🔥 <strong>What awaits you:</strong><br>
-                • Real-time problem solving with experts<br>
-                • Exclusive tutorials and resources<br>
-                • Job opportunities and partnerships<br>
-                • Weekly challenges and competitions<br>
-                • Direct access to RRK Technologies team
-            </p>
-            <a href="https://discord.gg/smAyYUf5" class="cta-button" target="_blank">
-                🚀 Join Our Discord Now - It's FREE!
-            </a>
-        </section>
-
-        <section class="section" id="products">
-            <h2 class="section-title">💎 Meet StockLight - Your Financial Edge</h2>
-            <div class="product-highlight">
-                <img 
-                    src="https://github.com/YossiArar/rrk-technologies-website/raw/main/stocklight-logo.png" 
-                    alt="StockLight Logo" 
-                    class="product-logo"
-                />
-                <h3>StockLight Premium</h3>
-                <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">
-                    <strong>The stock market just got a whole lot smarter!</strong>
-                </p>
-                <p style="margin-bottom: 2rem;">
-                    StockLight transforms complex market data into crystal-clear insights that anyone can understand and act upon. Our advanced AI algorithms work 24/7 to identify opportunities, predict trends, and deliver actionable intelligence straight to your dashboard.
-                </p>
-                <p style="margin-bottom: 2rem;">
-                    <strong>🎯 Why StockLight subscribers are winning:</strong><br>
-                    • AI-powered market analysis that never sleeps<br>
-                    • Simple, actionable insights for any skill level<br>
-                    • Real-time alerts for golden opportunities<br>
-                    • Comprehensive automation tools for trading<br>
-                    • Exclusive community of successful investors
-                </p>
-                <div style="background: rgba(255,255,255,0.9); padding: 2rem; border-radius: 15px; margin-top: 2rem;">
-                    <p style="font-size: 1.3rem; color: var(--primary); margin-bottom: 1rem;">
-                        <strong>🔥 Limited Time: Join the Financial Revolution!</strong>
-                    </p>
-                    <a href="https://patreon.com/stocklight" class="cta-button" target="_blank">
-                        💰 Subscribe to StockLight Premium
-                    </a>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
-                        Join thousands of smart investors already profiting with StockLight!
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="contact">
-            <h2 class="section-title">🚀 Ready to Transform Your Business?</h2>
-            <p style="font-size: 1.2rem; text-align: center; margin-bottom: 2rem;">
-                <strong>Don't wait for tomorrow's success—create it today!</strong>
-            </p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span>📧</span>
-                    <p>Email: info@stocklight.io</p>
-                </div>
-                <div style="text-align: center; margin-top: 2rem;">
-                    <a href="https://discord.gg/smAyYUf5" class="cta-button secondary" target="_blank">
-                        💬 Connect on Discord
-                    </a>
-                    <a href="https://patreon.com/stocklight" class="cta-button" target="_blank">
-                        🌟 Get StockLight Premium
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+    <!-- StockLight Product Section -->
+    <section class="section product-section" id="stocklight">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>RRK Technologies</h3>
-                    <p>🚀 Revolutionizing businesses through innovative AI & automation solutions</p>
-                    <p style="margin-top: 1rem;">Join the automation revolution today!</p>
+            <div class="product-content">
+                <div class="product-text">
+                    <div class="section-badge" style="background: rgba(245, 158, 11, 0.2); color: var(--accent); border-color: rgba(245, 158, 11, 0.3);">
+                        StockLight Product
+                    </div>
+                    <h2>StockLight: Your Secret Edge in the Markets</h2>
+                    <p>
+                        Ever felt overwhelmed by financial news? Or wished you could confidently join conversations about investing? Welcome to your solution. StockLight.io transforms complex market information into clear, actionable insights that make you both a more informed investor AND the most interesting person in any financial conversation.
+                    </p>
+                    
+                    <h3 style="color: white; font-size: 1.5rem; margin: 2rem 0 1.5rem 0; font-weight: 700;">What Makes Us Different</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 1.5rem;">
+                        We don't just give you data - anyone can do that. We give you understanding. Our AI-powered platform cuts through the noise to deliver:
+                    </p>
+                    
+                    <ul class="product-features">
+                        <li>Crystal-Clear Market Updates: Stock news simplified in ways that actually make sense</li>
+                        <li>Smart Watchlist: Follow companies that matter to YOU with insights you won't find elsewhere</li>
+                        <li>Context-Rich Analysis: See how events affect companies in language anyone can understand</li>
+                        <li>Conversation-Ready Insights: Transform technical market knowledge into engaging talking points</li>
+                        <li>Beyond the Headlines: Discover connections and implications that standard news sources miss</li>
+                        <li>Unique and Flexible Market Tracking: Broad knowledge opening doors to unexpected opportunities</li>
+                    </ul>
+                    
+                    <h3 style="color: white; font-size: 1.5rem; margin: 2rem 0 1.5rem 0; font-weight: 700;">Coming in 2025</h3>
+                    <ul class="product-features" style="margin-bottom: 2rem;">
+                        <li>The Hot Market Pulse: Weekly insights revealing hidden connections between stocks</li>
+                        <li>"Behind The Money" Stories: Exclusive narratives revealing what REALLY drives market moves</li>
+                        <li>Enhanced personalization features and portfolio analysis tools</li>
+                    </ul>
+                    
+                    <a href="https://patreon.com/stocklight" class="btn btn-accent" target="_blank">
+                        Subscribe to StockLight Premium
+                    </a>
                 </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <p><a href="https://discord.gg/smAyYUf5" style="color: #fff; text-decoration: none;">🎮 Discord Community</a></p>
-                    <p><a href="https://patreon.com/stocklight" style="color: #fff; text-decoration: none;">💎 StockLight Premium</a></p>
+                <div class="product-visual">
+                    <img src="https://github.com/YossiArar/rrk-technologies-website/raw/main/stocklight-logo.png" alt="StockLight" class="product-logo">
+                    <h3 style="margin-bottom: 1rem; color: white; font-size: 1.5rem;">StockLight Premium</h3>
+                    <p style="margin-bottom: 2rem; opacity: 0.9; line-height: 1.6;">
+                        Whether you're just starting out or looking to sharpen your edge, StockLight.io meets you exactly where you are. No jargon, no complexity - just clear insights.
+                    </p>
+                    
+                    <div style="background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 16px; margin-bottom: 2rem; border: 1px solid rgba(255, 255, 255, 0.2);">
+                        <h4 style="color: white; font-size: 1.25rem; margin-bottom: 1rem; font-weight: 600;">Beta Founders Community</h4>
+                        <p style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
+                            Join our growing Discord community with daily stock insights, breaking news analysis, and market tracking opportunities.
+                        </p>
+                        <p style="color: var(--accent); font-weight: 600; font-size: 1.1rem;">
+                            Clarity. Confidence. Community.
+                        </p>
+                    </div>
+                    
+                    <div class="product-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">AI-Powered</div>
+                            <div class="stat-label">Market Analysis</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Real-time</div>
+                            <div class="stat-label">Monitoring</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Smart</div>
+                            <div class="stat-label">Insights</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Premium</div>
+                            <div class="stat-label">Features</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 RRK Technologies. All rights reserved. | 🌟 Building the future, one automation at a time.</p>
+            
+            <!-- Legal Disclaimer Section -->
+            <div style="margin-top: 4rem; padding: 3rem; background: rgba(255, 255, 255, 0.05); border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                <h3 style="color: white; font-size: 1.5rem; margin-bottom: 2rem; font-weight: 700; text-align: center;">Legal Disclaimer</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div>
+                        <h4 style="color: var(--accent); font-size: 1.125rem; margin-bottom: 1rem; font-weight: 600;">Nature of Service</h4>
+                        <ul style="list-style: none; color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+                            <li style="margin-bottom: 0.5rem;">• Content for general informational purposes only</li>
+                            <li style="margin-bottom: 0.5rem;">• Not registered as securities dealer or investment advisor</li>
+                            <li style="margin-bottom: 0.5rem;">• Based on AI analysis of public information</li>
+                            <li style="margin-bottom: 0.5rem;">• Provided "AS IS" without warranty</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 style="color: var(--accent); font-size: 1.125rem; margin-bottom: 1rem; font-weight: 600;">Important Notes</h4>
+                        <ul style="list-style: none; color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+                            <li style="margin-bottom: 0.5rem;">• Investment decisions at your sole discretion</li>
+                            <li style="margin-bottom: 0.5rem;">• Information from third-party sources</li>
+                            <li style="margin-bottom: 0.5rem;">• AI-generated content may contain errors</li>
+                            <li style="margin-bottom: 0.5rem;">• Consult licensed professionals before investing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(245, 158, 11, 0.1); border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.3);">
+                    <p style="color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; line-height: 1.6; text-align: center; margin-bottom: 1rem;">
+                        <strong>StockLight is provided by RRK Technologies Ltd.</strong> By subscribing, you acknowledge understanding and agreement to these terms and consent to release StockLight, RRK Technologies Ltd., and affiliated parties from liabilities arising from information use.
+                    </p>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.875rem; text-align: center;">
+                        For content removal requests: info@stocklight.io | Last updated: April 2025
+                    </p>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="section community-section" id="community">
+        <div class="container">
+            <div class="community-content">
+                <h2>Join Our Thriving Discord Community</h2>
+                <p style="font-size: 1.25rem; margin-bottom: 3rem; opacity: 0.95; line-height: 1.7;">
+                    Connect with industry leaders, collaborate on groundbreaking projects, and accelerate your growth with thousands of like-minded innovators in automation, AI, and financial technology.
+                </p>
+                <div class="community-features">
+                    <div class="community-feature">
+                        <h4>Expert Problem Solving</h4>
+                        <p>Get real-time help from automation experts and AI specialists who've solved the toughest technical challenges.</p>
+                    </div>
+                    <div class="community-feature">
+                        <h4>Exclusive Resources</h4>
+                        <p>Access premium tutorials, insider strategies, and cutting-edge tools available only to community members.</p>
+                    </div>
+                    <div class="community-feature">
+                        <h4>Career Opportunities</h4>
+                        <p>Discover high-paying job opportunities and partnership deals shared exclusively within our network.</p>
+                    </div>
+                    <div class="community-feature">
+                        <h4>Weekly Challenges</h4>
+                        <p>Participate in exciting competitions, hackathons, and skill-building challenges with amazing prizes.</p>
+                    </div>
+                </div>
+                <a href="https://discord.gg/smAyYUf5" class="btn btn-primary" target="_blank" style="background: white; color: #5865f2; font-size: 1.125rem; padding: 1.25rem 2.5rem;">
+                    Join Our Discord Community - FREE
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Get Started Today</div>
+                <h2>Ready to Transform Your Future?</h2>
+                <p class="section-subtitle">
+                    Don't wait for tomorrow's success—create it today. Choose your path to innovation and join thousands of businesses and investors already winning with RRK Technologies.
+                </p>
+            </div>
+            <div class="cta-grid">
+                <div class="cta-card">
+                    <h3>Enterprise Automation</h3>
+                    <p>Transform your business operations with our comprehensive automation services. From simple workflows to complex enterprise solutions, we deliver results that matter.</p>
+                    <a href="https://discord.gg/smAyYUf5" class="btn btn-primary" target="_blank">
+                        Start Your Automation Journey
+                    </a>
+                </div>
+                <div class="cta-card">
+                    <h3>StockLight Premium</h3>
+                    <p>Join the financial intelligence revolution. Get AI-powered market insights, real-time alerts, and trading automation tools that give you the edge you need to succeed.</p>
+                    <a href="https://patreon.com/stocklight" class="btn btn-accent" target="_blank">
+                        Subscribe to StockLight
+                    </a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: white; border-radius: 16px; border: 1px solid var(--border-light);">
+                <p style="font-size: 1.125rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                    Questions? Ready to get started? Contact us directly:
+                </p>
+                <p style="font-size: 1.25rem; font-weight: 600; color: var(--primary);">
+                    info@stocklight.io
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>RRK Technologies</h3>
+                <p>Pioneering the future of business automation and financial intelligence. We empower companies and individuals to achieve extraordinary results through cutting-edge AI and automation solutions.</p>
+                <p style="margin-top: 1rem; font-weight: 600;">Building tomorrow's success stories today.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Automation Services</h3>
+                <a href="#automation">UI/API Automation</a>
+                <a href="#automation">CI/CD Solutions</a>
+                <a href="#automation">Training & Recruitment</a>
+                <a href="#automation">AI & Cloud Integration</a>
+                <a href="#automation">Process Optimization</a>
+                <a href="#automation">Tech Consulting</a>
+            </div>
+            <div class="footer-section">
+                <h3>StockLight Product</h3>
+                <a href="https://patreon.com/stocklight" target="_blank">Premium Subscription</a>
+                <a href="#stocklight">Product Features</a>
+                <a href="#stocklight">Market Analysis</a>
+                <a href="#stocklight">Trading Tools</a>
+                <a href="#stocklight">AI Insights</a>
+            </div>
+            <div class="footer-section">
+                <h3>Community & Support</h3>
+                <a href="https://discord.gg/smAyYUf5" target="_blank">Discord Community</a>
+                <a href="#community">Join Network</a>
+                <p>Email: info@stocklight.io</p>
+                <p>Connect with thousands of innovators and industry leaders in our vibrant community.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 RRK Technologies. All rights reserved. | Innovating the future of business automation and financial intelligence.</p>
         </div>
     </footer>
 </body>

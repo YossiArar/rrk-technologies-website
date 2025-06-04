@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RRK Technologies - Advanced AI & Technology Solutions</title>
+    <title>RRK Technologies - Revolutionary AI & Automation Solutions</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
@@ -11,11 +11,13 @@
             --primary: #0066cc;
             --primary-dark: #004999;
             --primary-light: #e6f0ff;
+            --accent: #ff6b35;
             --text-dark: #1a1a1a;
             --text-light: #666;
             --background: #f8f9fa;
             --white: #ffffff;
             --gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            --accent-gradient: linear-gradient(135deg, var(--accent) 0%, #ff8c42 100%);
         }
 
         * {
@@ -56,7 +58,6 @@
         }
 
         .logo-image {
-            /* Adjust width/height as needed */
             width: 50px;
             height: 50px;
             object-fit: contain;
@@ -115,6 +116,35 @@
             border-radius: 2px;
         }
 
+        /* CTA Button Styles */
+        .cta-button {
+            display: inline-block;
+            background: var(--accent-gradient);
+            color: var(--white);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+            margin: 1rem 0.5rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        .cta-button.secondary {
+            background: var(--gradient);
+            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+        }
+
+        .cta-button.secondary:hover {
+            box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
+        }
+
         /* Products & Services */
         .product-highlight {
             background: var(--primary-light);
@@ -125,7 +155,6 @@
         }
 
         .product-logo {
-            /* Adjust width/height as needed */
             width: 150px;
             margin-bottom: 1rem;
             object-fit: contain;
@@ -163,6 +192,21 @@
             color: var(--primary);
             font-size: 1.5rem;
             margin-bottom: 1rem;
+        }
+
+        /* Discord Community Section */
+        .discord-section {
+            background: linear-gradient(135deg, #5865f2 0%, #7289da 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .discord-section .section-title {
+            color: var(--white);
+        }
+
+        .discord-section .section-title::after {
+            background: var(--white);
         }
 
         /* Contact Section */
@@ -258,6 +302,12 @@
             .logo-text {
                 font-size: 2rem;
             }
+
+            .cta-button {
+                display: block;
+                text-align: center;
+                margin: 1rem 0;
+            }
         }
 
         /* Animations */
@@ -273,13 +323,21 @@
         .service-card {
             animation: fadeIn 0.5s ease-out;
         }
+
+        /* Highlight text */
+        .highlight {
+            background: linear-gradient(120deg, var(--accent) 0%, var(--accent) 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 0.2em;
+            background-position: 0 88%;
+            padding: 0 0.2em;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo-container">
-                <!-- Replace with your actual GitHub repo URL or relative path -->
                 <img 
                     src="https://github.com/YossiArar/rrk-technologies-website/raw/main/rrk-technologies-logo.png" 
                     alt="RRK Technologies Logo" 
@@ -287,67 +345,139 @@
                 />
                 <div class="logo-text">RRK Technologies</div>
             </div>
-            <p class="subtitle">Advanced AI & Technology Solutions</p>
+            <p class="subtitle">🚀 Revolutionizing Business Through Smart AI & Automation</p>
         </div>
     </header>
 
     <main class="container">
         <section class="section" id="about">
-            <h2 class="section-title">About Us</h2>
+            <h2 class="section-title">🌟 Transform Your Business Today</h2>
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        RRK Technologies stands at the forefront of technological innovation, providing a comprehensive range of software development, technological consulting, and information product marketing services at the highest level. We're here to upgrade your business with customized solutions and exceptional service.
+                        Welcome to the <span class="highlight">future of business automation</span>! RRK Technologies is your ultimate partner in digital transformation, delivering cutting-edge AI solutions that don't just optimize—they revolutionize. 
+                    </p>
+                    <p style="margin-top: 1rem;">
+                        We're not just another tech company. We're <strong>innovation architects</strong> who turn complex challenges into streamlined success stories. From smart automation that works while you sleep to AI-powered insights that predict tomorrow's opportunities, we bring the future to your fingertips—today!
+                    </p>
+                    <p style="margin-top: 1rem;">
+                        <strong>Ready to 10x your efficiency?</strong> Let's make it happen! 🚀
                     </p>
                 </div>
                 <div class="about-image">
-                    RRK Tech
+                    🤖 AI POWERED
                 </div>
             </div>
         </section>
 
+        <section class="section" id="services">
+            <h2 class="section-title">⚡ Our Game-Changing Solutions</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; text-align: center;">
+                <strong>Unleash the power of next-generation technology with solutions that actually work!</strong>
+            </p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🎯 Advanced UI/API Automation</h3>
+                    <p>Forget complex setups! Our intuitive automation tools are so easy to use, you'll wonder how you ever worked without them. Automate everything from simple tasks to complex workflows with zero coding required.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📊 Comprehensive CI/CD Solutions</h3>
+                    <p>Deploy with confidence using our bulletproof CI/CD pipelines featuring stunning visual test reports (powered by Allure). See your code quality at a glance and ship faster than ever!</p>
+                </div>
+                <div class="service-card">
+                    <h3>🎓 Professional Training & Recruitment</h3>
+                    <p>Build your dream automation team! We don't just find talent—we create automation specialists through our intensive training programs. Your future automation experts are waiting!</p>
+                </div>
+                <div class="service-card">
+                    <h3>🧠 Custom AI Integration</h3>
+                    <p>Transform your business with AI that actually understands your needs. From predictive analytics to intelligent automation, we make AI work for YOU.</p>
+                </div>
+                <div class="service-card">
+                    <h3>⚙️ Smart Process Optimization</h3>
+                    <p>Watch your productivity soar! We identify bottlenecks you didn't even know existed and eliminate them with surgical precision.</p>
+                </div>
+                <div class="service-card">
+                    <h3>💡 Strategic Tech Consulting</h3>
+                    <p>Stop guessing, start winning! Our experts guide you through the tech maze, ensuring every decision drives real results and ROI.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section discord-section" id="community">
+            <h2 class="section-title">🎮 Join Our Thriving Discord Community!</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 2rem;">
+                <strong>Connect. Learn. Grow. Succeed.</strong>
+            </p>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+                Step into the most vibrant automation community on Discord! Network with industry leaders, collaborate on cutting-edge projects, and accelerate your learning with like-minded innovators. From beginner tips to advanced strategies, our community is your gateway to automation mastery.
+            </p>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+                🔥 <strong>What awaits you:</strong><br>
+                • Real-time problem solving with experts<br>
+                • Exclusive tutorials and resources<br>
+                • Job opportunities and partnerships<br>
+                • Weekly challenges and competitions<br>
+                • Direct access to RRK Technologies team
+            </p>
+            <a href="https://discord.gg/smAyYUf5" class="cta-button" target="_blank">
+                🚀 Join Our Discord Now - It's FREE!
+            </a>
+        </section>
+
         <section class="section" id="products">
-            <h2 class="section-title">Our Product</h2>
+            <h2 class="section-title">💎 Meet StockLight - Your Financial Edge</h2>
             <div class="product-highlight">
-                <!-- Replace with your actual GitHub repo URL or relative path -->
                 <img 
                     src="https://github.com/YossiArar/rrk-technologies-website/raw/main/stocklight-logo.png" 
                     alt="StockLight Logo" 
                     class="product-logo"
                 />
-                <h3>StockLight</h3>
-                <p>
-                    StockLight is specifically designed to make the stock market accessible to the average user. 
-                    The product utilizes advanced technological tools to provide simple and clear insights, 
-                    enabling anyone to understand the market in a comprehensible way.
+                <h3>StockLight Premium</h3>
+                <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">
+                    <strong>The stock market just got a whole lot smarter!</strong>
                 </p>
-            </div>
-        </section>
-
-        <section class="section" id="services">
-            <h2 class="section-title">Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>AI Integration</h3>
-                    <p>Custom artificial intelligence solutions tailored to your business needs</p>
-                </div>
-                <div class="service-card">
-                    <h3>Automation</h3>
-                    <p>Streamlining business processes through intelligent automation</p>
-                </div>
-                <div class="service-card">
-                    <h3>Tech Consulting</h3>
-                    <p>Professional guidance in selecting and implementing technological solutions</p>
+                <p style="margin-bottom: 2rem;">
+                    StockLight transforms complex market data into crystal-clear insights that anyone can understand and act upon. Our advanced AI algorithms work 24/7 to identify opportunities, predict trends, and deliver actionable intelligence straight to your dashboard.
+                </p>
+                <p style="margin-bottom: 2rem;">
+                    <strong>🎯 Why StockLight subscribers are winning:</strong><br>
+                    • AI-powered market analysis that never sleeps<br>
+                    • Simple, actionable insights for any skill level<br>
+                    • Real-time alerts for golden opportunities<br>
+                    • Comprehensive automation tools for trading<br>
+                    • Exclusive community of successful investors
+                </p>
+                <div style="background: rgba(255,255,255,0.9); padding: 2rem; border-radius: 15px; margin-top: 2rem;">
+                    <p style="font-size: 1.3rem; color: var(--primary); margin-bottom: 1rem;">
+                        <strong>🔥 Limited Time: Join the Financial Revolution!</strong>
+                    </p>
+                    <a href="https://patreon.com/stocklight" class="cta-button" target="_blank">
+                        💰 Subscribe to StockLight Premium
+                    </a>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+                        Join thousands of smart investors already profiting with StockLight!
+                    </p>
                 </div>
             </div>
         </section>
 
         <section class="section" id="contact">
-            <h2 class="section-title">Contact Us</h2>
+            <h2 class="section-title">🚀 Ready to Transform Your Business?</h2>
+            <p style="font-size: 1.2rem; text-align: center; margin-bottom: 2rem;">
+                <strong>Don't wait for tomorrow's success—create it today!</strong>
+            </p>
             <div class="contact-info">
                 <div class="contact-item">
-                    <span>📱</span>
+                    <span>📧</span>
                     <p>Email: info@stocklight.io</p>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="https://discord.gg/smAyYUf5" class="cta-button secondary" target="_blank">
+                        💬 Connect on Discord
+                    </a>
+                    <a href="https://patreon.com/stocklight" class="cta-button" target="_blank">
+                        🌟 Get StockLight Premium
+                    </a>
                 </div>
             </div>
         </section>
@@ -358,11 +488,17 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>RRK Technologies</h3>
-                    <p>Advancing businesses through innovative technology solutions</p>
+                    <p>🚀 Revolutionizing businesses through innovative AI & automation solutions</p>
+                    <p style="margin-top: 1rem;">Join the automation revolution today!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="https://discord.gg/smAyYUf5" style="color: #fff; text-decoration: none;">🎮 Discord Community</a></p>
+                    <p><a href="https://patreon.com/stocklight" style="color: #fff; text-decoration: none;">💎 StockLight Premium</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 RRK Technologies. All rights reserved.</p>
+                <p>&copy; 2025 RRK Technologies. All rights reserved. | 🌟 Building the future, one automation at a time.</p>
             </div>
         </div>
     </footer>

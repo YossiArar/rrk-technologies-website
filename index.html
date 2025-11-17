@@ -230,15 +230,15 @@
       <a class="logo" href="#top" aria-label="RRK Technologies home">
         <img src="./RRK-logo.svg" alt="RRK Technologies logo">
       </a>
-      <button class="nav-toggle" id="nav-toggle" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+      <button class="nav-toggle" id="nav-toggle" aria-controls="primary-nav" aria-expanded="false" rrk-automation-id="menu-btn">Menu</button>
       <ul class="nav-links" id="primary-nav">
-        <li><a href="#pillars">What We Do</a></li>
-        <li><a href="#services">Automation Services</a></li>
-        <li><a href="#pipeline">Data Pipelines</a></li>
-        <li><a href="#testing">Testing</a></li>
-        <li><a href="#tools">Tools & IP</a></li>
-        <li><a href="#stocklight">StockLight</a></li>
-        <li><a class="cta" href="#contact">Contact</a></li>
+        <li><a href="#pillars" rrk-automation-id="what-we-do-link">What We Do</a></li>
+        <li><a href="#services" rrk-automation-id="automation-services-link">Automation Services</a></li>
+        <li><a href="#pipeline" rrk-automation-id="data-pipelines-link">Data Pipelines</a></li>
+        <li><a href="#testing" rrk-automation-id="testing-link">Testing</a></li>
+        <li><a href="#tools" rrk-automation-id="tools-ip-link">Tools & IP</a></li>
+        <li><a href="#stocklight" rrk-automation-id="stocklight-link">StockLight</a></li>
+        <li><a class="cta" href="#contact" rrk-automation-id="contact-link">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -253,8 +253,8 @@
           RRK Technologies scopes, ships, and maintains automation and data products. Multi-cloud by design: GCP, AWS, and Azure. In parallel, we build <strong>StockLight</strong> - a clean, actionable market insights product.
         </p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#services">Explore automation services</a>
-          <a class="btn btn-secondary" href="https://stocklight.io/" target="_blank" rel="noopener">Open StockLight</a>
+          <a class="btn btn-primary" href="#services" rrk-automation-id="explore-automation-services-link">Explore automation services</a>
+          <a class="btn btn-secondary" href="https://stocklight.io/" target="_blank" rel="noopener" rrk-automation-id="open-stocklight-link">Open StockLight</a>
         </div>
       </div>
 
@@ -290,7 +290,7 @@
           <li>Analytics and BI on Supabase and pgvector</li>
           <li>Quality gates and health checks for stable releases</li>
         </ul>
-        <div style="margin-top:14px"><a class="btn btn-secondary" href="#services">See services</a></div>
+        <div style="margin-top:14px"><a class="btn btn-secondary" href="#services" rrk-automation-id="see-services-link">See services</a></div>
       </div>
 
       <div class="card">
@@ -301,7 +301,7 @@
           <li>Watchlists that highlight what matters for you</li>
           <li>Foundation for alerts, personalization, and portfolios</li>
         </ul>
-        <div style="margin-top:14px"><a class="btn btn-primary" href="https://stocklight.io/" target="_blank" rel="noopener">Open StockLight</a></div>
+        <div style="margin-top:14px"><a class="btn btn-primary" href="https://stocklight.io/" target="_blank" rel="noopener" rrk-automation-id="open-stocklight-link-1">Open StockLight</a></div>
       </div>
     </div>
   </section>
@@ -433,8 +433,8 @@ api -> web -> discord/telegram</pre>
           <li>Playbooks and training for internal teams</li>
         </ul>
         <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
-          <a class="btn btn-secondary" href="https://matics.live/" target="_blank" rel="noopener">Visit Matics</a>
-          <a class="btn btn-secondary" href="#contact">Work with RRK</a>
+          <a class="btn btn-secondary" href="https://matics.live/" target="_blank" rel="noopener" rrk-automation-id="visit-matics-link">Visit Matics</a>
+          <a class="btn btn-secondary" href="#contact" rrk-automation-id="work-with-rrk-link">Work with RRK</a>
         </div>
       </div>
 
@@ -494,8 +494,8 @@ api -> web -> discord/telegram</pre>
             <div class="feat"><strong>Personalization</strong><br/>Roadmap for alerts, watchlists, and portfolios</div>
           </div>
           <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">
-            <a class="btn btn-primary" href="https://stocklight.io/" target="_blank" rel="noopener">Open stocklight.io</a>
-            <a class="btn btn-secondary" href="https://discord.gg/smAyYUf5" target="_blank" rel="noopener">Join StockLight community</a>
+            <a class="btn btn-primary" href="https://stocklight.io/" target="_blank" rel="noopener" rrk-automation-id="open-stocklightio-link">Open stocklight.io</a>
+            <a class="btn btn-secondary" href="https://discord.gg/smAyYUf5" target="_blank" rel="noopener" rrk-automation-id="join-stocklight-community-link">Join StockLight community</a>
           </div>
         </div>
         <div class="stock-card">
@@ -516,20 +516,20 @@ api -> web -> discord/telegram</pre>
       <div class="cta-item">
         <h3 style="font-weight:800;margin-bottom:6px">Work with RRK</h3>
         <p>Book a discovery call. We will scope a compact, high impact automation track and ship a measurable result.</p>
-        <a class="btn btn-secondary" href="mailto:info@rrk-technologies.com">Contact by email</a>
+        <a class="btn btn-secondary" href="mailto:info@rrk-technologies.com" rrk-automation-id="contact-by-email-link">Contact by email</a>
       </div>
       <div class="cta-item">
         <h3 style="font-weight:800;margin-bottom:6px">Open StockLight</h3>
         <p>See how we turn daily market noise into calm, useful context.</p>
-        <a class="btn btn-primary" href="https://stocklight.io/" target="_blank" rel="noopener">Go to stocklight.io</a>
+        <a class="btn btn-primary" href="https://stocklight.io/" target="_blank" rel="noopener" rrk-automation-id="go-to-stocklightio-link">Go to stocklight.io</a>
       </div>
     </div>
 
     <div class="email-block">
-      <a class="email" href="mailto:info@rrk-technologies.com">info@rrk-technologies.com</a>
+      <a class="email" href="mailto:info@rrk-technologies.com" rrk-automation-id="inforrktechnologiescom-link">info@rrk-technologies.com</a>
     </div>
     
-    <form id="contact-form" class="contact-form" aria-label="Contact form">
+    <form id="contact-form" class="contact-form" aria-label="Contact form" rrk-automation-id="name-email-subject-form">
       <div class="form-row">
         <div class="field">
           <label for="cf-name">Name</label>
@@ -546,10 +546,10 @@ api -> web -> discord/telegram</pre>
       </div>
       <div class="field">
         <label for="cf-message">Message</label>
-        <textarea id="cf-message" name="message" required placeholder="Tell us a bit about your needs"></textarea>
+        <textarea id="cf-message" name="message" required placeholder="Tell us a bit about your needs" rrk-automation-id="textarea"></textarea>
       </div>
       <div class="form-actions">
-        <button type="submit" class="btn btn-primary">Send message</button>
+        <button type="submit" class="btn btn-primary" rrk-automation-id="send-message-btn">Send message</button>
         <span class="note">We reply from info@rrk-technologies.com</span>
       </div>
     </form>
@@ -565,22 +565,22 @@ api -> web -> discord/telegram</pre>
       </div>
       <div>
         <h5>Automation</h5>
-        <a href="#services">UI and API automation</a><br/>
-        <a href="#services">LLM and agents</a><br/>
-        <a href="#services">Cloud backends</a><br/>
-        <a href="#services">Data intelligence</a><br/>
+        <a href="#services" rrk-automation-id="ui-and-api-link">UI and API automation</a><br/>
+        <a href="#services" rrk-automation-id="llm-and-agents-link">LLM and agents</a><br/>
+        <a href="#services" rrk-automation-id="cloud-backends-link">Cloud backends</a><br/>
+        <a href="#services" rrk-automation-id="data-intelligence-link">Data intelligence</a><br/>
         <a href="#testing">Testing</a>
       </div>
       <div>
         <h5>StockLight</h5>
-        <a href="#stocklight">Overview</a><br/>
-        <a href="https://stocklight.io/" target="_blank" rel="noopener">stocklight.io</a><br/>
-        <a href="https://discord.gg/smAyYUf5" target="_blank" rel="noopener">Community</a>
+        <a href="#stocklight" rrk-automation-id="overview-link">Overview</a><br/>
+        <a href="https://stocklight.io/" target="_blank" rel="noopener" rrk-automation-id="stocklightio-link">stocklight.io</a><br/>
+        <a href="https://discord.gg/smAyYUf5" target="_blank" rel="noopener" rrk-automation-id="community-link">Community</a>
       </div>
       <div>
         <h5>Contact</h5>
-        <a href="mailto:info@rrk-technologies.com">info@rrk-technologies.com</a><br/>
-        <a href="#contact">Contact form</a>
+        <a href="mailto:info@rrk-technologies.com" rrk-automation-id="inforrktechnologiescom-link-1">info@rrk-technologies.com</a><br/>
+        <a href="#contact" rrk-automation-id="contact-form-link">Contact form</a>
       </div>
     </div>
     <div style="text-align:center;margin-top:18px;color:#94a3b8;border-top:1px solid #1f2937;padding-top:18px">

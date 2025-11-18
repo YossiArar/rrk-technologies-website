@@ -1,616 +1,372 @@
 {
   "projectName": "rrk-technologies-website",
   "scannedFiles": 1,
-  "totalElements": 36,
-  "covered": [],
-  "missing": [
+  "totalElements": 32,
+  "covered": [
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 1,
-        "column": 0,
-        "elementType": "a",
-        "codeSnippet": "<a class=\"logo\" href=\"#top\" aria-label=\"RRK Technologies home\">\n        <img src=\"./RRK-logo.svg\" alt=\"RRK Technologies logo\">\n      </a>",
-        "fileContext": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>RRK Technologies - AI Automation Agency & StockLight</title>\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"./favicon.svg\" />\n  <meta name=\"description\" content=\"RRK Technologies delivers production-grade AI automation, multi-cloud data pipelines, and rigorous testing. We also build StockLight - a clean, actionable financial insights product.\" />\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap\" rel=\"stylesheet\">\n  <meta property=\"og:title\" content=\"RRK Technologies - AI Automation Agency & StockLight\">",
-        "snippet": "<a class=\"logo\" href=\"#top\" aria-label=\"RRK Technologies home\">\n        <img src=\"./RRK-logo.svg\" alt=\"RRK Technologies logo\">\n      </a>"
-      },
-      "suggestion": {
-        "proposedId": "link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 249,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "RRK\n          Automation & Intelligence",
+      "codeSnippet": "<a class=\"logo\" href=\"#top\" aria-label=\"RRK Technologies home\" rrk-automation-id=\"rrk-automation-intelligence-link\">",
+      "existingLocator": "rrk-automation-intelligence-link",
+      "fileContext": "    \"logo\":\"https://rrk-technologies.com/logo.svg\",\n    \"sameAs\":[\"https://stocklight.io/\"],\n    \"description\":\"AI automation agency delivering multi-cloud data pipelines and full-stack testing. Creators of StockLight.\"\n  }\n  </script>\n</head>\n<body>\n  <!-- Header -->\n  <header class=\"header\" role=\"banner\">\n    <nav class=\"nav\" aria-label=\"Primary\">\n      <a class=\"logo\" href=\"#top\" aria-label=\"RRK Technologies home\" rrk-automation-id=\"rrk-automation-intelligence-link\">\n        <svg width=\"240\" height=\"64\" viewBox=\"0 0 240 64\" xmlns=\"http://www.w3.org/2000/svg\" style=\"height:48px;width:auto\">\n          <rect width=\"240\" height=\"64\" fill=\"none\"/>\n          <rect x=\"8\" y=\"8\" width=\"48\" height=\"48\" rx=\"10\" fill=\"#1a1f2e\" stroke=\"#00d9ff\" stroke-width=\"2\"/>\n          <rect x=\"18\" y=\"20\" width=\"28\" height=\"4\" rx=\"2\" fill=\"#00d9ff\"/>\n          <rect x=\"18\" y=\"28\" width=\"22\" height=\"4\" rx=\"2\" fill=\"#7c3aed\"/>\n          <rect x=\"18\" y=\"36\" width=\"16\" height=\"4\" rx=\"2\" fill=\"#06ffa5\"/>\n          <path d=\"M38 34 L44 30 L44 38 Z\" fill=\"#00d9ff\"/>\n          <text x=\"72\" y=\"40\" fill=\"#00d9ff\" font-size=\"28\" font-family=\"system-ui\" font-weight=\"700\" letter-spacing=\"3\">RRK</text>\n          <text x=\"72\" y=\"52\" fill=\"#a8b2c8\" font-size=\"10\" font-family=\"system-ui\" font-weight=\"500\">Automation & Intelligence</text>\n        </svg>",
+      "snippet": "<a class=\"logo\" href=\"#top\" aria-label=\"RRK Technologies home\" rrk-automation-id=\"rrk-automation-intelligence-link\">"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 233,
-        "column": 0,
-        "elementType": "button",
-        "textContent": "Menu",
-        "codeSnippet": "<button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\">Menu</button>",
-        "fileContext": "  }\n  </script>\n</head>\n<body>\n  <!-- Header -->\n  <header class=\"header\" role=\"banner\">\n    <nav class=\"nav\" aria-label=\"Primary\">\n      <a class=\"logo\" href=\"#top\" aria-label=\"RRK Technologies home\">\n        <img src=\"./RRK-logo.svg\" alt=\"RRK Technologies logo\">\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\">What We Do</a></li>\n        <li><a href=\"#services\">Automation Services</a></li>\n        <li><a href=\"#pipeline\">Data Pipelines</a></li>\n        <li><a href=\"#testing\">Testing</a></li>\n        <li><a href=\"#tools\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\">Contact</a></li>\n      </ul>\n    </nav>",
-        "snippet": "<button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\">Menu</button>"
-      },
-      "suggestion": {
-        "proposedId": "menu-btn",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 261,
+      "column": 0,
+      "elementType": "button",
+      "textContent": "Menu",
+      "codeSnippet": "<button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>",
+      "existingLocator": "menu-btn",
+      "fileContext": "          <rect width=\"240\" height=\"64\" fill=\"none\"/>\n          <rect x=\"8\" y=\"8\" width=\"48\" height=\"48\" rx=\"10\" fill=\"#1a1f2e\" stroke=\"#00d9ff\" stroke-width=\"2\"/>\n          <rect x=\"18\" y=\"20\" width=\"28\" height=\"4\" rx=\"2\" fill=\"#00d9ff\"/>\n          <rect x=\"18\" y=\"28\" width=\"22\" height=\"4\" rx=\"2\" fill=\"#7c3aed\"/>\n          <rect x=\"18\" y=\"36\" width=\"16\" height=\"4\" rx=\"2\" fill=\"#06ffa5\"/>\n          <path d=\"M38 34 L44 30 L44 38 Z\" fill=\"#00d9ff\"/>\n          <text x=\"72\" y=\"40\" fill=\"#00d9ff\" font-size=\"28\" font-family=\"system-ui\" font-weight=\"700\" letter-spacing=\"3\">RRK</text>\n          <text x=\"72\" y=\"52\" fill=\"#a8b2c8\" font-size=\"10\" font-family=\"system-ui\" font-weight=\"500\">Automation & Intelligence</text>\n        </svg>\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a></li>\n        <li><a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a></li>\n        <li><a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a></li>\n        <li><a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a></li>\n        <li><a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a></li>\n      </ul>\n    </nav>",
+      "snippet": "<button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 235,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "What We Do",
-        "codeSnippet": "<a href=\"#pillars\">What We Do</a>",
-        "fileContext": "</head>\n<body>\n  <!-- Header -->\n  <header class=\"header\" role=\"banner\">\n    <nav class=\"nav\" aria-label=\"Primary\">\n      <a class=\"logo\" href=\"#top\" aria-label=\"RRK Technologies home\">\n        <img src=\"./RRK-logo.svg\" alt=\"RRK Technologies logo\">\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\">What We Do</a></li>\n        <li><a href=\"#services\">Automation Services</a></li>\n        <li><a href=\"#pipeline\">Data Pipelines</a></li>\n        <li><a href=\"#testing\">Testing</a></li>\n        <li><a href=\"#tools\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n",
-        "snippet": "<a href=\"#pillars\">What We Do</a>"
-      },
-      "suggestion": {
-        "proposedId": "what-we-do-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 263,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "What We Do",
+      "codeSnippet": "<a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a>",
+      "existingLocator": "what-we-do-link",
+      "fileContext": "          <rect x=\"18\" y=\"20\" width=\"28\" height=\"4\" rx=\"2\" fill=\"#00d9ff\"/>\n          <rect x=\"18\" y=\"28\" width=\"22\" height=\"4\" rx=\"2\" fill=\"#7c3aed\"/>\n          <rect x=\"18\" y=\"36\" width=\"16\" height=\"4\" rx=\"2\" fill=\"#06ffa5\"/>\n          <path d=\"M38 34 L44 30 L44 38 Z\" fill=\"#00d9ff\"/>\n          <text x=\"72\" y=\"40\" fill=\"#00d9ff\" font-size=\"28\" font-family=\"system-ui\" font-weight=\"700\" letter-spacing=\"3\">RRK</text>\n          <text x=\"72\" y=\"52\" fill=\"#a8b2c8\" font-size=\"10\" font-family=\"system-ui\" font-weight=\"500\">Automation & Intelligence</text>\n        </svg>\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a></li>\n        <li><a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a></li>\n        <li><a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a></li>\n        <li><a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a></li>\n        <li><a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n",
+      "snippet": "<a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 236,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Automation Services",
-        "codeSnippet": "<a href=\"#services\">Automation Services</a>",
-        "fileContext": "<body>\n  <!-- Header -->\n  <header class=\"header\" role=\"banner\">\n    <nav class=\"nav\" aria-label=\"Primary\">\n      <a class=\"logo\" href=\"#top\" aria-label=\"RRK Technologies home\">\n        <img src=\"./RRK-logo.svg\" alt=\"RRK Technologies logo\">\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\">What We Do</a></li>\n        <li><a href=\"#services\">Automation Services</a></li>\n        <li><a href=\"#pipeline\">Data Pipelines</a></li>\n        <li><a href=\"#testing\">Testing</a></li>\n        <li><a href=\"#tools\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->",
-        "snippet": "<a href=\"#services\">Automation Services</a>"
-      },
-      "suggestion": {
-        "proposedId": "automation-services-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 264,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Automation Services",
+      "codeSnippet": "<a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a>",
+      "existingLocator": "automation-services-link",
+      "fileContext": "          <rect x=\"18\" y=\"28\" width=\"22\" height=\"4\" rx=\"2\" fill=\"#7c3aed\"/>\n          <rect x=\"18\" y=\"36\" width=\"16\" height=\"4\" rx=\"2\" fill=\"#06ffa5\"/>\n          <path d=\"M38 34 L44 30 L44 38 Z\" fill=\"#00d9ff\"/>\n          <text x=\"72\" y=\"40\" fill=\"#00d9ff\" font-size=\"28\" font-family=\"system-ui\" font-weight=\"700\" letter-spacing=\"3\">RRK</text>\n          <text x=\"72\" y=\"52\" fill=\"#a8b2c8\" font-size=\"10\" font-family=\"system-ui\" font-weight=\"500\">Automation & Intelligence</text>\n        </svg>\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a></li>\n        <li><a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a></li>\n        <li><a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a></li>\n        <li><a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a></li>\n        <li><a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->",
+      "snippet": "<a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 237,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Data Pipelines",
-        "codeSnippet": "<a href=\"#pipeline\">Data Pipelines</a>",
-        "fileContext": "  <!-- Header -->\n  <header class=\"header\" role=\"banner\">\n    <nav class=\"nav\" aria-label=\"Primary\">\n      <a class=\"logo\" href=\"#top\" aria-label=\"RRK Technologies home\">\n        <img src=\"./RRK-logo.svg\" alt=\"RRK Technologies logo\">\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\">What We Do</a></li>\n        <li><a href=\"#services\">Automation Services</a></li>\n        <li><a href=\"#pipeline\">Data Pipelines</a></li>\n        <li><a href=\"#testing\">Testing</a></li>\n        <li><a href=\"#tools\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">",
-        "snippet": "<a href=\"#pipeline\">Data Pipelines</a>"
-      },
-      "suggestion": {
-        "proposedId": "data-pipelines-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 265,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Data Pipelines",
+      "codeSnippet": "<a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a>",
+      "existingLocator": "data-pipelines-link",
+      "fileContext": "          <rect x=\"18\" y=\"36\" width=\"16\" height=\"4\" rx=\"2\" fill=\"#06ffa5\"/>\n          <path d=\"M38 34 L44 30 L44 38 Z\" fill=\"#00d9ff\"/>\n          <text x=\"72\" y=\"40\" fill=\"#00d9ff\" font-size=\"28\" font-family=\"system-ui\" font-weight=\"700\" letter-spacing=\"3\">RRK</text>\n          <text x=\"72\" y=\"52\" fill=\"#a8b2c8\" font-size=\"10\" font-family=\"system-ui\" font-weight=\"500\">Automation & Intelligence</text>\n        </svg>\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a></li>\n        <li><a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a></li>\n        <li><a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a></li>\n        <li><a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a></li>\n        <li><a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">",
+      "snippet": "<a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 238,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Testing",
-        "codeSnippet": "<a href=\"#testing\">Testing</a>",
-        "fileContext": "  <header class=\"header\" role=\"banner\">\n    <nav class=\"nav\" aria-label=\"Primary\">\n      <a class=\"logo\" href=\"#top\" aria-label=\"RRK Technologies home\">\n        <img src=\"./RRK-logo.svg\" alt=\"RRK Technologies logo\">\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\">What We Do</a></li>\n        <li><a href=\"#services\">Automation Services</a></li>\n        <li><a href=\"#pipeline\">Data Pipelines</a></li>\n        <li><a href=\"#testing\">Testing</a></li>\n        <li><a href=\"#tools\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">",
-        "snippet": "<a href=\"#testing\">Testing</a>"
-      },
-      "suggestion": {
-        "proposedId": "testing-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 266,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Testing",
+      "codeSnippet": "<a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a>",
+      "existingLocator": "testing-link",
+      "fileContext": "          <path d=\"M38 34 L44 30 L44 38 Z\" fill=\"#00d9ff\"/>\n          <text x=\"72\" y=\"40\" fill=\"#00d9ff\" font-size=\"28\" font-family=\"system-ui\" font-weight=\"700\" letter-spacing=\"3\">RRK</text>\n          <text x=\"72\" y=\"52\" fill=\"#a8b2c8\" font-size=\"10\" font-family=\"system-ui\" font-weight=\"500\">Automation & Intelligence</text>\n        </svg>\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a></li>\n        <li><a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a></li>\n        <li><a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a></li>\n        <li><a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a></li>\n        <li><a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">",
+      "snippet": "<a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 239,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Tools & IP",
-        "codeSnippet": "<a href=\"#tools\">Tools & IP</a>",
-        "fileContext": "    <nav class=\"nav\" aria-label=\"Primary\">\n      <a class=\"logo\" href=\"#top\" aria-label=\"RRK Technologies home\">\n        <img src=\"./RRK-logo.svg\" alt=\"RRK Technologies logo\">\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\">What We Do</a></li>\n        <li><a href=\"#services\">Automation Services</a></li>\n        <li><a href=\"#pipeline\">Data Pipelines</a></li>\n        <li><a href=\"#testing\">Testing</a></li>\n        <li><a href=\"#tools\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>",
-        "snippet": "<a href=\"#tools\">Tools & IP</a>"
-      },
-      "suggestion": {
-        "proposedId": "tools-ip-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 267,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Tools & IP",
+      "codeSnippet": "<a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a>",
+      "existingLocator": "tools-ip-link",
+      "fileContext": "          <text x=\"72\" y=\"40\" fill=\"#00d9ff\" font-size=\"28\" font-family=\"system-ui\" font-weight=\"700\" letter-spacing=\"3\">RRK</text>\n          <text x=\"72\" y=\"52\" fill=\"#a8b2c8\" font-size=\"10\" font-family=\"system-ui\" font-weight=\"500\">Automation & Intelligence</text>\n        </svg>\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a></li>\n        <li><a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a></li>\n        <li><a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a></li>\n        <li><a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a></li>\n        <li><a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>",
+      "snippet": "<a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 240,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "StockLight",
-        "codeSnippet": "<a href=\"#stocklight\">StockLight</a>",
-        "fileContext": "      <a class=\"logo\" href=\"#top\" aria-label=\"RRK Technologies home\">\n        <img src=\"./RRK-logo.svg\" alt=\"RRK Technologies logo\">\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\">What We Do</a></li>\n        <li><a href=\"#services\">Automation Services</a></li>\n        <li><a href=\"#pipeline\">Data Pipelines</a></li>\n        <li><a href=\"#testing\">Testing</a></li>\n        <li><a href=\"#tools\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>\n        <span class=\"eyebrow\">Production-grade AI and automation</span>",
-        "snippet": "<a href=\"#stocklight\">StockLight</a>"
-      },
-      "suggestion": {
-        "proposedId": "stocklight-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 268,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "StockLight",
+      "codeSnippet": "<a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a>",
+      "existingLocator": "stocklight-link",
+      "fileContext": "          <text x=\"72\" y=\"52\" fill=\"#a8b2c8\" font-size=\"10\" font-family=\"system-ui\" font-weight=\"500\">Automation & Intelligence</text>\n        </svg>\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a></li>\n        <li><a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a></li>\n        <li><a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a></li>\n        <li><a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a></li>\n        <li><a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>\n        <span class=\"eyebrow\">Production-grade AI and automation</span>",
+      "snippet": "<a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 241,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Contact",
-        "codeSnippet": "<a class=\"cta\" href=\"#contact\">Contact</a>",
-        "fileContext": "        <img src=\"./RRK-logo.svg\" alt=\"RRK Technologies logo\">\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\">What We Do</a></li>\n        <li><a href=\"#services\">Automation Services</a></li>\n        <li><a href=\"#pipeline\">Data Pipelines</a></li>\n        <li><a href=\"#testing\">Testing</a></li>\n        <li><a href=\"#tools\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>\n        <span class=\"eyebrow\">Production-grade AI and automation</span>\n        <h1>We build intelligent systems that run your operations and turn data into decisions.</h1>",
-        "snippet": "<a class=\"cta\" href=\"#contact\">Contact</a>"
-      },
-      "suggestion": {
-        "proposedId": "contact-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 269,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Contact",
+      "codeSnippet": "<a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a>",
+      "existingLocator": "contact-link",
+      "fileContext": "        </svg>\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a></li>\n        <li><a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a></li>\n        <li><a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a></li>\n        <li><a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a></li>\n        <li><a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>\n        <span class=\"eyebrow\">Production-grade AI and automation</span>\n        <h1>We build intelligent systems that run your operations and turn data into decisions.</h1>",
+      "snippet": "<a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 256,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Explore automation services",
-        "codeSnippet": "<a class=\"btn btn-primary\" href=\"#services\">Explore automation services</a>",
-        "fileContext": "  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>\n        <span class=\"eyebrow\">Production-grade AI and automation</span>\n        <h1>We build intelligent systems that run your operations and turn data into decisions.</h1>\n        <p class=\"sub\">\n          RRK Technologies scopes, ships, and maintains automation and data products. Multi-cloud by design: GCP, AWS, and Azure. In parallel, we build <strong>StockLight</strong> - a clean, actionable market insights product.\n        </p>\n        <div class=\"hero-cta\">\n          <a class=\"btn btn-primary\" href=\"#services\">Explore automation services</a>\n          <a class=\"btn btn-secondary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Open StockLight</a>\n        </div>\n      </div>\n\n      <div class=\"hero-card\" aria-label=\"Summary\">\n        <h3 style=\"font-weight:800;margin-bottom:6px\">Two tracks. One standard.</h3>\n        <p class=\"sub\" style=\"font-size:.98rem\">RRK is a productized automation agency. StockLight is a focused product. Same quality bar.</p>\n        <div style=\"display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px\">\n          <div style=\"background:rgba(255,107,107,.12);border:1px solid rgba(255,107,107,.4);border-radius:12px;padding:14px;box-shadow:0 4px 15px rgba(255,107,107,.2)\">\n            <strong style=\"display:block;color:var(--primary);font-size:1.05rem\">RRK Automation</strong>",
-        "snippet": "<a class=\"btn btn-primary\" href=\"#services\">Explore automation services</a>"
-      },
-      "suggestion": {
-        "proposedId": "explore-automation-services-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 284,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Explore automation services",
+      "codeSnippet": "<a class=\"btn btn-primary\" href=\"#services\" rrk-automation-id=\"explore-automation-services-link\">Explore automation services</a>",
+      "existingLocator": "explore-automation-services-link",
+      "fileContext": "  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>\n        <span class=\"eyebrow\">Production-grade AI and automation</span>\n        <h1>We build intelligent systems that run your operations and turn data into decisions.</h1>\n        <p class=\"sub\">\n          RRK Technologies scopes, ships, and maintains automation and data products. Multi-cloud by design: GCP, AWS, and Azure. In parallel, we build <strong>StockLight</strong> - a clean, actionable market insights product.\n        </p>\n        <div class=\"hero-cta\">\n          <a class=\"btn btn-primary\" href=\"#services\" rrk-automation-id=\"explore-automation-services-link\">Explore automation services</a>\n          <a class=\"btn btn-secondary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link\">Open StockLight</a>\n        </div>\n      </div>\n\n      <div class=\"hero-card\" aria-label=\"Summary\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Two tracks. One standard.</h3>\n        <p class=\"sub\" style=\"font-size:.98rem\">RRK is a productized automation agency. StockLight is a focused product. Same quality bar.</p>\n        <div style=\"display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px\">\n          <div style=\"background:linear-gradient(135deg,rgba(0,217,255,.08),rgba(0,217,255,.04));border:1px solid rgba(0,217,255,.3);border-radius:8px;padding:14px;box-shadow:0 0 20px rgba(0,217,255,.1)\">\n            <strong style=\"display:block;color:var(--primary);font-size:1.05rem;text-shadow:0 0 20px var(--primary-glow)\">RRK Automation</strong>",
+      "snippet": "<a class=\"btn btn-primary\" href=\"#services\" rrk-automation-id=\"explore-automation-services-link\">Explore automation services</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 257,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Open StockLight",
-        "codeSnippet": "<a class=\"btn btn-secondary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Open StockLight</a>",
-        "fileContext": "  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>\n        <span class=\"eyebrow\">Production-grade AI and automation</span>\n        <h1>We build intelligent systems that run your operations and turn data into decisions.</h1>\n        <p class=\"sub\">\n          RRK Technologies scopes, ships, and maintains automation and data products. Multi-cloud by design: GCP, AWS, and Azure. In parallel, we build <strong>StockLight</strong> - a clean, actionable market insights product.\n        </p>\n        <div class=\"hero-cta\">\n          <a class=\"btn btn-primary\" href=\"#services\">Explore automation services</a>\n          <a class=\"btn btn-secondary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Open StockLight</a>\n        </div>\n      </div>\n\n      <div class=\"hero-card\" aria-label=\"Summary\">\n        <h3 style=\"font-weight:800;margin-bottom:6px\">Two tracks. One standard.</h3>\n        <p class=\"sub\" style=\"font-size:.98rem\">RRK is a productized automation agency. StockLight is a focused product. Same quality bar.</p>\n        <div style=\"display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px\">\n          <div style=\"background:rgba(255,107,107,.12);border:1px solid rgba(255,107,107,.4);border-radius:12px;padding:14px;box-shadow:0 4px 15px rgba(255,107,107,.2)\">\n            <strong style=\"display:block;color:var(--primary);font-size:1.05rem\">RRK Automation</strong>\n            <span class=\"sub\" style=\"font-size:.95rem\">UI and API automation, LLM agents, data pipelines, reliability</span>",
-        "snippet": "<a class=\"btn btn-secondary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Open StockLight</a>"
-      },
-      "suggestion": {
-        "proposedId": "open-stocklight-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 285,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Open StockLight",
+      "codeSnippet": "<a class=\"btn btn-secondary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link\">Open StockLight</a>",
+      "existingLocator": "open-stocklight-link",
+      "fileContext": "  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>\n        <span class=\"eyebrow\">Production-grade AI and automation</span>\n        <h1>We build intelligent systems that run your operations and turn data into decisions.</h1>\n        <p class=\"sub\">\n          RRK Technologies scopes, ships, and maintains automation and data products. Multi-cloud by design: GCP, AWS, and Azure. In parallel, we build <strong>StockLight</strong> - a clean, actionable market insights product.\n        </p>\n        <div class=\"hero-cta\">\n          <a class=\"btn btn-primary\" href=\"#services\" rrk-automation-id=\"explore-automation-services-link\">Explore automation services</a>\n          <a class=\"btn btn-secondary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link\">Open StockLight</a>\n        </div>\n      </div>\n\n      <div class=\"hero-card\" aria-label=\"Summary\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Two tracks. One standard.</h3>\n        <p class=\"sub\" style=\"font-size:.98rem\">RRK is a productized automation agency. StockLight is a focused product. Same quality bar.</p>\n        <div style=\"display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px\">\n          <div style=\"background:linear-gradient(135deg,rgba(0,217,255,.08),rgba(0,217,255,.04));border:1px solid rgba(0,217,255,.3);border-radius:8px;padding:14px;box-shadow:0 0 20px rgba(0,217,255,.1)\">\n            <strong style=\"display:block;color:var(--primary);font-size:1.05rem;text-shadow:0 0 20px var(--primary-glow)\">RRK Automation</strong>\n            <span class=\"sub\" style=\"font-size:.95rem\">UI and API automation, LLM agents, data pipelines, reliability</span>",
+      "snippet": "<a class=\"btn btn-secondary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link\">Open StockLight</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 293,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "See services",
-        "codeSnippet": "<a class=\"btn btn-secondary\" href=\"#services\">See services</a>",
-        "fileContext": "      <div class=\"card\">\n        <h3>RRK - Productized automation agency</h3>\n        <p class=\"lead\">We deliver automation that replaces hours of manual work and makes outcomes measurable.</p>\n        <ul class=\"list\">\n          <li>LLM agents and orchestration across your stack</li>\n          <li>UI and API automation with page-object discipline</li>\n          <li>Cloud-native backends and event pipelines</li>\n          <li>Analytics and BI on Supabase and pgvector</li>\n          <li>Quality gates and health checks for stable releases</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-secondary\" href=\"#services\">See services</a></div>\n      </div>\n\n      <div class=\"card\">\n        <h3>StockLight - Financial intelligence product</h3>\n        <p class=\"lead\">A product that turns noisy market feeds into clear, conversation-ready insights.</p>\n        <ul class=\"list\">\n          <li>Daily market briefs and context-aware analysis</li>\n          <li>Watchlists that highlight what matters for you</li>\n          <li>Foundation for alerts, personalization, and portfolios</li>\n        </ul>",
-        "snippet": "<a class=\"btn btn-secondary\" href=\"#services\">See services</a>"
-      },
-      "suggestion": {
-        "proposedId": "see-services-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 321,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "See services",
+      "codeSnippet": "<a class=\"btn btn-secondary\" href=\"#services\" rrk-automation-id=\"see-services-link\">See services</a>",
+      "existingLocator": "see-services-link",
+      "fileContext": "      <div class=\"card\">\n        <h3>RRK - Productized automation agency</h3>\n        <p class=\"lead\">We deliver automation that replaces hours of manual work and makes outcomes measurable.</p>\n        <ul class=\"list\">\n          <li>LLM agents and orchestration across your stack</li>\n          <li>UI and API automation with page-object discipline</li>\n          <li>Cloud-native backends and event pipelines</li>\n          <li>Analytics and BI on Supabase and pgvector</li>\n          <li>Quality gates and health checks for stable releases</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-secondary\" href=\"#services\" rrk-automation-id=\"see-services-link\">See services</a></div>\n      </div>\n\n      <div class=\"card\">\n        <h3>StockLight - Financial intelligence product</h3>\n        <p class=\"lead\">A product that turns noisy market feeds into clear, conversation-ready insights.</p>\n        <ul class=\"list\">\n          <li>Daily market briefs and context-aware analysis</li>\n          <li>Watchlists that highlight what matters for you</li>\n          <li>Foundation for alerts, personalization, and portfolios</li>\n        </ul>",
+      "snippet": "<a class=\"btn btn-secondary\" href=\"#services\" rrk-automation-id=\"see-services-link\">See services</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 304,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Open StockLight",
-        "codeSnippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Open StockLight</a>",
-        "fileContext": "      </div>\n\n      <div class=\"card\">\n        <h3>StockLight - Financial intelligence product</h3>\n        <p class=\"lead\">A product that turns noisy market feeds into clear, conversation-ready insights.</p>\n        <ul class=\"list\">\n          <li>Daily market briefs and context-aware analysis</li>\n          <li>Watchlists that highlight what matters for you</li>\n          <li>Foundation for alerts, personalization, and portfolios</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Open StockLight</a></div>\n      </div>\n    </div>\n  </section>\n\n  <!-- Services -->\n  <section id=\"services\" class=\"section-alt\" aria-labelledby=\"services-h\">\n    <div class=\"container\">\n      <div style=\"text-align:center\">\n        <span class=\"eyebrow\" style=\"background:rgba(255,107,107,.15);border-color:rgba(255,107,107,.4);color:var(--primary)\">RRK Services</span>\n        <h2 id=\"services-h\" style=\"font-size:2rem;font-weight:900;margin-top:8px\">Enterprise automation that ships</h2>",
-        "snippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Open StockLight</a>"
-      },
-      "suggestion": {
-        "proposedId": "open-stocklight-link-1",
-        "reason": "Rule-based suggestion from element type and content (made unique)",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 332,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Open StockLight",
+      "codeSnippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link-1\">Open StockLight</a>",
+      "existingLocator": "open-stocklight-link-1",
+      "fileContext": "      </div>\n\n      <div class=\"card\">\n        <h3>StockLight - Financial intelligence product</h3>\n        <p class=\"lead\">A product that turns noisy market feeds into clear, conversation-ready insights.</p>\n        <ul class=\"list\">\n          <li>Daily market briefs and context-aware analysis</li>\n          <li>Watchlists that highlight what matters for you</li>\n          <li>Foundation for alerts, personalization, and portfolios</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link-1\">Open StockLight</a></div>\n      </div>\n    </div>\n  </section>\n\n  <!-- Services -->\n  <section id=\"services\" class=\"section-alt\" aria-labelledby=\"services-h\">\n    <div class=\"container\">\n      <div style=\"text-align:center\">\n        <span class=\"eyebrow\">RRK Services</span>\n        <h2 id=\"services-h\" style=\"font-size:2rem;font-weight:800;margin-top:8px\">Enterprise automation that ships</h2>",
+      "snippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link-1\">Open StockLight</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 436,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Visit Matics",
-        "codeSnippet": "<a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\">Visit Matics</a>",
-        "fileContext": "    <div class=\"case\" style=\"margin-top:22px\">\n      <div class=\"card\">\n        <h3 style=\"margin-bottom:8px\">Scope</h3>\n        <ul class=\"list\">\n          <li>Unified framework with page-object targets</li>\n          <li>Stable execution and environment controls</li>\n          <li>Reporting approach based on existing tools</li>\n          <li>Playbooks and training for internal teams</li>\n        </ul>\n        <div style=\"margin-top:16px;display:flex;gap:10px;flex-wrap:wrap\">\n          <a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\">Visit Matics</a>\n          <a class=\"btn btn-secondary\" href=\"#contact\">Work with RRK</a>\n        </div>\n      </div>\n\n      <div class=\"case-visual\" aria-label=\"Notes\">\n        <p>Outcome: clearer structure, faster adoption, and easier handover. The focus was on standards and execution stability.</p>\n        <div class=\"kpi\">\n          <div class=\"box\"><div class=\"n\">Faster</div><div>Delivery cadence improved</div></div>\n          <div class=\"box\"><div class=\"n\">Fewer</div><div>Regressions through guardrails</div></div>\n          <div class=\"box\"><div class=\"n\">Smoother</div><div>Onboarding with playbooks</div></div>",
-        "snippet": "<a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\">Visit Matics</a>"
-      },
-      "suggestion": {
-        "proposedId": "visit-matics-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 464,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Visit Matics",
+      "codeSnippet": "<a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"visit-matics-link\">Visit Matics</a>",
+      "existingLocator": "visit-matics-link",
+      "fileContext": "    <div class=\"case\" style=\"margin-top:22px\">\n      <div class=\"card\">\n        <h3 style=\"margin-bottom:8px\">Scope</h3>\n        <ul class=\"list\">\n          <li>Unified framework with page-object targets</li>\n          <li>Stable execution and environment controls</li>\n          <li>Reporting approach based on existing tools</li>\n          <li>Playbooks and training for internal teams</li>\n        </ul>\n        <div style=\"margin-top:16px;display:flex;gap:10px;flex-wrap:wrap\">\n          <a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"visit-matics-link\">Visit Matics</a>\n          <a class=\"btn btn-secondary\" href=\"#contact\" rrk-automation-id=\"work-with-rrk-link\">Work with RRK</a>\n        </div>\n      </div>\n\n      <div class=\"case-visual\" aria-label=\"Notes\">\n        <p>Outcome: clearer structure, faster adoption, and easier handover. The focus was on standards and execution stability.</p>\n        <div class=\"kpi\">\n          <div class=\"box\"><div class=\"n\">Faster</div><div>Delivery cadence improved</div></div>\n          <div class=\"box\"><div class=\"n\">Fewer</div><div>Regressions through guardrails</div></div>\n          <div class=\"box\"><div class=\"n\">Smoother</div><div>Onboarding with playbooks</div></div>",
+      "snippet": "<a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"visit-matics-link\">Visit Matics</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 437,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Work with RRK",
-        "codeSnippet": "<a class=\"btn btn-secondary\" href=\"#contact\">Work with RRK</a>",
-        "fileContext": "      <div class=\"card\">\n        <h3 style=\"margin-bottom:8px\">Scope</h3>\n        <ul class=\"list\">\n          <li>Unified framework with page-object targets</li>\n          <li>Stable execution and environment controls</li>\n          <li>Reporting approach based on existing tools</li>\n          <li>Playbooks and training for internal teams</li>\n        </ul>\n        <div style=\"margin-top:16px;display:flex;gap:10px;flex-wrap:wrap\">\n          <a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\">Visit Matics</a>\n          <a class=\"btn btn-secondary\" href=\"#contact\">Work with RRK</a>\n        </div>\n      </div>\n\n      <div class=\"case-visual\" aria-label=\"Notes\">\n        <p>Outcome: clearer structure, faster adoption, and easier handover. The focus was on standards and execution stability.</p>\n        <div class=\"kpi\">\n          <div class=\"box\"><div class=\"n\">Faster</div><div>Delivery cadence improved</div></div>\n          <div class=\"box\"><div class=\"n\">Fewer</div><div>Regressions through guardrails</div></div>\n          <div class=\"box\"><div class=\"n\">Smoother</div><div>Onboarding with playbooks</div></div>\n        </div>",
-        "snippet": "<a class=\"btn btn-secondary\" href=\"#contact\">Work with RRK</a>"
-      },
-      "suggestion": {
-        "proposedId": "work-with-rrk-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 465,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Work with RRK",
+      "codeSnippet": "<a class=\"btn btn-secondary\" href=\"#contact\" rrk-automation-id=\"work-with-rrk-link\">Work with RRK</a>",
+      "existingLocator": "work-with-rrk-link",
+      "fileContext": "      <div class=\"card\">\n        <h3 style=\"margin-bottom:8px\">Scope</h3>\n        <ul class=\"list\">\n          <li>Unified framework with page-object targets</li>\n          <li>Stable execution and environment controls</li>\n          <li>Reporting approach based on existing tools</li>\n          <li>Playbooks and training for internal teams</li>\n        </ul>\n        <div style=\"margin-top:16px;display:flex;gap:10px;flex-wrap:wrap\">\n          <a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"visit-matics-link\">Visit Matics</a>\n          <a class=\"btn btn-secondary\" href=\"#contact\" rrk-automation-id=\"work-with-rrk-link\">Work with RRK</a>\n        </div>\n      </div>\n\n      <div class=\"case-visual\" aria-label=\"Notes\">\n        <p>Outcome: clearer structure, faster adoption, and easier handover. The focus was on standards and execution stability.</p>\n        <div class=\"kpi\">\n          <div class=\"box\"><div class=\"n\">Faster</div><div>Delivery cadence improved</div></div>\n          <div class=\"box\"><div class=\"n\">Fewer</div><div>Regressions through guardrails</div></div>\n          <div class=\"box\"><div class=\"n\">Smoother</div><div>Onboarding with playbooks</div></div>\n        </div>",
+      "snippet": "<a class=\"btn btn-secondary\" href=\"#contact\" rrk-automation-id=\"work-with-rrk-link\">Work with RRK</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 497,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Open stocklight.io",
-        "codeSnippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Open stocklight.io</a>",
-        "fileContext": "      <div class=\"grid\" style=\"grid-template-columns:1.1fr .9fr;gap:22px;margin-top:22px\">\n        <div class=\"stock-card\">\n          <h3 style=\"margin-bottom:8px\">What you get</h3>\n          <div class=\"features\">\n            <div class=\"feat\"><strong>Daily clarity</strong><br/>News distilled to what matters for your names</div>\n            <div class=\"feat\"><strong>Context</strong><br/>How events connect across sectors and factors</div>\n            <div class=\"feat\"><strong>Conversation ready</strong><br/>Insight you can explain to anyone</div>\n            <div class=\"feat\"><strong>Personalization</strong><br/>Roadmap for alerts, watchlists, and portfolios</div>\n          </div>\n          <div style=\"display:flex;gap:10px;flex-wrap:wrap;margin-top:6px\">\n            <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Open stocklight.io</a>\n            <a class=\"btn btn-secondary\" href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\">Join StockLight community</a>\n          </div>\n        </div>\n        <div class=\"stock-card\">\n          <h3 style=\"margin-bottom:8px\">Policy and disclaimer</h3>\n          <p>Information is for educational purposes only and may include AI generated content. Not an investment advisor. Always do your own research.</p>\n          <p style=\"color:#94a3b8\">Provider: RRK Technologies Ltd. Contact: info@rrk-technologies.com</p>\n        </div>\n      </div>\n    </div>",
-        "snippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Open stocklight.io</a>"
-      },
-      "suggestion": {
-        "proposedId": "open-stocklightio-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 525,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Open stocklight.io",
+      "codeSnippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklightio-link\">Open stocklight.io</a>",
+      "existingLocator": "open-stocklightio-link",
+      "fileContext": "      <div class=\"grid\" style=\"grid-template-columns:1.1fr .9fr;gap:22px;margin-top:22px\">\n        <div class=\"stock-card\">\n          <h3 style=\"margin-bottom:8px\">What you get</h3>\n          <div class=\"features\">\n            <div class=\"feat\"><strong>Daily clarity</strong><br/>News distilled to what matters for your names</div>\n            <div class=\"feat\"><strong>Context</strong><br/>How events connect across sectors and factors</div>\n            <div class=\"feat\"><strong>Conversation ready</strong><br/>Insight you can explain to anyone</div>\n            <div class=\"feat\"><strong>Personalization</strong><br/>Roadmap for alerts, watchlists, and portfolios</div>\n          </div>\n          <div style=\"display:flex;gap:10px;flex-wrap:wrap;margin-top:6px\">\n            <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklightio-link\">Open stocklight.io</a>\n            <a class=\"btn btn-secondary\" href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"join-stocklight-community-link\">Join StockLight community</a>\n          </div>\n        </div>\n        <div class=\"stock-card\">\n          <h3 style=\"margin-bottom:8px\">Policy and disclaimer</h3>\n          <p>Information is for educational purposes only and may include AI generated content. Not an investment advisor. Always do your own research.</p>\n          <p style=\"color:#94a3b8\">Provider: RRK Technologies Ltd. Contact: info@rrk-technologies.com</p>\n        </div>\n      </div>\n    </div>",
+      "snippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklightio-link\">Open stocklight.io</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 498,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Join StockLight community",
-        "codeSnippet": "<a class=\"btn btn-secondary\" href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\">Join StockLight community</a>",
-        "fileContext": "        <div class=\"stock-card\">\n          <h3 style=\"margin-bottom:8px\">What you get</h3>\n          <div class=\"features\">\n            <div class=\"feat\"><strong>Daily clarity</strong><br/>News distilled to what matters for your names</div>\n            <div class=\"feat\"><strong>Context</strong><br/>How events connect across sectors and factors</div>\n            <div class=\"feat\"><strong>Conversation ready</strong><br/>Insight you can explain to anyone</div>\n            <div class=\"feat\"><strong>Personalization</strong><br/>Roadmap for alerts, watchlists, and portfolios</div>\n          </div>\n          <div style=\"display:flex;gap:10px;flex-wrap:wrap;margin-top:6px\">\n            <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Open stocklight.io</a>\n            <a class=\"btn btn-secondary\" href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\">Join StockLight community</a>\n          </div>\n        </div>\n        <div class=\"stock-card\">\n          <h3 style=\"margin-bottom:8px\">Policy and disclaimer</h3>\n          <p>Information is for educational purposes only and may include AI generated content. Not an investment advisor. Always do your own research.</p>\n          <p style=\"color:#94a3b8\">Provider: RRK Technologies Ltd. Contact: info@rrk-technologies.com</p>\n        </div>\n      </div>\n    </div>\n  </section>",
-        "snippet": "<a class=\"btn btn-secondary\" href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\">Join StockLight community</a>"
-      },
-      "suggestion": {
-        "proposedId": "join-stocklight-community-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 526,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Join StockLight community",
+      "codeSnippet": "<a class=\"btn btn-secondary\" href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"join-stocklight-community-link\">Join StockLight community</a>",
+      "existingLocator": "join-stocklight-community-link",
+      "fileContext": "        <div class=\"stock-card\">\n          <h3 style=\"margin-bottom:8px\">What you get</h3>\n          <div class=\"features\">\n            <div class=\"feat\"><strong>Daily clarity</strong><br/>News distilled to what matters for your names</div>\n            <div class=\"feat\"><strong>Context</strong><br/>How events connect across sectors and factors</div>\n            <div class=\"feat\"><strong>Conversation ready</strong><br/>Insight you can explain to anyone</div>\n            <div class=\"feat\"><strong>Personalization</strong><br/>Roadmap for alerts, watchlists, and portfolios</div>\n          </div>\n          <div style=\"display:flex;gap:10px;flex-wrap:wrap;margin-top:6px\">\n            <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklightio-link\">Open stocklight.io</a>\n            <a class=\"btn btn-secondary\" href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"join-stocklight-community-link\">Join StockLight community</a>\n          </div>\n        </div>\n        <div class=\"stock-card\">\n          <h3 style=\"margin-bottom:8px\">Policy and disclaimer</h3>\n          <p>Information is for educational purposes only and may include AI generated content. Not an investment advisor. Always do your own research.</p>\n          <p style=\"color:#94a3b8\">Provider: RRK Technologies Ltd. Contact: info@rrk-technologies.com</p>\n        </div>\n      </div>\n    </div>\n  </section>",
+      "snippet": "<a class=\"btn btn-secondary\" href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"join-stocklight-community-link\">Join StockLight community</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 519,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Contact by email",
-        "codeSnippet": "<a class=\"btn btn-secondary\" href=\"mailto:info@rrk-technologies.com\">Contact by email</a>",
-        "fileContext": "\n  <!-- CTA / Contact -->\n  <section id=\"contact\" class=\"container cta-block\" aria-labelledby=\"cta-h\">\n    <h2 id=\"cta-h\" style=\"font-size:2rem;font-weight:900\">Ready to move from manual to meaningful</h2>\n    <p class=\"sub\" style=\"max-width:760px;margin:8px auto 0\">Start with a focused automation scope or try StockLight for clean market understanding.</p>\n\n    <div class=\"cta-cards\">\n      <div class=\"cta-item\">\n        <h3 style=\"font-weight:800;margin-bottom:6px\">Work with RRK</h3>\n        <p>Book a discovery call. We will scope a compact, high impact automation track and ship a measurable result.</p>\n        <a class=\"btn btn-secondary\" href=\"mailto:info@rrk-technologies.com\">Contact by email</a>\n      </div>\n      <div class=\"cta-item\">\n        <h3 style=\"font-weight:800;margin-bottom:6px\">Open StockLight</h3>\n        <p>See how we turn daily market noise into calm, useful context.</p>\n        <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Go to stocklight.io</a>\n      </div>\n    </div>\n\n    <div class=\"email-block\">\n      <a class=\"email\" href=\"mailto:info@rrk-technologies.com\">info@rrk-technologies.com</a>",
-        "snippet": "<a class=\"btn btn-secondary\" href=\"mailto:info@rrk-technologies.com\">Contact by email</a>"
-      },
-      "suggestion": {
-        "proposedId": "contact-by-email-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 547,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Contact by email",
+      "codeSnippet": "<a class=\"btn btn-secondary\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"contact-by-email-link\">Contact by email</a>",
+      "existingLocator": "contact-by-email-link",
+      "fileContext": "\n  <!-- CTA / Contact -->\n  <section id=\"contact\" class=\"container cta-block\" aria-labelledby=\"cta-h\">\n    <h2 id=\"cta-h\" style=\"font-size:2rem;font-weight:800\">Ready to move from manual to meaningful</h2>\n    <p class=\"sub\" style=\"max-width:760px;margin:8px auto 0\">Start with a focused automation scope or try StockLight for clean market understanding.</p>\n\n    <div class=\"cta-cards\">\n      <div class=\"cta-item\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Work with RRK</h3>\n        <p>Book a discovery call. We will scope a compact, high impact automation track and ship a measurable result.</p>\n        <a class=\"btn btn-secondary\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"contact-by-email-link\">Contact by email</a>\n      </div>\n      <div class=\"cta-item\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Open StockLight</h3>\n        <p>See how we turn daily market noise into calm, useful context.</p>\n        <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"go-to-stocklightio-link\">Go to stocklight.io</a>\n      </div>\n    </div>\n\n    <div class=\"email-block\">\n      <a class=\"email\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link\">info@rrk-technologies.com</a>",
+      "snippet": "<a class=\"btn btn-secondary\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"contact-by-email-link\">Contact by email</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 524,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Go to stocklight.io",
-        "codeSnippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Go to stocklight.io</a>",
-        "fileContext": "\n    <div class=\"cta-cards\">\n      <div class=\"cta-item\">\n        <h3 style=\"font-weight:800;margin-bottom:6px\">Work with RRK</h3>\n        <p>Book a discovery call. We will scope a compact, high impact automation track and ship a measurable result.</p>\n        <a class=\"btn btn-secondary\" href=\"mailto:info@rrk-technologies.com\">Contact by email</a>\n      </div>\n      <div class=\"cta-item\">\n        <h3 style=\"font-weight:800;margin-bottom:6px\">Open StockLight</h3>\n        <p>See how we turn daily market noise into calm, useful context.</p>\n        <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Go to stocklight.io</a>\n      </div>\n    </div>\n\n    <div class=\"email-block\">\n      <a class=\"email\" href=\"mailto:info@rrk-technologies.com\">info@rrk-technologies.com</a>\n    </div>\n    \n    <form id=\"contact-form\" class=\"contact-form\" aria-label=\"Contact form\">\n      <div class=\"form-row\">\n        <div class=\"field\">",
-        "snippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Go to stocklight.io</a>"
-      },
-      "suggestion": {
-        "proposedId": "go-to-stocklightio-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 552,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Go to stocklight.io",
+      "codeSnippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"go-to-stocklightio-link\">Go to stocklight.io</a>",
+      "existingLocator": "go-to-stocklightio-link",
+      "fileContext": "\n    <div class=\"cta-cards\">\n      <div class=\"cta-item\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Work with RRK</h3>\n        <p>Book a discovery call. We will scope a compact, high impact automation track and ship a measurable result.</p>\n        <a class=\"btn btn-secondary\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"contact-by-email-link\">Contact by email</a>\n      </div>\n      <div class=\"cta-item\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Open StockLight</h3>\n        <p>See how we turn daily market noise into calm, useful context.</p>\n        <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"go-to-stocklightio-link\">Go to stocklight.io</a>\n      </div>\n    </div>\n\n    <div class=\"email-block\">\n      <a class=\"email\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link\">info@rrk-technologies.com</a>\n    </div>\n    \n    <form id=\"contact-form\" class=\"contact-form\" aria-label=\"Contact form\" rrk-automation-id=\"name-email-subject-form\">\n      <div class=\"form-row\">\n        <div class=\"field\">",
+      "snippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"go-to-stocklightio-link\">Go to stocklight.io</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 529,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "info@rrk-technologies.com",
-        "codeSnippet": "<a class=\"email\" href=\"mailto:info@rrk-technologies.com\">info@rrk-technologies.com</a>",
-        "fileContext": "        <a class=\"btn btn-secondary\" href=\"mailto:info@rrk-technologies.com\">Contact by email</a>\n      </div>\n      <div class=\"cta-item\">\n        <h3 style=\"font-weight:800;margin-bottom:6px\">Open StockLight</h3>\n        <p>See how we turn daily market noise into calm, useful context.</p>\n        <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Go to stocklight.io</a>\n      </div>\n    </div>\n\n    <div class=\"email-block\">\n      <a class=\"email\" href=\"mailto:info@rrk-technologies.com\">info@rrk-technologies.com</a>\n    </div>\n    \n    <form id=\"contact-form\" class=\"contact-form\" aria-label=\"Contact form\">\n      <div class=\"form-row\">\n        <div class=\"field\">\n          <label for=\"cf-name\">Name</label>\n          <input id=\"cf-name\" name=\"name\" type=\"text\" autocomplete=\"name\" required placeholder=\"Your name\" />\n        </div>\n        <div class=\"field\">\n          <label for=\"cf-email\">Email</label>",
-        "snippet": "<a class=\"email\" href=\"mailto:info@rrk-technologies.com\">info@rrk-technologies.com</a>"
-      },
-      "suggestion": {
-        "proposedId": "inforrktechnologiescom-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 557,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "info@rrk-technologies.com",
+      "codeSnippet": "<a class=\"email\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link\">info@rrk-technologies.com</a>",
+      "existingLocator": "inforrktechnologiescom-link",
+      "fileContext": "        <a class=\"btn btn-secondary\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"contact-by-email-link\">Contact by email</a>\n      </div>\n      <div class=\"cta-item\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Open StockLight</h3>\n        <p>See how we turn daily market noise into calm, useful context.</p>\n        <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"go-to-stocklightio-link\">Go to stocklight.io</a>\n      </div>\n    </div>\n\n    <div class=\"email-block\">\n      <a class=\"email\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link\">info@rrk-technologies.com</a>\n    </div>\n    \n    <form id=\"contact-form\" class=\"contact-form\" aria-label=\"Contact form\" rrk-automation-id=\"name-email-subject-form\">\n      <div class=\"form-row\">\n        <div class=\"field\">\n          <label for=\"cf-name\">Name</label>\n          <input id=\"cf-name\" name=\"name\" type=\"text\" autocomplete=\"name\" required placeholder=\"Your name\" />\n        </div>\n        <div class=\"field\">\n          <label for=\"cf-email\">Email</label>",
+      "snippet": "<a class=\"email\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link\">info@rrk-technologies.com</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 532,
-        "column": 0,
-        "elementType": "form",
-        "textContent": "Name\n          \n        \n        \n          Email\n          \n        \n      \n      \n        Subject\n",
-        "codeSnippet": "<form id=\"contact-form\" class=\"contact-form\" aria-label=\"Contact form\">",
-        "fileContext": "        <h3 style=\"font-weight:800;margin-bottom:6px\">Open StockLight</h3>\n        <p>See how we turn daily market noise into calm, useful context.</p>\n        <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">Go to stocklight.io</a>\n      </div>\n    </div>\n\n    <div class=\"email-block\">\n      <a class=\"email\" href=\"mailto:info@rrk-technologies.com\">info@rrk-technologies.com</a>\n    </div>\n    \n    <form id=\"contact-form\" class=\"contact-form\" aria-label=\"Contact form\">\n      <div class=\"form-row\">\n        <div class=\"field\">\n          <label for=\"cf-name\">Name</label>\n          <input id=\"cf-name\" name=\"name\" type=\"text\" autocomplete=\"name\" required placeholder=\"Your name\" />\n        </div>\n        <div class=\"field\">\n          <label for=\"cf-email\">Email</label>\n          <input id=\"cf-email\" name=\"email\" type=\"email\" autocomplete=\"email\" required placeholder=\"you@example.com\" />\n        </div>\n      </div>",
-        "snippet": "<form id=\"contact-form\" class=\"contact-form\" aria-label=\"Contact form\">"
-      },
-      "suggestion": {
-        "proposedId": "name-email-subject-form",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 560,
+      "column": 0,
+      "elementType": "form",
+      "textContent": "Name\n          \n        \n        \n          Email\n          \n        \n      \n      \n        Subject\n",
+      "codeSnippet": "<form id=\"contact-form\" class=\"contact-form\" aria-label=\"Contact form\" rrk-automation-id=\"name-email-subject-form\">",
+      "existingLocator": "name-email-subject-form",
+      "fileContext": "        <h3 style=\"font-weight:700;margin-bottom:6px\">Open StockLight</h3>\n        <p>See how we turn daily market noise into calm, useful context.</p>\n        <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"go-to-stocklightio-link\">Go to stocklight.io</a>\n      </div>\n    </div>\n\n    <div class=\"email-block\">\n      <a class=\"email\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link\">info@rrk-technologies.com</a>\n    </div>\n    \n    <form id=\"contact-form\" class=\"contact-form\" aria-label=\"Contact form\" rrk-automation-id=\"name-email-subject-form\">\n      <div class=\"form-row\">\n        <div class=\"field\">\n          <label for=\"cf-name\">Name</label>\n          <input id=\"cf-name\" name=\"name\" type=\"text\" autocomplete=\"name\" required placeholder=\"Your name\" />\n        </div>\n        <div class=\"field\">\n          <label for=\"cf-email\">Email</label>\n          <input id=\"cf-email\" name=\"email\" type=\"email\" autocomplete=\"email\" required placeholder=\"you@example.com\" />\n        </div>\n      </div>",
+      "snippet": "<form id=\"contact-form\" class=\"contact-form\" aria-label=\"Contact form\" rrk-automation-id=\"name-email-subject-form\">"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 1,
-        "column": 0,
-        "elementType": "input",
-        "codeSnippet": "<input id=\"cf-name\" name=\"name\" type=\"text\" autocomplete=\"name\" required placeholder=\"Your name\" >",
-        "fileContext": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>RRK Technologies - AI Automation Agency & StockLight</title>\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"./favicon.svg\" />\n  <meta name=\"description\" content=\"RRK Technologies delivers production-grade AI automation, multi-cloud data pipelines, and rigorous testing. We also build StockLight - a clean, actionable financial insights product.\" />\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap\" rel=\"stylesheet\">\n  <meta property=\"og:title\" content=\"RRK Technologies - AI Automation Agency & StockLight\">",
-        "snippet": "<input id=\"cf-name\" name=\"name\" type=\"text\" autocomplete=\"name\" required placeholder=\"Your name\" >"
-      },
-      "suggestion": {
-        "proposedId": "input",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 580,
+      "column": 0,
+      "elementType": "button",
+      "textContent": "Send message",
+      "codeSnippet": "<button type=\"submit\" class=\"btn btn-primary\" rrk-automation-id=\"send-message-btn\">Send message</button>",
+      "existingLocator": "send-message-btn",
+      "fileContext": "      </div>\n      <div class=\"field\">\n        <label for=\"cf-subject\">Subject</label>\n        <input id=\"cf-subject\" name=\"subject\" type=\"text\" required placeholder=\"How can we help?\" />\n      </div>\n      <div class=\"field\">\n        <label for=\"cf-message\">Message</label>\n        <textarea id=\"cf-message\" name=\"message\" required placeholder=\"Tell us a bit about your needs\" rrk-automation-id=\"textarea\"></textarea>\n      </div>\n      <div class=\"form-actions\">\n        <button type=\"submit\" class=\"btn btn-primary\" rrk-automation-id=\"send-message-btn\">Send message</button>\n        <span class=\"note\">We reply from info@rrk-technologies.com</span>\n      </div>\n    </form>\n  </section>\n\n  <!-- Footer -->\n  <footer role=\"contentinfo\">\n    <div class=\"foot\">\n      <div>\n        <h5>RRK Technologies</h5>",
+      "snippet": "<button type=\"submit\" class=\"btn btn-primary\" rrk-automation-id=\"send-message-btn\">Send message</button>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 1,
-        "column": 0,
-        "elementType": "input",
-        "codeSnippet": "<input id=\"cf-email\" name=\"email\" type=\"email\" autocomplete=\"email\" required placeholder=\"you@example.com\" >",
-        "fileContext": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>RRK Technologies - AI Automation Agency & StockLight</title>\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"./favicon.svg\" />\n  <meta name=\"description\" content=\"RRK Technologies delivers production-grade AI automation, multi-cloud data pipelines, and rigorous testing. We also build StockLight - a clean, actionable financial insights product.\" />\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap\" rel=\"stylesheet\">\n  <meta property=\"og:title\" content=\"RRK Technologies - AI Automation Agency & StockLight\">",
-        "snippet": "<input id=\"cf-email\" name=\"email\" type=\"email\" autocomplete=\"email\" required placeholder=\"you@example.com\" >"
-      },
-      "suggestion": {
-        "proposedId": "input-1",
-        "reason": "Rule-based suggestion from element type and content (made unique)",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 596,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "UI and API automation",
+      "codeSnippet": "<a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a>",
+      "existingLocator": "ui-and-api-link",
+      "fileContext": "  <!-- Footer -->\n  <footer role=\"contentinfo\">\n    <div class=\"foot\">\n      <div>\n        <h5>RRK Technologies</h5>\n        <p>We build systems that let teams do their best work: AI driven automation, multi cloud data pipelines, and full stack testing.</p>\n        <p style=\"margin-top:.5rem;font-weight:700\">Built with pragmatism, delivered with care.</p>\n      </div>\n      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a><br/>\n        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>",
+      "snippet": "<a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 1,
-        "column": 0,
-        "elementType": "input",
-        "codeSnippet": "<input id=\"cf-subject\" name=\"subject\" type=\"text\" required placeholder=\"How can we help?\" >",
-        "fileContext": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>RRK Technologies - AI Automation Agency & StockLight</title>\n  <link rel=\"icon\" type=\"image/svg+xml\" href=\"./favicon.svg\" />\n  <meta name=\"description\" content=\"RRK Technologies delivers production-grade AI automation, multi-cloud data pipelines, and rigorous testing. We also build StockLight - a clean, actionable financial insights product.\" />\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap\" rel=\"stylesheet\">\n  <meta property=\"og:title\" content=\"RRK Technologies - AI Automation Agency & StockLight\">",
-        "snippet": "<input id=\"cf-subject\" name=\"subject\" type=\"text\" required placeholder=\"How can we help?\" >"
-      },
-      "suggestion": {
-        "proposedId": "input-2",
-        "reason": "Rule-based suggestion from element type and content (made unique)",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 597,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "LLM and agents",
+      "codeSnippet": "<a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a>",
+      "existingLocator": "llm-and-agents-link",
+      "fileContext": "  <footer role=\"contentinfo\">\n    <div class=\"foot\">\n      <div>\n        <h5>RRK Technologies</h5>\n        <p>We build systems that let teams do their best work: AI driven automation, multi cloud data pipelines, and full stack testing.</p>\n        <p style=\"margin-top:.5rem;font-weight:700\">Built with pragmatism, delivered with care.</p>\n      </div>\n      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a><br/>\n        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>",
+      "snippet": "<a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 549,
-        "column": 0,
-        "elementType": "textarea",
-        "codeSnippet": "<textarea id=\"cf-message\" name=\"message\" required placeholder=\"Tell us a bit about your needs\"></textarea>",
-        "fileContext": "          <label for=\"cf-email\">Email</label>\n          <input id=\"cf-email\" name=\"email\" type=\"email\" autocomplete=\"email\" required placeholder=\"you@example.com\" />\n        </div>\n      </div>\n      <div class=\"field\">\n        <label for=\"cf-subject\">Subject</label>\n        <input id=\"cf-subject\" name=\"subject\" type=\"text\" required placeholder=\"How can we help?\" />\n      </div>\n      <div class=\"field\">\n        <label for=\"cf-message\">Message</label>\n        <textarea id=\"cf-message\" name=\"message\" required placeholder=\"Tell us a bit about your needs\"></textarea>\n      </div>\n      <div class=\"form-actions\">\n        <button type=\"submit\" class=\"btn btn-primary\">Send message</button>\n        <span class=\"note\">We reply from info@rrk-technologies.com</span>\n      </div>\n    </form>\n  </section>\n\n  <!-- Footer -->\n  <footer role=\"contentinfo\">",
-        "snippet": "<textarea id=\"cf-message\" name=\"message\" required placeholder=\"Tell us a bit about your needs\"></textarea>"
-      },
-      "suggestion": {
-        "proposedId": "textarea",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 598,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Cloud backends",
+      "codeSnippet": "<a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a>",
+      "existingLocator": "cloud-backends-link",
+      "fileContext": "    <div class=\"foot\">\n      <div>\n        <h5>RRK Technologies</h5>\n        <p>We build systems that let teams do their best work: AI driven automation, multi cloud data pipelines, and full stack testing.</p>\n        <p style=\"margin-top:.5rem;font-weight:700\">Built with pragmatism, delivered with care.</p>\n      </div>\n      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a><br/>\n        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>\n      <div>",
+      "snippet": "<a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 552,
-        "column": 0,
-        "elementType": "button",
-        "textContent": "Send message",
-        "codeSnippet": "<button type=\"submit\" class=\"btn btn-primary\">Send message</button>",
-        "fileContext": "      </div>\n      <div class=\"field\">\n        <label for=\"cf-subject\">Subject</label>\n        <input id=\"cf-subject\" name=\"subject\" type=\"text\" required placeholder=\"How can we help?\" />\n      </div>\n      <div class=\"field\">\n        <label for=\"cf-message\">Message</label>\n        <textarea id=\"cf-message\" name=\"message\" required placeholder=\"Tell us a bit about your needs\"></textarea>\n      </div>\n      <div class=\"form-actions\">\n        <button type=\"submit\" class=\"btn btn-primary\">Send message</button>\n        <span class=\"note\">We reply from info@rrk-technologies.com</span>\n      </div>\n    </form>\n  </section>\n\n  <!-- Footer -->\n  <footer role=\"contentinfo\">\n    <div class=\"foot\">\n      <div>\n        <h5>RRK Technologies</h5>",
-        "snippet": "<button type=\"submit\" class=\"btn btn-primary\">Send message</button>"
-      },
-      "suggestion": {
-        "proposedId": "send-message-btn",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 599,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Data intelligence",
+      "codeSnippet": "<a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a>",
+      "existingLocator": "data-intelligence-link",
+      "fileContext": "      <div>\n        <h5>RRK Technologies</h5>\n        <p>We build systems that let teams do their best work: AI driven automation, multi cloud data pipelines, and full stack testing.</p>\n        <p style=\"margin-top:.5rem;font-weight:700\">Built with pragmatism, delivered with care.</p>\n      </div>\n      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a><br/>\n        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>",
+      "snippet": "<a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 568,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "UI and API automation",
-        "codeSnippet": "<a href=\"#services\">UI and API automation</a>",
-        "fileContext": "  <!-- Footer -->\n  <footer role=\"contentinfo\">\n    <div class=\"foot\">\n      <div>\n        <h5>RRK Technologies</h5>\n        <p>We build systems that let teams do their best work: AI driven automation, multi cloud data pipelines, and full stack testing.</p>\n        <p style=\"margin-top:.5rem;font-weight:700\">Built with pragmatism, delivered with care.</p>\n      </div>\n      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\">UI and API automation</a><br/>\n        <a href=\"#services\">LLM and agents</a><br/>\n        <a href=\"#services\">Cloud backends</a><br/>\n        <a href=\"#services\">Data intelligence</a><br/>\n        <a href=\"#testing\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\">Community</a>",
-        "snippet": "<a href=\"#services\">UI and API automation</a>"
-      },
-      "suggestion": {
-        "proposedId": "ui-and-api-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 600,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Testing",
+      "codeSnippet": "<a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>",
+      "existingLocator": "testing-link-1",
+      "fileContext": "        <h5>RRK Technologies</h5>\n        <p>We build systems that let teams do their best work: AI driven automation, multi cloud data pipelines, and full stack testing.</p>\n        <p style=\"margin-top:.5rem;font-weight:700\">Built with pragmatism, delivered with care.</p>\n      </div>\n      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a><br/>\n        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link-1\">info@rrk-technologies.com</a><br/>",
+      "snippet": "<a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 569,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "LLM and agents",
-        "codeSnippet": "<a href=\"#services\">LLM and agents</a>",
-        "fileContext": "  <footer role=\"contentinfo\">\n    <div class=\"foot\">\n      <div>\n        <h5>RRK Technologies</h5>\n        <p>We build systems that let teams do their best work: AI driven automation, multi cloud data pipelines, and full stack testing.</p>\n        <p style=\"margin-top:.5rem;font-weight:700\">Built with pragmatism, delivered with care.</p>\n      </div>\n      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\">UI and API automation</a><br/>\n        <a href=\"#services\">LLM and agents</a><br/>\n        <a href=\"#services\">Cloud backends</a><br/>\n        <a href=\"#services\">Data intelligence</a><br/>\n        <a href=\"#testing\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\">Community</a>\n      </div>",
-        "snippet": "<a href=\"#services\">LLM and agents</a>"
-      },
-      "suggestion": {
-        "proposedId": "llm-and-agents-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 604,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Overview",
+      "codeSnippet": "<a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a>",
+      "existingLocator": "overview-link",
+      "fileContext": "      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a><br/>\n        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link-1\">info@rrk-technologies.com</a><br/>\n        <a href=\"#contact\" rrk-automation-id=\"contact-form-link\">Contact form</a>\n      </div>\n    </div>\n    <div style=\"text-align:center;margin-top:18px;color:#94a3b8;border-top:1px solid #1f2937;padding-top:18px\">",
+      "snippet": "<a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 570,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Cloud backends",
-        "codeSnippet": "<a href=\"#services\">Cloud backends</a>",
-        "fileContext": "    <div class=\"foot\">\n      <div>\n        <h5>RRK Technologies</h5>\n        <p>We build systems that let teams do their best work: AI driven automation, multi cloud data pipelines, and full stack testing.</p>\n        <p style=\"margin-top:.5rem;font-weight:700\">Built with pragmatism, delivered with care.</p>\n      </div>\n      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\">UI and API automation</a><br/>\n        <a href=\"#services\">LLM and agents</a><br/>\n        <a href=\"#services\">Cloud backends</a><br/>\n        <a href=\"#services\">Data intelligence</a><br/>\n        <a href=\"#testing\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\">Community</a>\n      </div>\n      <div>",
-        "snippet": "<a href=\"#services\">Cloud backends</a>"
-      },
-      "suggestion": {
-        "proposedId": "cloud-backends-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 605,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "stocklight.io",
+      "codeSnippet": "<a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a>",
+      "existingLocator": "stocklightio-link",
+      "fileContext": "        <h5>Automation</h5>\n        <a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a><br/>\n        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link-1\">info@rrk-technologies.com</a><br/>\n        <a href=\"#contact\" rrk-automation-id=\"contact-form-link\">Contact form</a>\n      </div>\n    </div>\n    <div style=\"text-align:center;margin-top:18px;color:#94a3b8;border-top:1px solid #1f2937;padding-top:18px\">\n      © 2025 RRK Technologies. All rights reserved.",
+      "snippet": "<a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 571,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Data intelligence",
-        "codeSnippet": "<a href=\"#services\">Data intelligence</a>",
-        "fileContext": "      <div>\n        <h5>RRK Technologies</h5>\n        <p>We build systems that let teams do their best work: AI driven automation, multi cloud data pipelines, and full stack testing.</p>\n        <p style=\"margin-top:.5rem;font-weight:700\">Built with pragmatism, delivered with care.</p>\n      </div>\n      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\">UI and API automation</a><br/>\n        <a href=\"#services\">LLM and agents</a><br/>\n        <a href=\"#services\">Cloud backends</a><br/>\n        <a href=\"#services\">Data intelligence</a><br/>\n        <a href=\"#testing\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>",
-        "snippet": "<a href=\"#services\">Data intelligence</a>"
-      },
-      "suggestion": {
-        "proposedId": "data-intelligence-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 606,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Community",
+      "codeSnippet": "<a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>",
+      "existingLocator": "community-link",
+      "fileContext": "        <a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a><br/>\n        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link-1\">info@rrk-technologies.com</a><br/>\n        <a href=\"#contact\" rrk-automation-id=\"contact-form-link\">Contact form</a>\n      </div>\n    </div>\n    <div style=\"text-align:center;margin-top:18px;color:#94a3b8;border-top:1px solid #1f2937;padding-top:18px\">\n      © 2025 RRK Technologies. All rights reserved.\n    </div>",
+      "snippet": "<a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 238,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Testing",
-        "codeSnippet": "<a href=\"#testing\">Testing</a>",
-        "fileContext": "  <header class=\"header\" role=\"banner\">\n    <nav class=\"nav\" aria-label=\"Primary\">\n      <a class=\"logo\" href=\"#top\" aria-label=\"RRK Technologies home\">\n        <img src=\"./RRK-logo.svg\" alt=\"RRK Technologies logo\">\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\">What We Do</a></li>\n        <li><a href=\"#services\">Automation Services</a></li>\n        <li><a href=\"#pipeline\">Data Pipelines</a></li>\n        <li><a href=\"#testing\">Testing</a></li>\n        <li><a href=\"#tools\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">",
-        "snippet": "<a href=\"#testing\">Testing</a>"
-      },
-      "suggestion": {
-        "proposedId": "testing-link-1",
-        "reason": "Rule-based suggestion from element type and content (made unique)",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 610,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "info@rrk-technologies.com",
+      "codeSnippet": "<a href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link-1\">info@rrk-technologies.com</a>",
+      "existingLocator": "inforrktechnologiescom-link-1",
+      "fileContext": "        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link-1\">info@rrk-technologies.com</a><br/>\n        <a href=\"#contact\" rrk-automation-id=\"contact-form-link\">Contact form</a>\n      </div>\n    </div>\n    <div style=\"text-align:center;margin-top:18px;color:#94a3b8;border-top:1px solid #1f2937;padding-top:18px\">\n      © 2025 RRK Technologies. All rights reserved.\n    </div>\n  </footer>\n  <script>\n  (function(){\n    var form = document.getElementById('contact-form');",
+      "snippet": "<a href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link-1\">info@rrk-technologies.com</a>"
     },
     {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 576,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Overview",
-        "codeSnippet": "<a href=\"#stocklight\">Overview</a>",
-        "fileContext": "      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\">UI and API automation</a><br/>\n        <a href=\"#services\">LLM and agents</a><br/>\n        <a href=\"#services\">Cloud backends</a><br/>\n        <a href=\"#services\">Data intelligence</a><br/>\n        <a href=\"#testing\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\">info@rrk-technologies.com</a><br/>\n        <a href=\"#contact\">Contact form</a>\n      </div>\n    </div>\n    <div style=\"text-align:center;margin-top:18px;color:#94a3b8;border-top:1px solid #1f2937;padding-top:18px\">",
-        "snippet": "<a href=\"#stocklight\">Overview</a>"
-      },
-      "suggestion": {
-        "proposedId": "overview-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
-    },
-    {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 577,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "stocklight.io",
-        "codeSnippet": "<a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">stocklight.io</a>",
-        "fileContext": "        <h5>Automation</h5>\n        <a href=\"#services\">UI and API automation</a><br/>\n        <a href=\"#services\">LLM and agents</a><br/>\n        <a href=\"#services\">Cloud backends</a><br/>\n        <a href=\"#services\">Data intelligence</a><br/>\n        <a href=\"#testing\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\">info@rrk-technologies.com</a><br/>\n        <a href=\"#contact\">Contact form</a>\n      </div>\n    </div>\n    <div style=\"text-align:center;margin-top:18px;color:#94a3b8;border-top:1px solid #1f2937;padding-top:18px\">\n      © 2025 RRK Technologies. All rights reserved.",
-        "snippet": "<a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">stocklight.io</a>"
-      },
-      "suggestion": {
-        "proposedId": "stocklightio-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
-    },
-    {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 578,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Community",
-        "codeSnippet": "<a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\">Community</a>",
-        "fileContext": "        <a href=\"#services\">UI and API automation</a><br/>\n        <a href=\"#services\">LLM and agents</a><br/>\n        <a href=\"#services\">Cloud backends</a><br/>\n        <a href=\"#services\">Data intelligence</a><br/>\n        <a href=\"#testing\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\">info@rrk-technologies.com</a><br/>\n        <a href=\"#contact\">Contact form</a>\n      </div>\n    </div>\n    <div style=\"text-align:center;margin-top:18px;color:#94a3b8;border-top:1px solid #1f2937;padding-top:18px\">\n      © 2025 RRK Technologies. All rights reserved.\n    </div>",
-        "snippet": "<a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\">Community</a>"
-      },
-      "suggestion": {
-        "proposedId": "community-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
-    },
-    {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 582,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "info@rrk-technologies.com",
-        "codeSnippet": "<a href=\"mailto:info@rrk-technologies.com\">info@rrk-technologies.com</a>",
-        "fileContext": "        <a href=\"#testing\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\">info@rrk-technologies.com</a><br/>\n        <a href=\"#contact\">Contact form</a>\n      </div>\n    </div>\n    <div style=\"text-align:center;margin-top:18px;color:#94a3b8;border-top:1px solid #1f2937;padding-top:18px\">\n      © 2025 RRK Technologies. All rights reserved.\n    </div>\n  </footer>\n  <script>\n  (function(){\n    var form = document.getElementById('contact-form');",
-        "snippet": "<a href=\"mailto:info@rrk-technologies.com\">info@rrk-technologies.com</a>"
-      },
-      "suggestion": {
-        "proposedId": "inforrktechnologiescom-link-1",
-        "reason": "Rule-based suggestion from element type and content (made unique)",
-        "fromAI": false
-      }
-    },
-    {
-      "element": {
-        "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
-        "line": 583,
-        "column": 0,
-        "elementType": "a",
-        "textContent": "Contact form",
-        "codeSnippet": "<a href=\"#contact\">Contact form</a>",
-        "fileContext": "      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\">info@rrk-technologies.com</a><br/>\n        <a href=\"#contact\">Contact form</a>\n      </div>\n    </div>\n    <div style=\"text-align:center;margin-top:18px;color:#94a3b8;border-top:1px solid #1f2937;padding-top:18px\">\n      © 2025 RRK Technologies. All rights reserved.\n    </div>\n  </footer>\n  <script>\n  (function(){\n    var form = document.getElementById('contact-form');\n    if(!form) return;",
-        "snippet": "<a href=\"#contact\">Contact form</a>"
-      },
-      "suggestion": {
-        "proposedId": "contact-form-link",
-        "reason": "Rule-based suggestion from element type and content",
-        "fromAI": false
-      }
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 611,
+      "column": 0,
+      "elementType": "a",
+      "textContent": "Contact form",
+      "codeSnippet": "<a href=\"#contact\" rrk-automation-id=\"contact-form-link\">Contact form</a>",
+      "existingLocator": "contact-form-link",
+      "fileContext": "      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link-1\">info@rrk-technologies.com</a><br/>\n        <a href=\"#contact\" rrk-automation-id=\"contact-form-link\">Contact form</a>\n      </div>\n    </div>\n    <div style=\"text-align:center;margin-top:18px;color:#94a3b8;border-top:1px solid #1f2937;padding-top:18px\">\n      © 2025 RRK Technologies. All rights reserved.\n    </div>\n  </footer>\n  <script>\n  (function(){\n    var form = document.getElementById('contact-form');\n    if(!form) return;",
+      "snippet": "<a href=\"#contact\" rrk-automation-id=\"contact-form-link\">Contact form</a>"
     }
   ],
-  "locatorAttribute": "rrk-automation-id"
+  "missing": [],
+  "locatorAttribute": "rrk-automation-id",
+  "qualityStats": {
+    "totalScanned": 36,
+    "relevantElements": 32,
+    "filteredOut": 4,
+    "withLocators": 32,
+    "excellent": 29,
+    "good": 2,
+    "acceptable": 0,
+    "needsImprovement": 1
+  },
+  "qualityReport": "📊 Locator Quality Report\n========================\n\nTotal Elements Scanned: 36\nRelevant Elements: 32\nFiltered Out (Irrelevant): 4\n\n✅ Coverage:\n- Elements with Locators: 32/32 (100%)\n- Missing Locators: 0\n\n🏆 Quality Breakdown:\n- Excellent: 29 [█████████ ] 91%\n- Good: 2 [█         ] 6%\n- Acceptable: 0 [          ] 0%\n- Needs Improvement: 1 [          ] 3%\n\n⚠️ Top Issues to Address:\n  - Locator uses non-semantic or invalid pattern: 1 element\n\n🌟 Excellent Examples:\n  - rrk-automation-intelligence-link (a)\n  - menu-btn (button)\n  - what-we-do-link (a)\n\n💡 Recommendations:\n  - Improve 1 locators with poor naming patterns"
 }

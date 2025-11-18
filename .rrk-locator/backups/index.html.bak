@@ -246,7 +246,7 @@
   <!-- Header -->
   <header class="header" role="banner">
     <nav class="nav" aria-label="Primary">
-      <a class="logo" href="#top" aria-label="RRK Technologies home" rrk-automation-id="rrk-automation-intelligence-link">
+      <a class="logo" href="#top" aria-label="RRK Technologies home">
         <svg width="240" height="64" viewBox="0 0 240 64" xmlns="http://www.w3.org/2000/svg" style="height:48px;width:auto">
           <rect width="240" height="64" fill="none"/>
           <rect x="8" y="8" width="48" height="48" rx="10" fill="#1a1f2e" stroke="#00d9ff" stroke-width="2"/>

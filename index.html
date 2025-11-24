@@ -74,6 +74,7 @@
     }
 
     *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
     html,body{height:100%}
     body{
       font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
@@ -231,10 +232,17 @@
 
     /* Header */
     .header{
-      position:sticky;top:0;z-index:1000;
+      position:sticky;
+      top:0;
+      z-index:1000;
       backdrop-filter:saturate(140%) blur(12px);
       background:rgba(10,10,10,.75);
-      border-bottom:1px solid var(--line-2);
+      border-bottom:1px solid rgba(70,200,255,0.1);
+      transition:all var(--duration-normal) ease;
+    }
+    .header.scrolled{
+      border-bottom-color:rgba(70,200,255,0.2);
+      background:rgba(10,10,10,.85);
     }
     .nav{max-width:1200px;margin:0 auto;height:80px;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
     .logo{display:flex;gap:.6rem;align-items:center;text-decoration:none;color:var(--ink);font-weight:700}
@@ -1321,6 +1329,35 @@ api -> web -> discord/telegram</pre>
     document.querySelectorAll('.animate-on-scroll').forEach(function(el){
       observer.observe(el);
     });
+  })();
+
+  /* ===== HEADER SCROLL STATE ===== */
+  (function(){
+    var header = document.querySelector('.header');
+    if(!header) return;
+
+    var scrollThreshold = 50;
+    var lastScrollY = 0;
+
+    function updateHeaderState(){
+      var currentScrollY = window.scrollY || window.pageYOffset;
+
+      if(currentScrollY > scrollThreshold){
+        if(!header.classList.contains('scrolled')){
+          header.classList.add('scrolled');
+        }
+      } else {
+        header.classList.remove('scrolled');
+      }
+
+      lastScrollY = currentScrollY;
+    }
+
+    // Use passive listener for better performance
+    window.addEventListener('scroll', updateHeaderState, {passive:true});
+
+    // Initial check
+    updateHeaderState();
   })();
   </script>
 </body>

@@ -119,6 +119,9 @@
     .animate-fade-in{animation:fadeIn 0.8s var(--ease-out) forwards}
     .animate-scale-in{animation:scaleIn var(--duration-entrance) var(--ease-smooth) forwards}
 
+    /* Trigger animation when visible */
+    .animate-visible{animation:slideInUp var(--duration-entrance) var(--ease-smooth) forwards !important}
+
     /* Stagger animations for multiple elements */
     .stagger-1{animation-delay:.1s}
     .stagger-2{animation-delay:.2s}
@@ -138,46 +141,48 @@
     section h2{background:var(--grad-4color);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 
     /* ===== GLOBAL ELEMENT ANIMATIONS ===== */
-    /* All cards animate in from different directions with stagger */
+    /* All cards start visible, then animate when in viewport */
     .card, .service, .tcard, .cta-item, .stock-card, .case, .feat, .feature-item{
-      opacity:0;
-      animation:slideInUp var(--duration-entrance) var(--ease-smooth) forwards;
+      opacity:1;
+      /* animation only runs when .animate-visible is added */
     }
 
-    /* Stagger delays for card animations */
-    .pillars .card:nth-child(1){animation:slideInLeft var(--duration-entrance) var(--ease-smooth) 0.2s forwards}
-    .pillars .card:nth-child(2){animation:slideInRight var(--duration-entrance) var(--ease-smooth) 0.3s forwards}
+    /* Stagger delays for cards when visible */
+    .pillars .card:nth-child(1).animate-visible{animation-delay:0s}
+    .pillars .card:nth-child(2).animate-visible{animation-delay:0.1s}
 
-    .grid .service:nth-child(1){animation-delay:.1s}
-    .grid .service:nth-child(2){animation-delay:.2s}
-    .grid .service:nth-child(3){animation-delay:.3s}
+    .grid .service:nth-child(1).animate-visible{animation-delay:0s}
+    .grid .service:nth-child(2).animate-visible{animation-delay:0.05s}
+    .grid .service:nth-child(3).animate-visible{animation-delay:0.1s}
 
-    .test-grid .tcard:nth-child(1){animation-delay:.1s}
-    .test-grid .tcard:nth-child(2){animation-delay:.2s}
-    .test-grid .tcard:nth-child(3){animation-delay:.3s}
-    .test-grid .tcard:nth-child(4){animation-delay:.4s}
+    .test-grid .tcard:nth-child(1).animate-visible{animation-delay:0s}
+    .test-grid .tcard:nth-child(2).animate-visible{animation-delay:0.05s}
+    .test-grid .tcard:nth-child(3).animate-visible{animation-delay:0.1s}
+    .test-grid .tcard:nth-child(4).animate-visible{animation-delay:0.15s}
 
-    .cta-cards .cta-item:nth-child(1){animation-delay:.1s}
-    .cta-cards .cta-item:nth-child(2){animation-delay:.2s}
+    .cta-cards .cta-item:nth-child(1).animate-visible{animation-delay:0s}
+    .cta-cards .cta-item:nth-child(2).animate-visible{animation-delay:0.05s}
 
-    .case:nth-child(1){animation-delay:.1s}
-    .case:nth-child(2){animation-delay:.3s}
+    .case:nth-child(1).animate-visible{animation-delay:0s}
+    .case:nth-child(2).animate-visible{animation-delay:0.1s}
 
-    .features .feat:nth-child(1){animation-delay:.1s}
-    .features .feat:nth-child(2){animation-delay:.15s}
-    .features .feat:nth-child(3){animation-delay:.2s}
-    .features .feat:nth-child(4){animation-delay:.25s}
+    .features .feat:nth-child(1).animate-visible{animation-delay:0s}
+    .features .feat:nth-child(2).animate-visible{animation-delay:0.05s}
+    .features .feat:nth-child(3).animate-visible{animation-delay:0.08s}
+    .features .feat:nth-child(4).animate-visible{animation-delay:0.12s}
 
-    /* ===== LIST ITEM ANIMATIONS ===== */
-    .list li{animation:slideInLeft .5s ease-out forwards;opacity:0}
-    .list li:nth-child(1){animation-delay:.2s}
-    .list li:nth-child(2){animation-delay:.25s}
-    .list li:nth-child(3){animation-delay:.3s}
-    .list li:nth-child(4){animation-delay:.35s}
-    .list li:nth-child(5){animation-delay:.4s}
+    /* ===== LIST ITEM ANIMATIONS (REDUCED STAGGER) ===== */
+    .list li{opacity:1}
+    .list li.animate-visible{animation:slideInLeft .5s ease-out forwards}
+    .list li:nth-child(1).animate-visible{animation-delay:0s}
+    .list li:nth-child(2).animate-visible{animation-delay:0.05s}
+    .list li:nth-child(3).animate-visible{animation-delay:0.1s}
+    .list li:nth-child(4).animate-visible{animation-delay:0.15s}
+    .list li:nth-child(5).animate-visible{animation-delay:0.2s}
 
     /* ===== EYEBROW BADGE ANIMATION ===== */
-    .eyebrow{opacity:0;animation:slideInDown 0.5s var(--ease-out) 0.15s forwards}
+    .eyebrow{opacity:1}
+    .eyebrow.animate-visible{animation:slideInDown 0.5s var(--ease-out) forwards}
 
     /* ===== TEXT & PARAGRAPH ANIMATIONS ===== */
     .hero-inner > div > p, .sub {animation:slideInUp 0.65s var(--ease-out) forwards;opacity:0}
@@ -1068,15 +1073,6 @@ api -> web -> discord/telegram</pre>
           </ul>
         </div>
       </div>
-
-      <div class="tcard" style="margin-top:22px" rrk-automation-id="quality-pipeline-premerge-card">
-        <h4>Quality pipeline</h4>
-        <ul class="tlist">
-          <li rrk-automation-id="premerge-checks-with-item">Pre-merge checks with gated CI</li>
-          <li rrk-automation-id="smoke-tests-on-item">Smoke tests on deploy with rollback policy</li>
-          <li rrk-automation-id="health-checks-and-item">Health checks and alerting tied to business metrics</li>
-        </ul>
-      </div>
     </div>
   </section>
 
@@ -1278,50 +1274,26 @@ api -> web -> discord/telegram</pre>
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   })();
-  /* ===== CHAR-BY-CHAR ANIMATION ===== */
-  (function(){
-    function wrapCharacters(element){
-      var text = element.textContent;
-      element.textContent = '';
-      var fragment = document.createDocumentFragment();
-      for(var i=0; i<text.length; i++){
-        var span = document.createElement('span');
-        span.textContent = text[i];
-        span.style.animationDelay = (i * 0.03) + 's';
-        fragment.appendChild(span);
-      }
-      element.appendChild(fragment);
-    }
-    // Apply char-by-char animation to section headings
-    var h2Elements = document.querySelectorAll('section h2');
-    h2Elements.forEach(function(h2){
-      h2.classList.add('char-animate');
-      wrapCharacters(h2);
-    });
-  })();
-  /* ===== SCROLL-BASED ENTRANCE ANIMATIONS ===== */
+  /* ===== CHAR-BY-CHAR ANIMATION (DISABLED FOR PERFORMANCE) ===== */
+  // This was creating 200+ extra DOM nodes and causing crashes on scroll
+  // The section headings now animate as a whole instead
+  /* ===== SCROLL-BASED ENTRANCE ANIMATIONS (LIGHTWEIGHT) ===== */
   (function(){
     if(!window.IntersectionObserver) return;
     var observer = new IntersectionObserver(function(entries){
       entries.forEach(function(entry){
         if(entry.isIntersecting){
           var element = entry.target;
-          // Trigger animation classes
-          if(element.classList.contains('animate-on-scroll')){
-            var direction = element.dataset.animateDirection || 'up';
-            element.classList.add('animate-in-' + direction);
-          }
-          // Also handle regular animated elements
-          element.style.animationPlayState = 'running';
+          // Add animation class that triggers the CSS animation
+          element.classList.add('animate-visible');
           observer.unobserve(element);
         }
       });
-    }, {threshold:0.05, rootMargin:'0px 0px -100px 0px'});
+    }, {threshold:0.05, rootMargin:'0px 0px -50px 0px'});
 
-    // Observe all animated elements
-    var animatedSelectors = '.card, .service, .tcard, .cta-item, .stock-card, .case, .feat, .list li, .eyebrow, .hero-card, .hero-cta > *';
+    // Observe important animated elements
+    var animatedSelectors = '.card, .service, .tcard, .cta-item, .stock-card, .case, .feat, .eyebrow, .hero-card, .list li';
     document.querySelectorAll(animatedSelectors).forEach(function(el){
-      el.style.animationPlayState = 'paused';
       observer.observe(el);
     });
 

@@ -44,6 +44,7 @@
       --glow:0 0 12px rgba(70,200,255,.12);
 
       --grad-1:linear-gradient(135deg,#46c8ff 0%,#1e40af 100%);
+      --grad-4color:linear-gradient(135deg,#46c8ff 0%,#FFB84D 33%,#1e40af 66%,#06ffa5 100%);
       --grad-shine:linear-gradient(135deg,rgba(255,255,255,.08) 0%,rgba(255,255,255,.03) 100%);
     }
 
@@ -63,6 +64,59 @@
     @media (prefers-reduced-motion: reduce){
       *{animation:none!important;transition:none!important}
     }
+
+    /* ===== KEYFRAME ANIMATIONS ===== */
+    @keyframes slideInLeft{from{opacity:0;transform:translateX(-60px)}to{opacity:1;transform:translateX(0)}}
+    @keyframes slideInRight{from{opacity:0;transform:translateX(60px)}to{opacity:1;transform:translateX(0)}}
+    @keyframes slideInUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes slideInDown{from{opacity:0;transform:translateY(-40px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    @keyframes charAnimate{0%{opacity:0;transform:translateY(10px)}50%{opacity:0.6}100%{opacity:1;transform:translateY(0)}}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.6}}
+
+    /* ===== DIRECTIONAL ENTRANCE ANIMATIONS ===== */
+    .animate-in-left{animation:slideInLeft .6s cubic-bezier(0.34,1.56,0.64,1) forwards}
+    .animate-in-right{animation:slideInRight .6s cubic-bezier(0.34,1.56,0.64,1) forwards}
+    .animate-in-up{animation:slideInUp .6s cubic-bezier(0.34,1.56,0.64,1) forwards}
+    .animate-in-down{animation:slideInDown .6s cubic-bezier(0.34,1.56,0.64,1) forwards}
+    .animate-fade-in{animation:fadeIn .8s ease-out forwards}
+
+    /* Stagger animations for multiple elements */
+    .stagger-1{animation-delay:.1s}
+    .stagger-2{animation-delay:.2s}
+    .stagger-3{animation-delay:.3s}
+    .stagger-4{animation-delay:.4s}
+    .stagger-5{animation-delay:.5s}
+    .stagger-6{animation-delay:.6s}
+
+    /* ===== CHAR-BY-CHAR ANIMATION ===== */
+    .char-animate span{display:inline-block;animation:charAnimate .4s ease-out forwards;opacity:0}
+
+    /* ===== SECTION HEADINGS WITH 4-COLOR GRADIENT ===== */
+    section h2{background:var(--grad-4color);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+
+    /* ===== DYNAMIC COMPONENT ANIMATIONS ===== */
+    /* Cards animate in from different directions */
+    .pillars .card:nth-child(1){opacity:0;animation:slideInLeft .7s cubic-bezier(0.34,1.56,0.64,1) .2s forwards}
+    .pillars .card:nth-child(2){opacity:0;animation:slideInRight .7s cubic-bezier(0.34,1.56,0.64,1) .3s forwards}
+
+    /* Service cards stagger animations */
+    .grid .service{opacity:0;animation:slideInUp .6s cubic-bezier(0.34,1.56,0.64,1) forwards}
+    .grid .service:nth-child(1){animation-delay:.1s}
+    .grid .service:nth-child(2){animation-delay:.2s}
+    .grid .service:nth-child(3){animation-delay:.3s}
+
+    /* Pipeline sections */
+    .case{opacity:0;animation:slideInUp .6s cubic-bezier(0.34,1.56,0.64,1) forwards}
+    .case:nth-child(1){animation-delay:.1s}
+    .case:nth-child(2){animation-delay:.3s}
+
+    /* Test cards with varied animations */
+    .test-grid .tcard{opacity:0;animation:slideInUp .6s cubic-bezier(0.34,1.56,0.64,1) forwards}
+    .test-grid .tcard:nth-child(1){animation-delay:.1s}
+    .test-grid .tcard:nth-child(2){animation-delay:.2s}
+    .test-grid .tcard:nth-child(3){animation-delay:.3s}
+    .test-grid .tcard:nth-child(4){animation-delay:.4s}
 
     /* Header */
     .header{
@@ -726,6 +780,27 @@ api -> web -> discord/telegram</pre>
     toggle.addEventListener('click', function(){
       var open = nav.classList.toggle('is-open');
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+  /* ===== CHAR-BY-CHAR ANIMATION ===== */
+  (function(){
+    function wrapCharacters(element){
+      var text = element.textContent;
+      element.textContent = '';
+      var fragment = document.createDocumentFragment();
+      for(var i=0; i<text.length; i++){
+        var span = document.createElement('span');
+        span.textContent = text[i];
+        span.style.animationDelay = (i * 0.03) + 's';
+        fragment.appendChild(span);
+      }
+      element.appendChild(fragment);
+    }
+    // Apply char-by-char animation to section headings
+    var h2Elements = document.querySelectorAll('section h2');
+    h2Elements.forEach(function(h2){
+      h2.classList.add('char-animate');
+      wrapCharacters(h2);
     });
   })();
   </script>

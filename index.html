@@ -27,12 +27,12 @@
       --line-2:#0f1620;
       --primary:#46c8ff;
       --primary-glow:rgba(70,200,255,0.15);
-      --secondary:#7c3aed;
+      --secondary:#1e40af;
       --accent:#06ffa5;
       --gold:#ffd700;
 
-      /* human-friendly accent colors for tests/warmth */
-      --accent-purple:#8B7AFF;
+      /* professional accent colors for enterprise */
+      --accent-professional:#1e3a8a;
       --accent-warm:#FFB84D;
       --accent-sky:#5FD4FF;
       --accent-green:#06ffa5;
@@ -43,7 +43,7 @@
       --shadow-lg:0 8px 20px rgba(0,0,0,.4);
       --glow:0 0 12px rgba(70,200,255,.12);
 
-      --grad-1:linear-gradient(135deg,#46c8ff 0%,#7c3aed 100%);
+      --grad-1:linear-gradient(135deg,#46c8ff 0%,#1e40af 100%);
       --grad-shine:linear-gradient(135deg,rgba(255,255,255,.08) 0%,rgba(255,255,255,.03) 100%);
     }
 
@@ -141,7 +141,7 @@
     .list{margin-top:14px;display:grid;gap:10px}
     .list li{list-style:none;padding-left:26px;position:relative;color:var(--muted)}
     .list li:before{content:"";position:absolute;left:0;top:.46rem;width:6px;height:6px;border-radius:50%;background:var(--primary);box-shadow:0 0 8px var(--primary-glow)}
-    .testing .tlist li:before{background:var(--accent-purple);box-shadow:none}
+    .testing .tlist li:before{background:var(--accent-professional);box-shadow:none}
     .testing .tcard:nth-child(2) .tlist li:before{background:var(--accent-warm)}
     .testing .tcard:nth-child(3) .tlist li:before{background:var(--accent-sky)}
     .testing .tcard:nth-child(4) .tlist li:before{background:var(--accent-green)}
@@ -170,7 +170,7 @@
     .test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:32px}
     .tcard{background:transparent;border:1px solid var(--line-2);border-radius:12px;padding:28px;transition:all .3s ease}
     .tcard:hover{border-color:var(--line);transform:translateY(-2px)}
-    .tcard h4{color:var(--accent-purple);margin-bottom:6px;font-weight:600}
+    .tcard h4{color:var(--accent-professional);margin-bottom:6px;font-weight:600}
     .tlist{list-style:none;display:grid;gap:8px;color:var(--muted);font-size:.98rem}
     .tcard:nth-child(2) h4{color:var(--accent-warm)}
     .tcard:nth-child(3) h4{color:var(--accent-sky)}

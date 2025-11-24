@@ -95,28 +95,36 @@
     /* ===== SECTION HEADINGS WITH 4-COLOR GRADIENT ===== */
     section h2{background:var(--grad-4color);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 
-    /* ===== DYNAMIC COMPONENT ANIMATIONS ===== */
-    /* Cards animate in from different directions */
-    .pillars .card:nth-child(1){opacity:0;animation:slideInLeft .7s cubic-bezier(0.34,1.56,0.64,1) .2s forwards}
-    .pillars .card:nth-child(2){opacity:0;animation:slideInRight .7s cubic-bezier(0.34,1.56,0.64,1) .3s forwards}
+    /* ===== GLOBAL ELEMENT ANIMATIONS ===== */
+    /* All cards animate in from different directions with stagger */
+    .card, .service, .tcard, .cta-item, .stock-card, .case, .feat, .feature-item{
+      opacity:0;
+      animation:slideInUp .7s cubic-bezier(0.34,1.56,0.64,1) forwards;
+    }
 
-    /* Service cards stagger animations */
-    .grid .service{opacity:0;animation:slideInUp .6s cubic-bezier(0.34,1.56,0.64,1) forwards}
+    /* Stagger delays for card animations */
+    .pillars .card:nth-child(1){animation:slideInLeft .7s cubic-bezier(0.34,1.56,0.64,1) .2s forwards}
+    .pillars .card:nth-child(2){animation:slideInRight .7s cubic-bezier(0.34,1.56,0.64,1) .3s forwards}
+
     .grid .service:nth-child(1){animation-delay:.1s}
     .grid .service:nth-child(2){animation-delay:.2s}
     .grid .service:nth-child(3){animation-delay:.3s}
 
-    /* Pipeline sections */
-    .case{opacity:0;animation:slideInUp .6s cubic-bezier(0.34,1.56,0.64,1) forwards}
-    .case:nth-child(1){animation-delay:.1s}
-    .case:nth-child(2){animation-delay:.3s}
-
-    /* Test cards with varied animations */
-    .test-grid .tcard{opacity:0;animation:slideInUp .6s cubic-bezier(0.34,1.56,0.64,1) forwards}
     .test-grid .tcard:nth-child(1){animation-delay:.1s}
     .test-grid .tcard:nth-child(2){animation-delay:.2s}
     .test-grid .tcard:nth-child(3){animation-delay:.3s}
     .test-grid .tcard:nth-child(4){animation-delay:.4s}
+
+    .cta-cards .cta-item:nth-child(1){animation-delay:.1s}
+    .cta-cards .cta-item:nth-child(2){animation-delay:.2s}
+
+    .case:nth-child(1){animation-delay:.1s}
+    .case:nth-child(2){animation-delay:.3s}
+
+    .features .feat:nth-child(1){animation-delay:.1s}
+    .features .feat:nth-child(2){animation-delay:.15s}
+    .features .feat:nth-child(3){animation-delay:.2s}
+    .features .feat:nth-child(4){animation-delay:.25s}
 
     /* ===== LIST ITEM ANIMATIONS ===== */
     .list li{animation:slideInLeft .5s ease-out forwards;opacity:0}
@@ -129,13 +137,16 @@
     /* ===== EYEBROW BADGE ANIMATION ===== */
     .eyebrow{opacity:0;animation:slideInUp .5s ease-out .3s forwards}
 
-    /* ===== FEATURE ITEM ANIMATIONS ===== */
-    .features{display:grid;gap:24px;margin-top:32px}
-    .feature-item{opacity:0;animation:slideInUp .6s ease-out forwards}
-    .feature-item:nth-child(1){animation-delay:.1s}
-    .feature-item:nth-child(2){animation-delay:.2s}
-    .feature-item:nth-child(3){animation-delay:.3s}
-    .feature-item:nth-child(4){animation-delay:.4s}
+    /* ===== TEXT & PARAGRAPH ANIMATIONS ===== */
+    .hero-inner > div > p, .sub {animation:slideInUp .6s ease-out .1s forwards;opacity:0}
+
+    /* Hero cards */
+    .hero-card{opacity:0;animation:slideInUp .6s cubic-bezier(0.34,1.56,0.64,1) .4s forwards}
+
+    /* ===== CTA BUTTON ANIMATIONS ===== */
+    .hero-cta > *{opacity:0;animation:slideInUp .5s ease-out forwards}
+    .hero-cta > *:nth-child(1){animation-delay:.5s}
+    .hero-cta > *:nth-child(2){animation-delay:.6s}
 
     /* ===== BUTTON HOVER EFFECTS ===== */
     .btn{position:relative;overflow:hidden}
@@ -833,15 +844,26 @@ api -> web -> discord/telegram</pre>
       entries.forEach(function(entry){
         if(entry.isIntersecting){
           var element = entry.target;
+          // Trigger animation classes
           if(element.classList.contains('animate-on-scroll')){
             var direction = element.dataset.animateDirection || 'up';
             element.classList.add('animate-in-' + direction);
-            observer.unobserve(element);
           }
+          // Also handle regular animated elements
+          element.style.animationPlayState = 'running';
+          observer.unobserve(element);
         }
       });
-    }, {threshold:0.1, rootMargin:'0px 0px -50px 0px'});
-    // Observe all elements with animate-on-scroll class
+    }, {threshold:0.05, rootMargin:'0px 0px -100px 0px'});
+
+    // Observe all animated elements
+    var animatedSelectors = '.card, .service, .tcard, .cta-item, .stock-card, .case, .feat, .list li, .eyebrow, .hero-card, .hero-cta > *';
+    document.querySelectorAll(animatedSelectors).forEach(function(el){
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    });
+
+    // Also observe custom animate-on-scroll elements
     document.querySelectorAll('.animate-on-scroll').forEach(function(el){
       observer.observe(el);
     });

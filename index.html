@@ -286,7 +286,7 @@
         </div>
       </div>
 
-      <div class="hero-card" aria-label="Summary">
+      <div class="hero-card" aria-label="Summary" rrk-automation-id="two-tracks-one-card">
         <h3 style="font-weight:700;margin-bottom:6px">Two tracks. One standard.</h3>
         <p class="sub" style="font-size:.98rem">RRK is a productized automation agency. StockLight is a focused product. Same quality bar.</p>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px">
@@ -311,12 +311,12 @@
       <div class="card">
         <h3>RRK - Productized automation agency</h3>
         <p class="lead">We deliver automation that replaces hours of manual work and makes outcomes measurable.</p>
-        <ul class="list">
-          <li>LLM agents and orchestration across your stack</li>
-          <li>UI and API automation with page-object discipline</li>
-          <li>Cloud-native backends and event pipelines</li>
-          <li>Analytics and BI on Supabase and pgvector</li>
-          <li>Quality gates and health checks for stable releases</li>
+        <ul class="list" rrk-automation-id="llm-agents-and-list">
+          <li rrk-automation-id="llm-agents-and-item">LLM agents and orchestration across your stack</li>
+          <li rrk-automation-id="ui-and-api-item">UI and API automation with page-object discipline</li>
+          <li rrk-automation-id="cloudnative-backends-and-item">Cloud-native backends and event pipelines</li>
+          <li rrk-automation-id="analytics-and-bi-item">Analytics and BI on Supabase and pgvector</li>
+          <li rrk-automation-id="quality-gates-and-item">Quality gates and health checks for stable releases</li>
         </ul>
         <div style="margin-top:14px"><a class="btn btn-secondary" href="#services" rrk-automation-id="see-services-link">See services</a></div>
       </div>
@@ -325,9 +325,9 @@
         <h3>StockLight - Financial intelligence product</h3>
         <p class="lead">A product that turns noisy market feeds into clear, conversation-ready insights.</p>
         <ul class="list">
-          <li>Daily market briefs and context-aware analysis</li>
-          <li>Watchlists that highlight what matters for you</li>
-          <li>Foundation for alerts, personalization, and portfolios</li>
+          <li rrk-automation-id="daily-market-briefs-item">Daily market briefs and context-aware analysis</li>
+          <li rrk-automation-id="watchlists-that-highlight-item">Watchlists that highlight what matters for you</li>
+          <li rrk-automation-id="foundation-for-alerts-item">Foundation for alerts, personalization, and portfolios</li>
         </ul>
         <div style="margin-top:14px"><a class="btn btn-primary" href="https://stocklight.io/" target="_blank" rel="noopener" rrk-automation-id="open-stocklight-link-1">Open StockLight</a></div>
       </div>
@@ -343,7 +343,7 @@
         <p class="sub" style="max-width:780px;margin:8px auto 0">From quick wins to platform work. Scope, build, measure, improve.</p>
       </div>
 
-      <div class="grid" style="margin-top:28px">
+      <div class="grid" style="margin-top:28px" rrk-automation-id="ui-and-api-grid">
         <div class="service">
           <h4>UI and API automation</h4>
           <p>Resilient selectors, retries, page-object model, and deterministic flows. Designed for maintainability at scale.</p>
@@ -380,13 +380,13 @@
     <div class="pipeline" style="margin-top:22px">
       <div class="flow">
         <h3 style="margin-bottom:8px">Reference pipeline</h3>
-        <ul>
-          <li><span class="step">1</span><div><strong>Ingest</strong> - RSS, APIs, scrapers, uploads, webhooks</div></li>
-          <li><span class="step">2</span><div><strong>Normalize</strong> - schema mapping, dedup, enrichment</div></li>
-          <li><span class="step">3</span><div><strong>Store</strong> - Supabase tables, pgvector embeddings, partitions</div></li>
-          <li><span class="step">4</span><div><strong>Analyze</strong> - AI signals, topic modeling, entity linking</div></li>
-          <li><span class="step">5</span><div><strong>Agents</strong> - decision units that select tools and produce outputs</div></li>
-          <li><span class="step">6</span><div><strong>Deliver</strong> - APIs, dashboards, alerts, exports</div></li>
+        <ul rrk-automation-id="1ingest-rss-apis-list">
+          <li rrk-automation-id="1ingest-rss-apis-item"><span class="step">1</span><div><strong>Ingest</strong> - RSS, APIs, scrapers, uploads, webhooks</div></li>
+          <li rrk-automation-id="2normalize-schema-mapping-item"><span class="step">2</span><div><strong>Normalize</strong> - schema mapping, dedup, enrichment</div></li>
+          <li rrk-automation-id="3store-supabase-tables-item"><span class="step">3</span><div><strong>Store</strong> - Supabase tables, pgvector embeddings, partitions</div></li>
+          <li rrk-automation-id="4analyze-ai-signals-item"><span class="step">4</span><div><strong>Analyze</strong> - AI signals, topic modeling, entity linking</div></li>
+          <li rrk-automation-id="5agents-decision-units-item"><span class="step">5</span><div><strong>Agents</strong> - decision units that select tools and produce outputs</div></li>
+          <li rrk-automation-id="6deliver-apis-dashboards-item"><span class="step">6</span><div><strong>Deliver</strong> - APIs, dashboards, alerts, exports</div></li>
         </ul>
       </div>
       <div class="flow">
@@ -406,38 +406,38 @@ api -> web -> discord/telegram</pre>
       <p class="sub" style="max-width:820px">We test where bugs actually happen: web, API, mobile, and data checks. Visual status for leadership and developers.</p>
 
       <div class="test-grid">
-        <div class="tcard">
+        <div class="tcard" rrk-automation-id="web-and-ui-card">
           <h4>Web and UI</h4>
-          <ul class="tlist">
-            <li>Page-object model with clear targets</li>
-            <li>Retries and resilient selectors</li>
-            <li>Visual and accessibility checks on key flows</li>
+          <ul class="tlist" rrk-automation-id="pageobject-model-with-list">
+            <li rrk-automation-id="pageobject-model-with-item">Page-object model with clear targets</li>
+            <li rrk-automation-id="retries-and-resilient-item">Retries and resilient selectors</li>
+            <li rrk-automation-id="visual-and-accessibility-item">Visual and accessibility checks on key flows</li>
           </ul>
         </div>
         <div class="tcard">
           <h4>API and contracts</h4>
           <ul class="tlist">
-            <li>Schema and contract testing with fixtures</li>
-            <li>Idempotency and error-path coverage</li>
-            <li>Load checks for critical endpoints</li>
+            <li rrk-automation-id="schema-and-contract-item">Schema and contract testing with fixtures</li>
+            <li rrk-automation-id="idempotency-and-errorpath-item">Idempotency and error-path coverage</li>
+            <li rrk-automation-id="load-checks-for-item">Load checks for critical endpoints</li>
           </ul>
         </div>
         <div class="tcard">
           <h4>Mobile and codeless</h4>
           <ul class="tlist">
-            <li>Mobile flow coverage where needed</li>
-            <li>Codeless automation tools for non-dev teams</li>
-            <li>Status dashboards for clarity</li>
+            <li rrk-automation-id="mobile-flow-coverage-item">Mobile flow coverage where needed</li>
+            <li rrk-automation-id="codeless-automation-tools-item">Codeless automation tools for non-dev teams</li>
+            <li rrk-automation-id="status-dashboards-for-item">Status dashboards for clarity</li>
           </ul>
         </div>
       </div>
 
-      <div class="tcard" style="margin-top:22px">
+      <div class="tcard" style="margin-top:22px" rrk-automation-id="quality-pipeline-premerge-card">
         <h4>Quality pipeline</h4>
         <ul class="tlist">
-          <li>Pre-merge checks with gated CI</li>
-          <li>Smoke tests on deploy with rollback policy</li>
-          <li>Health checks and alerting tied to business metrics</li>
+          <li rrk-automation-id="premerge-checks-with-item">Pre-merge checks with gated CI</li>
+          <li rrk-automation-id="smoke-tests-on-item">Smoke tests on deploy with rollback policy</li>
+          <li rrk-automation-id="health-checks-and-item">Health checks and alerting tied to business metrics</li>
         </ul>
       </div>
     </div>
@@ -455,10 +455,10 @@ api -> web -> discord/telegram</pre>
       <div class="card">
         <h3 style="margin-bottom:8px">Scope</h3>
         <ul class="list">
-          <li>Unified framework with page-object targets</li>
-          <li>Stable execution and environment controls</li>
-          <li>Reporting approach based on existing tools</li>
-          <li>Playbooks and training for internal teams</li>
+          <li rrk-automation-id="unified-framework-with-item">Unified framework with page-object targets</li>
+          <li rrk-automation-id="stable-execution-and-item">Stable execution and environment controls</li>
+          <li rrk-automation-id="reporting-approach-based-item">Reporting approach based on existing tools</li>
+          <li rrk-automation-id="playbooks-and-training-item">Playbooks and training for internal teams</li>
         </ul>
         <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
           <a class="btn btn-secondary" href="https://matics.live/" target="_blank" rel="noopener" rrk-automation-id="visit-matics-link">Visit Matics</a>
@@ -482,7 +482,7 @@ api -> web -> discord/telegram</pre>
     <h2 id="tools-h" style="font-size:2rem;font-weight:800">Tools and IP</h2>
     <p class="sub" style="max-width:820px">Selected assets we can adapt to your use case.</p>
 
-    <div class="grid" style="margin-top:22px">
+    <div class="grid" style="margin-top:22px" rrk-automation-id="web-research-engine-grid">
       <div class="tool">
         <h4>Web research engine</h4>
         <p class="sub">Load data via links, analyze, and synthesize. Useful for due-diligence, market tracking, and ops research.</p>
@@ -513,7 +513,7 @@ api -> web -> discord/telegram</pre>
       <p style="max-width:820px">We translate market noise into usable understanding: daily briefs, watchlists, and narrative context you can act on.</p>
 
       <div class="grid" style="grid-template-columns:1.1fr .9fr;gap:22px;margin-top:22px">
-        <div class="stock-card">
+        <div class="stock-card" rrk-automation-id="policy-and-disclaimer-card">
           <h3 style="margin-bottom:8px">What you get</h3>
           <div class="features">
             <div class="feat"><strong>Daily clarity</strong><br/>News distilled to what matters for your names</div>
@@ -526,7 +526,7 @@ api -> web -> discord/telegram</pre>
             <a class="btn btn-secondary" href="https://discord.gg/smAyYUf5" target="_blank" rel="noopener" rrk-automation-id="join-stocklight-community-link">Join StockLight community</a>
           </div>
         </div>
-        <div class="stock-card">
+        <div class="stock-card" rrk-automation-id="policy-and-disclaimer-card-1">
           <h3 style="margin-bottom:8px">Policy and disclaimer</h3>
           <p>Information is for educational purposes only and may include AI generated content. Not an investment advisor. Always do your own research.</p>
           <p style="color:#94a3b8">Provider: RRK Technologies Ltd. Contact: info@rrk-technologies.com</p>

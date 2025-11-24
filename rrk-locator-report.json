@@ -1,16 +1,22 @@
 {
   "projectName": "rrk-technologies-website",
   "scannedFiles": 1,
-  "totalElements": 32,
+  "totalElements": 72,
   "covered": [
     {
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 249,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "RRK\n          Automation & Intelligence",
       "codeSnippet": "<a class=\"logo\" href=\"#top\" aria-label=\"RRK Technologies home\" rrk-automation-id=\"rrk-automation-intelligence-link\">",
       "existingLocator": "rrk-automation-intelligence-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "    \"logo\":\"https://rrk-technologies.com/logo.svg\",\n    \"sameAs\":[\"https://stocklight.io/\"],\n    \"description\":\"AI automation agency delivering multi-cloud data pipelines and full-stack testing. Creators of StockLight.\"\n  }\n  </script>\n</head>\n<body>\n  <!-- Header -->\n  <header class=\"header\" role=\"banner\">\n    <nav class=\"nav\" aria-label=\"Primary\">\n      <a class=\"logo\" href=\"#top\" aria-label=\"RRK Technologies home\" rrk-automation-id=\"rrk-automation-intelligence-link\">\n        <svg width=\"240\" height=\"64\" viewBox=\"0 0 240 64\" xmlns=\"http://www.w3.org/2000/svg\" style=\"height:48px;width:auto\">\n          <rect width=\"240\" height=\"64\" fill=\"none\"/>\n          <rect x=\"8\" y=\"8\" width=\"48\" height=\"48\" rx=\"10\" fill=\"#1a1f2e\" stroke=\"#00d9ff\" stroke-width=\"2\"/>\n          <rect x=\"18\" y=\"20\" width=\"28\" height=\"4\" rx=\"2\" fill=\"#00d9ff\"/>\n          <rect x=\"18\" y=\"28\" width=\"22\" height=\"4\" rx=\"2\" fill=\"#7c3aed\"/>\n          <rect x=\"18\" y=\"36\" width=\"16\" height=\"4\" rx=\"2\" fill=\"#06ffa5\"/>\n          <path d=\"M38 34 L44 30 L44 38 Z\" fill=\"#00d9ff\"/>\n          <text x=\"72\" y=\"40\" fill=\"#00d9ff\" font-size=\"28\" font-family=\"system-ui\" font-weight=\"700\" letter-spacing=\"3\">RRK</text>\n          <text x=\"72\" y=\"52\" fill=\"#a8b2c8\" font-size=\"10\" font-family=\"system-ui\" font-weight=\"500\">Automation & Intelligence</text>\n        </svg>",
       "snippet": "<a class=\"logo\" href=\"#top\" aria-label=\"RRK Technologies home\" rrk-automation-id=\"rrk-automation-intelligence-link\">"
     },
@@ -22,6 +28,12 @@
       "textContent": "Menu",
       "codeSnippet": "<button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>",
       "existingLocator": "menu-btn",
+      "componentMetadata": {
+        "category": "core-interactive",
+        "priority": "critical",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "          <rect width=\"240\" height=\"64\" fill=\"none\"/>\n          <rect x=\"8\" y=\"8\" width=\"48\" height=\"48\" rx=\"10\" fill=\"#1a1f2e\" stroke=\"#00d9ff\" stroke-width=\"2\"/>\n          <rect x=\"18\" y=\"20\" width=\"28\" height=\"4\" rx=\"2\" fill=\"#00d9ff\"/>\n          <rect x=\"18\" y=\"28\" width=\"22\" height=\"4\" rx=\"2\" fill=\"#7c3aed\"/>\n          <rect x=\"18\" y=\"36\" width=\"16\" height=\"4\" rx=\"2\" fill=\"#06ffa5\"/>\n          <path d=\"M38 34 L44 30 L44 38 Z\" fill=\"#00d9ff\"/>\n          <text x=\"72\" y=\"40\" fill=\"#00d9ff\" font-size=\"28\" font-family=\"system-ui\" font-weight=\"700\" letter-spacing=\"3\">RRK</text>\n          <text x=\"72\" y=\"52\" fill=\"#a8b2c8\" font-size=\"10\" font-family=\"system-ui\" font-weight=\"500\">Automation & Intelligence</text>\n        </svg>\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a></li>\n        <li><a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a></li>\n        <li><a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a></li>\n        <li><a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a></li>\n        <li><a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a></li>\n      </ul>\n    </nav>",
       "snippet": "<button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>"
     },
@@ -29,10 +41,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 263,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "What We Do",
       "codeSnippet": "<a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a>",
       "existingLocator": "what-we-do-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "          <rect x=\"18\" y=\"20\" width=\"28\" height=\"4\" rx=\"2\" fill=\"#00d9ff\"/>\n          <rect x=\"18\" y=\"28\" width=\"22\" height=\"4\" rx=\"2\" fill=\"#7c3aed\"/>\n          <rect x=\"18\" y=\"36\" width=\"16\" height=\"4\" rx=\"2\" fill=\"#06ffa5\"/>\n          <path d=\"M38 34 L44 30 L44 38 Z\" fill=\"#00d9ff\"/>\n          <text x=\"72\" y=\"40\" fill=\"#00d9ff\" font-size=\"28\" font-family=\"system-ui\" font-weight=\"700\" letter-spacing=\"3\">RRK</text>\n          <text x=\"72\" y=\"52\" fill=\"#a8b2c8\" font-size=\"10\" font-family=\"system-ui\" font-weight=\"500\">Automation & Intelligence</text>\n        </svg>\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a></li>\n        <li><a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a></li>\n        <li><a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a></li>\n        <li><a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a></li>\n        <li><a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n",
       "snippet": "<a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a>"
     },
@@ -40,10 +58,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 264,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Automation Services",
       "codeSnippet": "<a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a>",
       "existingLocator": "automation-services-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "          <rect x=\"18\" y=\"28\" width=\"22\" height=\"4\" rx=\"2\" fill=\"#7c3aed\"/>\n          <rect x=\"18\" y=\"36\" width=\"16\" height=\"4\" rx=\"2\" fill=\"#06ffa5\"/>\n          <path d=\"M38 34 L44 30 L44 38 Z\" fill=\"#00d9ff\"/>\n          <text x=\"72\" y=\"40\" fill=\"#00d9ff\" font-size=\"28\" font-family=\"system-ui\" font-weight=\"700\" letter-spacing=\"3\">RRK</text>\n          <text x=\"72\" y=\"52\" fill=\"#a8b2c8\" font-size=\"10\" font-family=\"system-ui\" font-weight=\"500\">Automation & Intelligence</text>\n        </svg>\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a></li>\n        <li><a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a></li>\n        <li><a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a></li>\n        <li><a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a></li>\n        <li><a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->",
       "snippet": "<a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a>"
     },
@@ -51,10 +75,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 265,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Data Pipelines",
       "codeSnippet": "<a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a>",
       "existingLocator": "data-pipelines-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "          <rect x=\"18\" y=\"36\" width=\"16\" height=\"4\" rx=\"2\" fill=\"#06ffa5\"/>\n          <path d=\"M38 34 L44 30 L44 38 Z\" fill=\"#00d9ff\"/>\n          <text x=\"72\" y=\"40\" fill=\"#00d9ff\" font-size=\"28\" font-family=\"system-ui\" font-weight=\"700\" letter-spacing=\"3\">RRK</text>\n          <text x=\"72\" y=\"52\" fill=\"#a8b2c8\" font-size=\"10\" font-family=\"system-ui\" font-weight=\"500\">Automation & Intelligence</text>\n        </svg>\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a></li>\n        <li><a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a></li>\n        <li><a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a></li>\n        <li><a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a></li>\n        <li><a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">",
       "snippet": "<a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a>"
     },
@@ -62,10 +92,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 266,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Testing",
       "codeSnippet": "<a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a>",
       "existingLocator": "testing-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "          <path d=\"M38 34 L44 30 L44 38 Z\" fill=\"#00d9ff\"/>\n          <text x=\"72\" y=\"40\" fill=\"#00d9ff\" font-size=\"28\" font-family=\"system-ui\" font-weight=\"700\" letter-spacing=\"3\">RRK</text>\n          <text x=\"72\" y=\"52\" fill=\"#a8b2c8\" font-size=\"10\" font-family=\"system-ui\" font-weight=\"500\">Automation & Intelligence</text>\n        </svg>\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a></li>\n        <li><a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a></li>\n        <li><a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a></li>\n        <li><a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a></li>\n        <li><a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">",
       "snippet": "<a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a>"
     },
@@ -73,10 +109,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 267,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Tools & IP",
       "codeSnippet": "<a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a>",
       "existingLocator": "tools-ip-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "          <text x=\"72\" y=\"40\" fill=\"#00d9ff\" font-size=\"28\" font-family=\"system-ui\" font-weight=\"700\" letter-spacing=\"3\">RRK</text>\n          <text x=\"72\" y=\"52\" fill=\"#a8b2c8\" font-size=\"10\" font-family=\"system-ui\" font-weight=\"500\">Automation & Intelligence</text>\n        </svg>\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a></li>\n        <li><a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a></li>\n        <li><a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a></li>\n        <li><a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a></li>\n        <li><a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>",
       "snippet": "<a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a>"
     },
@@ -84,10 +126,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 268,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "StockLight",
       "codeSnippet": "<a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a>",
       "existingLocator": "stocklight-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "          <text x=\"72\" y=\"52\" fill=\"#a8b2c8\" font-size=\"10\" font-family=\"system-ui\" font-weight=\"500\">Automation & Intelligence</text>\n        </svg>\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a></li>\n        <li><a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a></li>\n        <li><a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a></li>\n        <li><a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a></li>\n        <li><a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>\n        <span class=\"eyebrow\">Production-grade AI and automation</span>",
       "snippet": "<a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a>"
     },
@@ -95,10 +143,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 269,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Contact",
       "codeSnippet": "<a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a>",
       "existingLocator": "contact-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "        </svg>\n      </a>\n      <button class=\"nav-toggle\" id=\"nav-toggle\" aria-controls=\"primary-nav\" aria-expanded=\"false\" rrk-automation-id=\"menu-btn\">Menu</button>\n      <ul class=\"nav-links\" id=\"primary-nav\">\n        <li><a href=\"#pillars\" rrk-automation-id=\"what-we-do-link\">What We Do</a></li>\n        <li><a href=\"#services\" rrk-automation-id=\"automation-services-link\">Automation Services</a></li>\n        <li><a href=\"#pipeline\" rrk-automation-id=\"data-pipelines-link\">Data Pipelines</a></li>\n        <li><a href=\"#testing\" rrk-automation-id=\"testing-link\">Testing</a></li>\n        <li><a href=\"#tools\" rrk-automation-id=\"tools-ip-link\">Tools & IP</a></li>\n        <li><a href=\"#stocklight\" rrk-automation-id=\"stocklight-link\">StockLight</a></li>\n        <li><a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a></li>\n      </ul>\n    </nav>\n  </header>\n\n  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>\n        <span class=\"eyebrow\">Production-grade AI and automation</span>\n        <h1>We build intelligent systems that run your operations and turn data into decisions.</h1>",
       "snippet": "<a class=\"cta\" href=\"#contact\" rrk-automation-id=\"contact-link\">Contact</a>"
     },
@@ -106,98 +160,832 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 284,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Explore automation services",
       "codeSnippet": "<a class=\"btn btn-primary\" href=\"#services\" rrk-automation-id=\"explore-automation-services-link\">Explore automation services</a>",
       "existingLocator": "explore-automation-services-link",
-      "fileContext": "  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>\n        <span class=\"eyebrow\">Production-grade AI and automation</span>\n        <h1>We build intelligent systems that run your operations and turn data into decisions.</h1>\n        <p class=\"sub\">\n          RRK Technologies scopes, ships, and maintains automation and data products. Multi-cloud by design: GCP, AWS, and Azure. In parallel, we build <strong>StockLight</strong> - a clean, actionable market insights product.\n        </p>\n        <div class=\"hero-cta\">\n          <a class=\"btn btn-primary\" href=\"#services\" rrk-automation-id=\"explore-automation-services-link\">Explore automation services</a>\n          <a class=\"btn btn-secondary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link\">Open StockLight</a>\n        </div>\n      </div>\n\n      <div class=\"hero-card\" aria-label=\"Summary\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Two tracks. One standard.</h3>\n        <p class=\"sub\" style=\"font-size:.98rem\">RRK is a productized automation agency. StockLight is a focused product. Same quality bar.</p>\n        <div style=\"display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px\">\n          <div style=\"background:linear-gradient(135deg,rgba(0,217,255,.08),rgba(0,217,255,.04));border:1px solid rgba(0,217,255,.3);border-radius:8px;padding:14px;box-shadow:0 0 20px rgba(0,217,255,.1)\">\n            <strong style=\"display:block;color:var(--primary);font-size:1.05rem;text-shadow:0 0 20px var(--primary-glow)\">RRK Automation</strong>",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "  <!-- Hero -->\n  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>\n        <span class=\"eyebrow\">Production-grade AI and automation</span>\n        <h1>We build intelligent systems that run your operations and turn data into decisions.</h1>\n        <p class=\"sub\">\n          RRK Technologies scopes, ships, and maintains automation and data products. Multi-cloud by design: GCP, AWS, and Azure. In parallel, we build <strong>StockLight</strong> - a clean, actionable market insights product.\n        </p>\n        <div class=\"hero-cta\">\n          <a class=\"btn btn-primary\" href=\"#services\" rrk-automation-id=\"explore-automation-services-link\">Explore automation services</a>\n          <a class=\"btn btn-secondary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link\">Open StockLight</a>\n        </div>\n      </div>\n\n      <div class=\"hero-card\" aria-label=\"Summary\" rrk-automation-id=\"two-tracks-one-card\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Two tracks. One standard.</h3>\n        <p class=\"sub\" style=\"font-size:.98rem\">RRK is a productized automation agency. StockLight is a focused product. Same quality bar.</p>\n        <div style=\"display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px\">\n          <div style=\"background:linear-gradient(135deg,rgba(0,217,255,.08),rgba(0,217,255,.04));border:1px solid rgba(0,217,255,.3);border-radius:8px;padding:14px;box-shadow:0 0 20px rgba(0,217,255,.1)\">\n            <strong style=\"display:block;color:var(--primary);font-size:1.05rem;text-shadow:0 0 20px var(--primary-glow)\">RRK Automation</strong>",
       "snippet": "<a class=\"btn btn-primary\" href=\"#services\" rrk-automation-id=\"explore-automation-services-link\">Explore automation services</a>"
     },
     {
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 285,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Open StockLight",
       "codeSnippet": "<a class=\"btn btn-secondary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link\">Open StockLight</a>",
       "existingLocator": "open-stocklight-link",
-      "fileContext": "  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>\n        <span class=\"eyebrow\">Production-grade AI and automation</span>\n        <h1>We build intelligent systems that run your operations and turn data into decisions.</h1>\n        <p class=\"sub\">\n          RRK Technologies scopes, ships, and maintains automation and data products. Multi-cloud by design: GCP, AWS, and Azure. In parallel, we build <strong>StockLight</strong> - a clean, actionable market insights product.\n        </p>\n        <div class=\"hero-cta\">\n          <a class=\"btn btn-primary\" href=\"#services\" rrk-automation-id=\"explore-automation-services-link\">Explore automation services</a>\n          <a class=\"btn btn-secondary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link\">Open StockLight</a>\n        </div>\n      </div>\n\n      <div class=\"hero-card\" aria-label=\"Summary\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Two tracks. One standard.</h3>\n        <p class=\"sub\" style=\"font-size:.98rem\">RRK is a productized automation agency. StockLight is a focused product. Same quality bar.</p>\n        <div style=\"display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px\">\n          <div style=\"background:linear-gradient(135deg,rgba(0,217,255,.08),rgba(0,217,255,.04));border:1px solid rgba(0,217,255,.3);border-radius:8px;padding:14px;box-shadow:0 0 20px rgba(0,217,255,.1)\">\n            <strong style=\"display:block;color:var(--primary);font-size:1.05rem;text-shadow:0 0 20px var(--primary-glow)\">RRK Automation</strong>\n            <span class=\"sub\" style=\"font-size:.95rem\">UI and API automation, LLM agents, data pipelines, reliability</span>",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "  <section id=\"top\" class=\"hero\" aria-label=\"Hero\">\n    <div class=\"hero-inner\">\n      <div>\n        <span class=\"eyebrow\">Production-grade AI and automation</span>\n        <h1>We build intelligent systems that run your operations and turn data into decisions.</h1>\n        <p class=\"sub\">\n          RRK Technologies scopes, ships, and maintains automation and data products. Multi-cloud by design: GCP, AWS, and Azure. In parallel, we build <strong>StockLight</strong> - a clean, actionable market insights product.\n        </p>\n        <div class=\"hero-cta\">\n          <a class=\"btn btn-primary\" href=\"#services\" rrk-automation-id=\"explore-automation-services-link\">Explore automation services</a>\n          <a class=\"btn btn-secondary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link\">Open StockLight</a>\n        </div>\n      </div>\n\n      <div class=\"hero-card\" aria-label=\"Summary\" rrk-automation-id=\"two-tracks-one-card\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Two tracks. One standard.</h3>\n        <p class=\"sub\" style=\"font-size:.98rem\">RRK is a productized automation agency. StockLight is a focused product. Same quality bar.</p>\n        <div style=\"display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px\">\n          <div style=\"background:linear-gradient(135deg,rgba(0,217,255,.08),rgba(0,217,255,.04));border:1px solid rgba(0,217,255,.3);border-radius:8px;padding:14px;box-shadow:0 0 20px rgba(0,217,255,.1)\">\n            <strong style=\"display:block;color:var(--primary);font-size:1.05rem;text-shadow:0 0 20px var(--primary-glow)\">RRK Automation</strong>\n            <span class=\"sub\" style=\"font-size:.95rem\">UI and API automation, LLM agents, data pipelines, reliability</span>",
       "snippet": "<a class=\"btn btn-secondary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link\">Open StockLight</a>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 289,
+      "column": 0,
+      "elementType": "card",
+      "textContent": "Two tracks. One standard.\n        RRK is a productized automation agency. StockLight is a focused pr",
+      "codeSnippet": "<div class=\"hero-card\" aria-label=\"Summary\" rrk-automation-id=\"two-tracks-one-card\">",
+      "existingLocator": "two-tracks-one-card",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 70,
+        "method": "class-pattern"
+      },
+      "fileContext": "        <h1>We build intelligent systems that run your operations and turn data into decisions.</h1>\n        <p class=\"sub\">\n          RRK Technologies scopes, ships, and maintains automation and data products. Multi-cloud by design: GCP, AWS, and Azure. In parallel, we build <strong>StockLight</strong> - a clean, actionable market insights product.\n        </p>\n        <div class=\"hero-cta\">\n          <a class=\"btn btn-primary\" href=\"#services\" rrk-automation-id=\"explore-automation-services-link\">Explore automation services</a>\n          <a class=\"btn btn-secondary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link\">Open StockLight</a>\n        </div>\n      </div>\n\n      <div class=\"hero-card\" aria-label=\"Summary\" rrk-automation-id=\"two-tracks-one-card\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Two tracks. One standard.</h3>\n        <p class=\"sub\" style=\"font-size:.98rem\">RRK is a productized automation agency. StockLight is a focused product. Same quality bar.</p>\n        <div style=\"display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px\">\n          <div style=\"background:linear-gradient(135deg,rgba(0,217,255,.08),rgba(0,217,255,.04));border:1px solid rgba(0,217,255,.3);border-radius:8px;padding:14px;box-shadow:0 0 20px rgba(0,217,255,.1)\">\n            <strong style=\"display:block;color:var(--primary);font-size:1.05rem;text-shadow:0 0 20px var(--primary-glow)\">RRK Automation</strong>\n            <span class=\"sub\" style=\"font-size:.95rem\">UI and API automation, LLM agents, data pipelines, reliability</span>\n          </div>\n          <div style=\"background:linear-gradient(135deg,rgba(124,58,237,.08),rgba(124,58,237,.04));border:1px solid rgba(124,58,237,.3);border-radius:8px;padding:14px;box-shadow:0 0 20px rgba(124,58,237,.1)\">\n            <strong style=\"display:block;color:var(--secondary);font-size:1.05rem;text-shadow:0 0 20px rgba(124,58,237,.4)\">StockLight.io</strong>\n            <span class=\"sub\" style=\"font-size:.95rem\">Market news to clear insights with a clean UX</span>",
+      "snippet": "<div class=\"hero-card\" aria-label=\"Summary\" rrk-automation-id=\"two-tracks-one-card\">"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 314,
+      "column": 0,
+      "elementType": "list",
+      "textContent": "LLM agents and orchestration across your stack\n          UI and API automation with page-object disc",
+      "codeSnippet": "<ul class=\"list\" rrk-automation-id=\"llm-agents-and-list\">",
+      "existingLocator": "llm-agents-and-list",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "  </section>\n\n  <!-- What we do -->\n  <section id=\"pillars\" class=\"container\" aria-labelledby=\"pillars-h\">\n    <h2 id=\"pillars-h\" style=\"font-size:2rem;font-weight:800\">What we do</h2>\n    <p class=\"sub\" style=\"margin-top:6px\">One company with two focused tracks.</p>\n    <div class=\"pillars\">\n      <div class=\"card\">\n        <h3>RRK - Productized automation agency</h3>\n        <p class=\"lead\">We deliver automation that replaces hours of manual work and makes outcomes measurable.</p>\n        <ul class=\"list\" rrk-automation-id=\"llm-agents-and-list\">\n          <li rrk-automation-id=\"llm-agents-and-item\">LLM agents and orchestration across your stack</li>\n          <li rrk-automation-id=\"ui-and-api-item\">UI and API automation with page-object discipline</li>\n          <li rrk-automation-id=\"cloudnative-backends-and-item\">Cloud-native backends and event pipelines</li>\n          <li rrk-automation-id=\"analytics-and-bi-item\">Analytics and BI on Supabase and pgvector</li>\n          <li rrk-automation-id=\"quality-gates-and-item\">Quality gates and health checks for stable releases</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-secondary\" href=\"#services\" rrk-automation-id=\"see-services-link\">See services</a></div>\n      </div>\n\n      <div class=\"card\">",
+      "snippet": "<ul class=\"list\" rrk-automation-id=\"llm-agents-and-list\">"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 315,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "LLM agents and orchestration across your stack",
+      "codeSnippet": "<li rrk-automation-id=\"llm-agents-and-item\">LLM agents and orchestration across your stack</li>",
+      "existingLocator": "llm-agents-and-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "\n  <!-- What we do -->\n  <section id=\"pillars\" class=\"container\" aria-labelledby=\"pillars-h\">\n    <h2 id=\"pillars-h\" style=\"font-size:2rem;font-weight:800\">What we do</h2>\n    <p class=\"sub\" style=\"margin-top:6px\">One company with two focused tracks.</p>\n    <div class=\"pillars\">\n      <div class=\"card\">\n        <h3>RRK - Productized automation agency</h3>\n        <p class=\"lead\">We deliver automation that replaces hours of manual work and makes outcomes measurable.</p>\n        <ul class=\"list\" rrk-automation-id=\"llm-agents-and-list\">\n          <li rrk-automation-id=\"llm-agents-and-item\">LLM agents and orchestration across your stack</li>\n          <li rrk-automation-id=\"ui-and-api-item\">UI and API automation with page-object discipline</li>\n          <li rrk-automation-id=\"cloudnative-backends-and-item\">Cloud-native backends and event pipelines</li>\n          <li rrk-automation-id=\"analytics-and-bi-item\">Analytics and BI on Supabase and pgvector</li>\n          <li rrk-automation-id=\"quality-gates-and-item\">Quality gates and health checks for stable releases</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-secondary\" href=\"#services\" rrk-automation-id=\"see-services-link\">See services</a></div>\n      </div>\n\n      <div class=\"card\">\n        <h3>StockLight - Financial intelligence product</h3>",
+      "snippet": "<li rrk-automation-id=\"llm-agents-and-item\">LLM agents and orchestration across your stack</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 316,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "UI and API automation with page-object discipline",
+      "codeSnippet": "<li rrk-automation-id=\"ui-and-api-item\">UI and API automation with page-object discipline</li>",
+      "existingLocator": "ui-and-api-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "  <!-- What we do -->\n  <section id=\"pillars\" class=\"container\" aria-labelledby=\"pillars-h\">\n    <h2 id=\"pillars-h\" style=\"font-size:2rem;font-weight:800\">What we do</h2>\n    <p class=\"sub\" style=\"margin-top:6px\">One company with two focused tracks.</p>\n    <div class=\"pillars\">\n      <div class=\"card\">\n        <h3>RRK - Productized automation agency</h3>\n        <p class=\"lead\">We deliver automation that replaces hours of manual work and makes outcomes measurable.</p>\n        <ul class=\"list\" rrk-automation-id=\"llm-agents-and-list\">\n          <li rrk-automation-id=\"llm-agents-and-item\">LLM agents and orchestration across your stack</li>\n          <li rrk-automation-id=\"ui-and-api-item\">UI and API automation with page-object discipline</li>\n          <li rrk-automation-id=\"cloudnative-backends-and-item\">Cloud-native backends and event pipelines</li>\n          <li rrk-automation-id=\"analytics-and-bi-item\">Analytics and BI on Supabase and pgvector</li>\n          <li rrk-automation-id=\"quality-gates-and-item\">Quality gates and health checks for stable releases</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-secondary\" href=\"#services\" rrk-automation-id=\"see-services-link\">See services</a></div>\n      </div>\n\n      <div class=\"card\">\n        <h3>StockLight - Financial intelligence product</h3>\n        <p class=\"lead\">A product that turns noisy market feeds into clear, conversation-ready insights.</p>",
+      "snippet": "<li rrk-automation-id=\"ui-and-api-item\">UI and API automation with page-object discipline</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 317,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Cloud-native backends and event pipelines",
+      "codeSnippet": "<li rrk-automation-id=\"cloudnative-backends-and-item\">Cloud-native backends and event pipelines</li>",
+      "existingLocator": "cloudnative-backends-and-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "  <section id=\"pillars\" class=\"container\" aria-labelledby=\"pillars-h\">\n    <h2 id=\"pillars-h\" style=\"font-size:2rem;font-weight:800\">What we do</h2>\n    <p class=\"sub\" style=\"margin-top:6px\">One company with two focused tracks.</p>\n    <div class=\"pillars\">\n      <div class=\"card\">\n        <h3>RRK - Productized automation agency</h3>\n        <p class=\"lead\">We deliver automation that replaces hours of manual work and makes outcomes measurable.</p>\n        <ul class=\"list\" rrk-automation-id=\"llm-agents-and-list\">\n          <li rrk-automation-id=\"llm-agents-and-item\">LLM agents and orchestration across your stack</li>\n          <li rrk-automation-id=\"ui-and-api-item\">UI and API automation with page-object discipline</li>\n          <li rrk-automation-id=\"cloudnative-backends-and-item\">Cloud-native backends and event pipelines</li>\n          <li rrk-automation-id=\"analytics-and-bi-item\">Analytics and BI on Supabase and pgvector</li>\n          <li rrk-automation-id=\"quality-gates-and-item\">Quality gates and health checks for stable releases</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-secondary\" href=\"#services\" rrk-automation-id=\"see-services-link\">See services</a></div>\n      </div>\n\n      <div class=\"card\">\n        <h3>StockLight - Financial intelligence product</h3>\n        <p class=\"lead\">A product that turns noisy market feeds into clear, conversation-ready insights.</p>\n        <ul class=\"list\">",
+      "snippet": "<li rrk-automation-id=\"cloudnative-backends-and-item\">Cloud-native backends and event pipelines</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 318,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Analytics and BI on Supabase and pgvector",
+      "codeSnippet": "<li rrk-automation-id=\"analytics-and-bi-item\">Analytics and BI on Supabase and pgvector</li>",
+      "existingLocator": "analytics-and-bi-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "    <h2 id=\"pillars-h\" style=\"font-size:2rem;font-weight:800\">What we do</h2>\n    <p class=\"sub\" style=\"margin-top:6px\">One company with two focused tracks.</p>\n    <div class=\"pillars\">\n      <div class=\"card\">\n        <h3>RRK - Productized automation agency</h3>\n        <p class=\"lead\">We deliver automation that replaces hours of manual work and makes outcomes measurable.</p>\n        <ul class=\"list\" rrk-automation-id=\"llm-agents-and-list\">\n          <li rrk-automation-id=\"llm-agents-and-item\">LLM agents and orchestration across your stack</li>\n          <li rrk-automation-id=\"ui-and-api-item\">UI and API automation with page-object discipline</li>\n          <li rrk-automation-id=\"cloudnative-backends-and-item\">Cloud-native backends and event pipelines</li>\n          <li rrk-automation-id=\"analytics-and-bi-item\">Analytics and BI on Supabase and pgvector</li>\n          <li rrk-automation-id=\"quality-gates-and-item\">Quality gates and health checks for stable releases</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-secondary\" href=\"#services\" rrk-automation-id=\"see-services-link\">See services</a></div>\n      </div>\n\n      <div class=\"card\">\n        <h3>StockLight - Financial intelligence product</h3>\n        <p class=\"lead\">A product that turns noisy market feeds into clear, conversation-ready insights.</p>\n        <ul class=\"list\">\n          <li rrk-automation-id=\"daily-market-briefs-item\">Daily market briefs and context-aware analysis</li>",
+      "snippet": "<li rrk-automation-id=\"analytics-and-bi-item\">Analytics and BI on Supabase and pgvector</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 319,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Quality gates and health checks for stable releases",
+      "codeSnippet": "<li rrk-automation-id=\"quality-gates-and-item\">Quality gates and health checks for stable releases</li>",
+      "existingLocator": "quality-gates-and-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "    <p class=\"sub\" style=\"margin-top:6px\">One company with two focused tracks.</p>\n    <div class=\"pillars\">\n      <div class=\"card\">\n        <h3>RRK - Productized automation agency</h3>\n        <p class=\"lead\">We deliver automation that replaces hours of manual work and makes outcomes measurable.</p>\n        <ul class=\"list\" rrk-automation-id=\"llm-agents-and-list\">\n          <li rrk-automation-id=\"llm-agents-and-item\">LLM agents and orchestration across your stack</li>\n          <li rrk-automation-id=\"ui-and-api-item\">UI and API automation with page-object discipline</li>\n          <li rrk-automation-id=\"cloudnative-backends-and-item\">Cloud-native backends and event pipelines</li>\n          <li rrk-automation-id=\"analytics-and-bi-item\">Analytics and BI on Supabase and pgvector</li>\n          <li rrk-automation-id=\"quality-gates-and-item\">Quality gates and health checks for stable releases</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-secondary\" href=\"#services\" rrk-automation-id=\"see-services-link\">See services</a></div>\n      </div>\n\n      <div class=\"card\">\n        <h3>StockLight - Financial intelligence product</h3>\n        <p class=\"lead\">A product that turns noisy market feeds into clear, conversation-ready insights.</p>\n        <ul class=\"list\">\n          <li rrk-automation-id=\"daily-market-briefs-item\">Daily market briefs and context-aware analysis</li>\n          <li rrk-automation-id=\"watchlists-that-highlight-item\">Watchlists that highlight what matters for you</li>",
+      "snippet": "<li rrk-automation-id=\"quality-gates-and-item\">Quality gates and health checks for stable releases</li>"
     },
     {
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 321,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "See services",
       "codeSnippet": "<a class=\"btn btn-secondary\" href=\"#services\" rrk-automation-id=\"see-services-link\">See services</a>",
       "existingLocator": "see-services-link",
-      "fileContext": "      <div class=\"card\">\n        <h3>RRK - Productized automation agency</h3>\n        <p class=\"lead\">We deliver automation that replaces hours of manual work and makes outcomes measurable.</p>\n        <ul class=\"list\">\n          <li>LLM agents and orchestration across your stack</li>\n          <li>UI and API automation with page-object discipline</li>\n          <li>Cloud-native backends and event pipelines</li>\n          <li>Analytics and BI on Supabase and pgvector</li>\n          <li>Quality gates and health checks for stable releases</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-secondary\" href=\"#services\" rrk-automation-id=\"see-services-link\">See services</a></div>\n      </div>\n\n      <div class=\"card\">\n        <h3>StockLight - Financial intelligence product</h3>\n        <p class=\"lead\">A product that turns noisy market feeds into clear, conversation-ready insights.</p>\n        <ul class=\"list\">\n          <li>Daily market briefs and context-aware analysis</li>\n          <li>Watchlists that highlight what matters for you</li>\n          <li>Foundation for alerts, personalization, and portfolios</li>\n        </ul>",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "      <div class=\"card\">\n        <h3>RRK - Productized automation agency</h3>\n        <p class=\"lead\">We deliver automation that replaces hours of manual work and makes outcomes measurable.</p>\n        <ul class=\"list\" rrk-automation-id=\"llm-agents-and-list\">\n          <li rrk-automation-id=\"llm-agents-and-item\">LLM agents and orchestration across your stack</li>\n          <li rrk-automation-id=\"ui-and-api-item\">UI and API automation with page-object discipline</li>\n          <li rrk-automation-id=\"cloudnative-backends-and-item\">Cloud-native backends and event pipelines</li>\n          <li rrk-automation-id=\"analytics-and-bi-item\">Analytics and BI on Supabase and pgvector</li>\n          <li rrk-automation-id=\"quality-gates-and-item\">Quality gates and health checks for stable releases</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-secondary\" href=\"#services\" rrk-automation-id=\"see-services-link\">See services</a></div>\n      </div>\n\n      <div class=\"card\">\n        <h3>StockLight - Financial intelligence product</h3>\n        <p class=\"lead\">A product that turns noisy market feeds into clear, conversation-ready insights.</p>\n        <ul class=\"list\">\n          <li rrk-automation-id=\"daily-market-briefs-item\">Daily market briefs and context-aware analysis</li>\n          <li rrk-automation-id=\"watchlists-that-highlight-item\">Watchlists that highlight what matters for you</li>\n          <li rrk-automation-id=\"foundation-for-alerts-item\">Foundation for alerts, personalization, and portfolios</li>\n        </ul>",
       "snippet": "<a class=\"btn btn-secondary\" href=\"#services\" rrk-automation-id=\"see-services-link\">See services</a>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 328,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Daily market briefs and context-aware analysis",
+      "codeSnippet": "<li rrk-automation-id=\"daily-market-briefs-item\">Daily market briefs and context-aware analysis</li>",
+      "existingLocator": "daily-market-briefs-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "          <li rrk-automation-id=\"analytics-and-bi-item\">Analytics and BI on Supabase and pgvector</li>\n          <li rrk-automation-id=\"quality-gates-and-item\">Quality gates and health checks for stable releases</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-secondary\" href=\"#services\" rrk-automation-id=\"see-services-link\">See services</a></div>\n      </div>\n\n      <div class=\"card\">\n        <h3>StockLight - Financial intelligence product</h3>\n        <p class=\"lead\">A product that turns noisy market feeds into clear, conversation-ready insights.</p>\n        <ul class=\"list\">\n          <li rrk-automation-id=\"daily-market-briefs-item\">Daily market briefs and context-aware analysis</li>\n          <li rrk-automation-id=\"watchlists-that-highlight-item\">Watchlists that highlight what matters for you</li>\n          <li rrk-automation-id=\"foundation-for-alerts-item\">Foundation for alerts, personalization, and portfolios</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link-1\">Open StockLight</a></div>\n      </div>\n    </div>\n  </section>\n\n  <!-- Services -->\n  <section id=\"services\" class=\"section-alt\" aria-labelledby=\"services-h\">",
+      "snippet": "<li rrk-automation-id=\"daily-market-briefs-item\">Daily market briefs and context-aware analysis</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 329,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Watchlists that highlight what matters for you",
+      "codeSnippet": "<li rrk-automation-id=\"watchlists-that-highlight-item\">Watchlists that highlight what matters for you</li>",
+      "existingLocator": "watchlists-that-highlight-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "          <li rrk-automation-id=\"quality-gates-and-item\">Quality gates and health checks for stable releases</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-secondary\" href=\"#services\" rrk-automation-id=\"see-services-link\">See services</a></div>\n      </div>\n\n      <div class=\"card\">\n        <h3>StockLight - Financial intelligence product</h3>\n        <p class=\"lead\">A product that turns noisy market feeds into clear, conversation-ready insights.</p>\n        <ul class=\"list\">\n          <li rrk-automation-id=\"daily-market-briefs-item\">Daily market briefs and context-aware analysis</li>\n          <li rrk-automation-id=\"watchlists-that-highlight-item\">Watchlists that highlight what matters for you</li>\n          <li rrk-automation-id=\"foundation-for-alerts-item\">Foundation for alerts, personalization, and portfolios</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link-1\">Open StockLight</a></div>\n      </div>\n    </div>\n  </section>\n\n  <!-- Services -->\n  <section id=\"services\" class=\"section-alt\" aria-labelledby=\"services-h\">\n    <div class=\"container\">",
+      "snippet": "<li rrk-automation-id=\"watchlists-that-highlight-item\">Watchlists that highlight what matters for you</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 330,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Foundation for alerts, personalization, and portfolios",
+      "codeSnippet": "<li rrk-automation-id=\"foundation-for-alerts-item\">Foundation for alerts, personalization, and portfolios</li>",
+      "existingLocator": "foundation-for-alerts-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-secondary\" href=\"#services\" rrk-automation-id=\"see-services-link\">See services</a></div>\n      </div>\n\n      <div class=\"card\">\n        <h3>StockLight - Financial intelligence product</h3>\n        <p class=\"lead\">A product that turns noisy market feeds into clear, conversation-ready insights.</p>\n        <ul class=\"list\">\n          <li rrk-automation-id=\"daily-market-briefs-item\">Daily market briefs and context-aware analysis</li>\n          <li rrk-automation-id=\"watchlists-that-highlight-item\">Watchlists that highlight what matters for you</li>\n          <li rrk-automation-id=\"foundation-for-alerts-item\">Foundation for alerts, personalization, and portfolios</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link-1\">Open StockLight</a></div>\n      </div>\n    </div>\n  </section>\n\n  <!-- Services -->\n  <section id=\"services\" class=\"section-alt\" aria-labelledby=\"services-h\">\n    <div class=\"container\">\n      <div style=\"text-align:center\">",
+      "snippet": "<li rrk-automation-id=\"foundation-for-alerts-item\">Foundation for alerts, personalization, and portfolios</li>"
     },
     {
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 332,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Open StockLight",
       "codeSnippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link-1\">Open StockLight</a>",
       "existingLocator": "open-stocklight-link-1",
-      "fileContext": "      </div>\n\n      <div class=\"card\">\n        <h3>StockLight - Financial intelligence product</h3>\n        <p class=\"lead\">A product that turns noisy market feeds into clear, conversation-ready insights.</p>\n        <ul class=\"list\">\n          <li>Daily market briefs and context-aware analysis</li>\n          <li>Watchlists that highlight what matters for you</li>\n          <li>Foundation for alerts, personalization, and portfolios</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link-1\">Open StockLight</a></div>\n      </div>\n    </div>\n  </section>\n\n  <!-- Services -->\n  <section id=\"services\" class=\"section-alt\" aria-labelledby=\"services-h\">\n    <div class=\"container\">\n      <div style=\"text-align:center\">\n        <span class=\"eyebrow\">RRK Services</span>\n        <h2 id=\"services-h\" style=\"font-size:2rem;font-weight:800;margin-top:8px\">Enterprise automation that ships</h2>",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "      </div>\n\n      <div class=\"card\">\n        <h3>StockLight - Financial intelligence product</h3>\n        <p class=\"lead\">A product that turns noisy market feeds into clear, conversation-ready insights.</p>\n        <ul class=\"list\">\n          <li rrk-automation-id=\"daily-market-briefs-item\">Daily market briefs and context-aware analysis</li>\n          <li rrk-automation-id=\"watchlists-that-highlight-item\">Watchlists that highlight what matters for you</li>\n          <li rrk-automation-id=\"foundation-for-alerts-item\">Foundation for alerts, personalization, and portfolios</li>\n        </ul>\n        <div style=\"margin-top:14px\"><a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link-1\">Open StockLight</a></div>\n      </div>\n    </div>\n  </section>\n\n  <!-- Services -->\n  <section id=\"services\" class=\"section-alt\" aria-labelledby=\"services-h\">\n    <div class=\"container\">\n      <div style=\"text-align:center\">\n        <span class=\"eyebrow\">RRK Services</span>\n        <h2 id=\"services-h\" style=\"font-size:2rem;font-weight:800;margin-top:8px\">Enterprise automation that ships</h2>",
       "snippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklight-link-1\">Open StockLight</a>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 346,
+      "column": 0,
+      "elementType": "grid",
+      "textContent": "UI and API automation\n          Resilient selectors, retries, page-object model, and deterministic f",
+      "codeSnippet": "<div class=\"grid\" style=\"margin-top:28px\" rrk-automation-id=\"ui-and-api-grid\">",
+      "existingLocator": "ui-and-api-grid",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 70,
+        "method": "class-pattern"
+      },
+      "fileContext": "\n  <!-- Services -->\n  <section id=\"services\" class=\"section-alt\" aria-labelledby=\"services-h\">\n    <div class=\"container\">\n      <div style=\"text-align:center\">\n        <span class=\"eyebrow\">RRK Services</span>\n        <h2 id=\"services-h\" style=\"font-size:2rem;font-weight:800;margin-top:8px\">Enterprise automation that ships</h2>\n        <p class=\"sub\" style=\"max-width:780px;margin:8px auto 0\">From quick wins to platform work. Scope, build, measure, improve.</p>\n      </div>\n\n      <div class=\"grid\" style=\"margin-top:28px\" rrk-automation-id=\"ui-and-api-grid\">\n        <div class=\"service\">\n          <h4>UI and API automation</h4>\n          <p>Resilient selectors, retries, page-object model, and deterministic flows. Designed for maintainability at scale.</p>\n        </div>\n        <div class=\"service\">\n          <h4>LLM and agent integration</h4>\n          <p>Clarify, choose, and execute with guardrails. Evaluation and human in the loop where it matters.</p>\n        </div>\n        <div class=\"service\">\n          <h4>Cloud backends - multi cloud</h4>",
+      "snippet": "<div class=\"grid\" style=\"margin-top:28px\" rrk-automation-id=\"ui-and-api-grid\">"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 383,
+      "column": 0,
+      "elementType": "list",
+      "textContent": "1Ingest - RSS, APIs, scrapers, uploads, webhooks\n          2Normalize - schema mapping, dedup, enric",
+      "codeSnippet": "<ul rrk-automation-id=\"1ingest-rss-apis-list\">",
+      "existingLocator": "1ingest-rss-apis-list",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "  </section>\n\n  <!-- Data Pipelines -->\n  <section id=\"pipeline\" class=\"container\" aria-labelledby=\"pipeline-h\">\n    <h2 id=\"pipeline-h\" style=\"font-size:2rem;font-weight:800\">Data pipelines - from ingestion to agents</h2>\n    <p class=\"sub\" style=\"max-width:820px\">We built StockLight on this discipline. The same approach powers client systems: collect the right data, add structure, score with AI, and expose it through clean interfaces.</p>\n\n    <div class=\"pipeline\" style=\"margin-top:22px\">\n      <div class=\"flow\">\n        <h3 style=\"margin-bottom:8px\">Reference pipeline</h3>\n        <ul rrk-automation-id=\"1ingest-rss-apis-list\">\n          <li rrk-automation-id=\"1ingest-rss-apis-item\"><span class=\"step\">1</span><div><strong>Ingest</strong> - RSS, APIs, scrapers, uploads, webhooks</div></li>\n          <li rrk-automation-id=\"2normalize-schema-mapping-item\"><span class=\"step\">2</span><div><strong>Normalize</strong> - schema mapping, dedup, enrichment</div></li>\n          <li rrk-automation-id=\"3store-supabase-tables-item\"><span class=\"step\">3</span><div><strong>Store</strong> - Supabase tables, pgvector embeddings, partitions</div></li>\n          <li rrk-automation-id=\"4analyze-ai-signals-item\"><span class=\"step\">4</span><div><strong>Analyze</strong> - AI signals, topic modeling, entity linking</div></li>\n          <li rrk-automation-id=\"5agents-decision-units-item\"><span class=\"step\">5</span><div><strong>Agents</strong> - decision units that select tools and produce outputs</div></li>\n          <li rrk-automation-id=\"6deliver-apis-dashboards-item\"><span class=\"step\">6</span><div><strong>Deliver</strong> - APIs, dashboards, alerts, exports</div></li>\n        </ul>\n      </div>\n      <div class=\"flow\">\n        <h3 style=\"margin-bottom:8px\">StockLight style snippet</h3>",
+      "snippet": "<ul rrk-automation-id=\"1ingest-rss-apis-list\">"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 384,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "1Ingest - RSS, APIs, scrapers, uploads, webhooks",
+      "codeSnippet": "<li rrk-automation-id=\"1ingest-rss-apis-item\"><span class=\"step\">1</span><div><strong>Ingest</strong> - RSS, APIs, scrapers, uploads, webhooks</div></li>",
+      "existingLocator": "1ingest-rss-apis-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "\n  <!-- Data Pipelines -->\n  <section id=\"pipeline\" class=\"container\" aria-labelledby=\"pipeline-h\">\n    <h2 id=\"pipeline-h\" style=\"font-size:2rem;font-weight:800\">Data pipelines - from ingestion to agents</h2>\n    <p class=\"sub\" style=\"max-width:820px\">We built StockLight on this discipline. The same approach powers client systems: collect the right data, add structure, score with AI, and expose it through clean interfaces.</p>\n\n    <div class=\"pipeline\" style=\"margin-top:22px\">\n      <div class=\"flow\">\n        <h3 style=\"margin-bottom:8px\">Reference pipeline</h3>\n        <ul rrk-automation-id=\"1ingest-rss-apis-list\">\n          <li rrk-automation-id=\"1ingest-rss-apis-item\"><span class=\"step\">1</span><div><strong>Ingest</strong> - RSS, APIs, scrapers, uploads, webhooks</div></li>\n          <li rrk-automation-id=\"2normalize-schema-mapping-item\"><span class=\"step\">2</span><div><strong>Normalize</strong> - schema mapping, dedup, enrichment</div></li>\n          <li rrk-automation-id=\"3store-supabase-tables-item\"><span class=\"step\">3</span><div><strong>Store</strong> - Supabase tables, pgvector embeddings, partitions</div></li>\n          <li rrk-automation-id=\"4analyze-ai-signals-item\"><span class=\"step\">4</span><div><strong>Analyze</strong> - AI signals, topic modeling, entity linking</div></li>\n          <li rrk-automation-id=\"5agents-decision-units-item\"><span class=\"step\">5</span><div><strong>Agents</strong> - decision units that select tools and produce outputs</div></li>\n          <li rrk-automation-id=\"6deliver-apis-dashboards-item\"><span class=\"step\">6</span><div><strong>Deliver</strong> - APIs, dashboards, alerts, exports</div></li>\n        </ul>\n      </div>\n      <div class=\"flow\">\n        <h3 style=\"margin-bottom:8px\">StockLight style snippet</h3>\n        <pre class=\"code\">symbols -> events -> features -> narrative",
+      "snippet": "<li rrk-automation-id=\"1ingest-rss-apis-item\"><span class=\"step\">1</span><div><strong>Ingest</strong> - RSS, APIs, scrapers, uploads, webhooks</div></li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 385,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "2Normalize - schema mapping, dedup, enrichment",
+      "codeSnippet": "<li rrk-automation-id=\"2normalize-schema-mapping-item\"><span class=\"step\">2</span><div><strong>Normalize</strong> - schema mapping, dedup, enrichment</div></li>",
+      "existingLocator": "2normalize-schema-mapping-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "  <!-- Data Pipelines -->\n  <section id=\"pipeline\" class=\"container\" aria-labelledby=\"pipeline-h\">\n    <h2 id=\"pipeline-h\" style=\"font-size:2rem;font-weight:800\">Data pipelines - from ingestion to agents</h2>\n    <p class=\"sub\" style=\"max-width:820px\">We built StockLight on this discipline. The same approach powers client systems: collect the right data, add structure, score with AI, and expose it through clean interfaces.</p>\n\n    <div class=\"pipeline\" style=\"margin-top:22px\">\n      <div class=\"flow\">\n        <h3 style=\"margin-bottom:8px\">Reference pipeline</h3>\n        <ul rrk-automation-id=\"1ingest-rss-apis-list\">\n          <li rrk-automation-id=\"1ingest-rss-apis-item\"><span class=\"step\">1</span><div><strong>Ingest</strong> - RSS, APIs, scrapers, uploads, webhooks</div></li>\n          <li rrk-automation-id=\"2normalize-schema-mapping-item\"><span class=\"step\">2</span><div><strong>Normalize</strong> - schema mapping, dedup, enrichment</div></li>\n          <li rrk-automation-id=\"3store-supabase-tables-item\"><span class=\"step\">3</span><div><strong>Store</strong> - Supabase tables, pgvector embeddings, partitions</div></li>\n          <li rrk-automation-id=\"4analyze-ai-signals-item\"><span class=\"step\">4</span><div><strong>Analyze</strong> - AI signals, topic modeling, entity linking</div></li>\n          <li rrk-automation-id=\"5agents-decision-units-item\"><span class=\"step\">5</span><div><strong>Agents</strong> - decision units that select tools and produce outputs</div></li>\n          <li rrk-automation-id=\"6deliver-apis-dashboards-item\"><span class=\"step\">6</span><div><strong>Deliver</strong> - APIs, dashboards, alerts, exports</div></li>\n        </ul>\n      </div>\n      <div class=\"flow\">\n        <h3 style=\"margin-bottom:8px\">StockLight style snippet</h3>\n        <pre class=\"code\">symbols -> events -> features -> narrative\nalerts -> watchlists -> personalization",
+      "snippet": "<li rrk-automation-id=\"2normalize-schema-mapping-item\"><span class=\"step\">2</span><div><strong>Normalize</strong> - schema mapping, dedup, enrichment</div></li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 386,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "3Store - Supabase tables, pgvector embeddings, partitions",
+      "codeSnippet": "<li rrk-automation-id=\"3store-supabase-tables-item\"><span class=\"step\">3</span><div><strong>Store</strong> - Supabase tables, pgvector embeddings, partitions</div></li>",
+      "existingLocator": "3store-supabase-tables-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "  <section id=\"pipeline\" class=\"container\" aria-labelledby=\"pipeline-h\">\n    <h2 id=\"pipeline-h\" style=\"font-size:2rem;font-weight:800\">Data pipelines - from ingestion to agents</h2>\n    <p class=\"sub\" style=\"max-width:820px\">We built StockLight on this discipline. The same approach powers client systems: collect the right data, add structure, score with AI, and expose it through clean interfaces.</p>\n\n    <div class=\"pipeline\" style=\"margin-top:22px\">\n      <div class=\"flow\">\n        <h3 style=\"margin-bottom:8px\">Reference pipeline</h3>\n        <ul rrk-automation-id=\"1ingest-rss-apis-list\">\n          <li rrk-automation-id=\"1ingest-rss-apis-item\"><span class=\"step\">1</span><div><strong>Ingest</strong> - RSS, APIs, scrapers, uploads, webhooks</div></li>\n          <li rrk-automation-id=\"2normalize-schema-mapping-item\"><span class=\"step\">2</span><div><strong>Normalize</strong> - schema mapping, dedup, enrichment</div></li>\n          <li rrk-automation-id=\"3store-supabase-tables-item\"><span class=\"step\">3</span><div><strong>Store</strong> - Supabase tables, pgvector embeddings, partitions</div></li>\n          <li rrk-automation-id=\"4analyze-ai-signals-item\"><span class=\"step\">4</span><div><strong>Analyze</strong> - AI signals, topic modeling, entity linking</div></li>\n          <li rrk-automation-id=\"5agents-decision-units-item\"><span class=\"step\">5</span><div><strong>Agents</strong> - decision units that select tools and produce outputs</div></li>\n          <li rrk-automation-id=\"6deliver-apis-dashboards-item\"><span class=\"step\">6</span><div><strong>Deliver</strong> - APIs, dashboards, alerts, exports</div></li>\n        </ul>\n      </div>\n      <div class=\"flow\">\n        <h3 style=\"margin-bottom:8px\">StockLight style snippet</h3>\n        <pre class=\"code\">symbols -> events -> features -> narrative\nalerts -> watchlists -> personalization\napi -> web -> discord/telegram</pre>",
+      "snippet": "<li rrk-automation-id=\"3store-supabase-tables-item\"><span class=\"step\">3</span><div><strong>Store</strong> - Supabase tables, pgvector embeddings, partitions</div></li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 387,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "4Analyze - AI signals, topic modeling, entity linking",
+      "codeSnippet": "<li rrk-automation-id=\"4analyze-ai-signals-item\"><span class=\"step\">4</span><div><strong>Analyze</strong> - AI signals, topic modeling, entity linking</div></li>",
+      "existingLocator": "4analyze-ai-signals-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "    <h2 id=\"pipeline-h\" style=\"font-size:2rem;font-weight:800\">Data pipelines - from ingestion to agents</h2>\n    <p class=\"sub\" style=\"max-width:820px\">We built StockLight on this discipline. The same approach powers client systems: collect the right data, add structure, score with AI, and expose it through clean interfaces.</p>\n\n    <div class=\"pipeline\" style=\"margin-top:22px\">\n      <div class=\"flow\">\n        <h3 style=\"margin-bottom:8px\">Reference pipeline</h3>\n        <ul rrk-automation-id=\"1ingest-rss-apis-list\">\n          <li rrk-automation-id=\"1ingest-rss-apis-item\"><span class=\"step\">1</span><div><strong>Ingest</strong> - RSS, APIs, scrapers, uploads, webhooks</div></li>\n          <li rrk-automation-id=\"2normalize-schema-mapping-item\"><span class=\"step\">2</span><div><strong>Normalize</strong> - schema mapping, dedup, enrichment</div></li>\n          <li rrk-automation-id=\"3store-supabase-tables-item\"><span class=\"step\">3</span><div><strong>Store</strong> - Supabase tables, pgvector embeddings, partitions</div></li>\n          <li rrk-automation-id=\"4analyze-ai-signals-item\"><span class=\"step\">4</span><div><strong>Analyze</strong> - AI signals, topic modeling, entity linking</div></li>\n          <li rrk-automation-id=\"5agents-decision-units-item\"><span class=\"step\">5</span><div><strong>Agents</strong> - decision units that select tools and produce outputs</div></li>\n          <li rrk-automation-id=\"6deliver-apis-dashboards-item\"><span class=\"step\">6</span><div><strong>Deliver</strong> - APIs, dashboards, alerts, exports</div></li>\n        </ul>\n      </div>\n      <div class=\"flow\">\n        <h3 style=\"margin-bottom:8px\">StockLight style snippet</h3>\n        <pre class=\"code\">symbols -> events -> features -> narrative\nalerts -> watchlists -> personalization\napi -> web -> discord/telegram</pre>\n        <p class=\"sub\" style=\"margin-top:10px\">We productize this for finance, ops, marketing, and support use cases.</p>",
+      "snippet": "<li rrk-automation-id=\"4analyze-ai-signals-item\"><span class=\"step\">4</span><div><strong>Analyze</strong> - AI signals, topic modeling, entity linking</div></li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 388,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "5Agents - decision units that select tools and produce outputs",
+      "codeSnippet": "<li rrk-automation-id=\"5agents-decision-units-item\"><span class=\"step\">5</span><div><strong>Agents</strong> - decision units that select tools and produce outputs</div></li>",
+      "existingLocator": "5agents-decision-units-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "    <p class=\"sub\" style=\"max-width:820px\">We built StockLight on this discipline. The same approach powers client systems: collect the right data, add structure, score with AI, and expose it through clean interfaces.</p>\n\n    <div class=\"pipeline\" style=\"margin-top:22px\">\n      <div class=\"flow\">\n        <h3 style=\"margin-bottom:8px\">Reference pipeline</h3>\n        <ul rrk-automation-id=\"1ingest-rss-apis-list\">\n          <li rrk-automation-id=\"1ingest-rss-apis-item\"><span class=\"step\">1</span><div><strong>Ingest</strong> - RSS, APIs, scrapers, uploads, webhooks</div></li>\n          <li rrk-automation-id=\"2normalize-schema-mapping-item\"><span class=\"step\">2</span><div><strong>Normalize</strong> - schema mapping, dedup, enrichment</div></li>\n          <li rrk-automation-id=\"3store-supabase-tables-item\"><span class=\"step\">3</span><div><strong>Store</strong> - Supabase tables, pgvector embeddings, partitions</div></li>\n          <li rrk-automation-id=\"4analyze-ai-signals-item\"><span class=\"step\">4</span><div><strong>Analyze</strong> - AI signals, topic modeling, entity linking</div></li>\n          <li rrk-automation-id=\"5agents-decision-units-item\"><span class=\"step\">5</span><div><strong>Agents</strong> - decision units that select tools and produce outputs</div></li>\n          <li rrk-automation-id=\"6deliver-apis-dashboards-item\"><span class=\"step\">6</span><div><strong>Deliver</strong> - APIs, dashboards, alerts, exports</div></li>\n        </ul>\n      </div>\n      <div class=\"flow\">\n        <h3 style=\"margin-bottom:8px\">StockLight style snippet</h3>\n        <pre class=\"code\">symbols -> events -> features -> narrative\nalerts -> watchlists -> personalization\napi -> web -> discord/telegram</pre>\n        <p class=\"sub\" style=\"margin-top:10px\">We productize this for finance, ops, marketing, and support use cases.</p>\n      </div>",
+      "snippet": "<li rrk-automation-id=\"5agents-decision-units-item\"><span class=\"step\">5</span><div><strong>Agents</strong> - decision units that select tools and produce outputs</div></li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 389,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "6Deliver - APIs, dashboards, alerts, exports",
+      "codeSnippet": "<li rrk-automation-id=\"6deliver-apis-dashboards-item\"><span class=\"step\">6</span><div><strong>Deliver</strong> - APIs, dashboards, alerts, exports</div></li>",
+      "existingLocator": "6deliver-apis-dashboards-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "\n    <div class=\"pipeline\" style=\"margin-top:22px\">\n      <div class=\"flow\">\n        <h3 style=\"margin-bottom:8px\">Reference pipeline</h3>\n        <ul rrk-automation-id=\"1ingest-rss-apis-list\">\n          <li rrk-automation-id=\"1ingest-rss-apis-item\"><span class=\"step\">1</span><div><strong>Ingest</strong> - RSS, APIs, scrapers, uploads, webhooks</div></li>\n          <li rrk-automation-id=\"2normalize-schema-mapping-item\"><span class=\"step\">2</span><div><strong>Normalize</strong> - schema mapping, dedup, enrichment</div></li>\n          <li rrk-automation-id=\"3store-supabase-tables-item\"><span class=\"step\">3</span><div><strong>Store</strong> - Supabase tables, pgvector embeddings, partitions</div></li>\n          <li rrk-automation-id=\"4analyze-ai-signals-item\"><span class=\"step\">4</span><div><strong>Analyze</strong> - AI signals, topic modeling, entity linking</div></li>\n          <li rrk-automation-id=\"5agents-decision-units-item\"><span class=\"step\">5</span><div><strong>Agents</strong> - decision units that select tools and produce outputs</div></li>\n          <li rrk-automation-id=\"6deliver-apis-dashboards-item\"><span class=\"step\">6</span><div><strong>Deliver</strong> - APIs, dashboards, alerts, exports</div></li>\n        </ul>\n      </div>\n      <div class=\"flow\">\n        <h3 style=\"margin-bottom:8px\">StockLight style snippet</h3>\n        <pre class=\"code\">symbols -> events -> features -> narrative\nalerts -> watchlists -> personalization\napi -> web -> discord/telegram</pre>\n        <p class=\"sub\" style=\"margin-top:10px\">We productize this for finance, ops, marketing, and support use cases.</p>\n      </div>\n    </div>",
+      "snippet": "<li rrk-automation-id=\"6deliver-apis-dashboards-item\"><span class=\"step\">6</span><div><strong>Deliver</strong> - APIs, dashboards, alerts, exports</div></li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 409,
+      "column": 0,
+      "elementType": "card",
+      "textContent": "Web and UI\n          \n            Page-object model with clear targets\n            Retries and resil",
+      "codeSnippet": "<div class=\"tcard\" rrk-automation-id=\"web-and-ui-card\">",
+      "existingLocator": "web-and-ui-card",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 70,
+        "method": "class-pattern"
+      },
+      "fileContext": "    </div>\n  </section>\n\n  <!-- Testing -->\n  <section id=\"testing\" class=\"testing\" aria-labelledby=\"testing-h\">\n    <div class=\"container\">\n      <h2 id=\"testing-h\" style=\"font-size:2rem;font-weight:800\">Testing - across layers, by design</h2>\n      <p class=\"sub\" style=\"max-width:820px\">We test where bugs actually happen: web, API, mobile, and data checks. Visual status for leadership and developers.</p>\n\n      <div class=\"test-grid\">\n        <div class=\"tcard\" rrk-automation-id=\"web-and-ui-card\">\n          <h4>Web and UI</h4>\n          <ul class=\"tlist\" rrk-automation-id=\"pageobject-model-with-list\">\n            <li rrk-automation-id=\"pageobject-model-with-item\">Page-object model with clear targets</li>\n            <li rrk-automation-id=\"retries-and-resilient-item\">Retries and resilient selectors</li>\n            <li rrk-automation-id=\"visual-and-accessibility-item\">Visual and accessibility checks on key flows</li>\n          </ul>\n        </div>\n        <div class=\"tcard\">\n          <h4>API and contracts</h4>\n          <ul class=\"tlist\">",
+      "snippet": "<div class=\"tcard\" rrk-automation-id=\"web-and-ui-card\">"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 411,
+      "column": 0,
+      "elementType": "list",
+      "textContent": "Page-object model with clear targets\n            Retries and resilient selectors\n            Visual ",
+      "codeSnippet": "<ul class=\"tlist\" rrk-automation-id=\"pageobject-model-with-list\">",
+      "existingLocator": "pageobject-model-with-list",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "\n  <!-- Testing -->\n  <section id=\"testing\" class=\"testing\" aria-labelledby=\"testing-h\">\n    <div class=\"container\">\n      <h2 id=\"testing-h\" style=\"font-size:2rem;font-weight:800\">Testing - across layers, by design</h2>\n      <p class=\"sub\" style=\"max-width:820px\">We test where bugs actually happen: web, API, mobile, and data checks. Visual status for leadership and developers.</p>\n\n      <div class=\"test-grid\">\n        <div class=\"tcard\" rrk-automation-id=\"web-and-ui-card\">\n          <h4>Web and UI</h4>\n          <ul class=\"tlist\" rrk-automation-id=\"pageobject-model-with-list\">\n            <li rrk-automation-id=\"pageobject-model-with-item\">Page-object model with clear targets</li>\n            <li rrk-automation-id=\"retries-and-resilient-item\">Retries and resilient selectors</li>\n            <li rrk-automation-id=\"visual-and-accessibility-item\">Visual and accessibility checks on key flows</li>\n          </ul>\n        </div>\n        <div class=\"tcard\">\n          <h4>API and contracts</h4>\n          <ul class=\"tlist\">\n            <li rrk-automation-id=\"schema-and-contract-item\">Schema and contract testing with fixtures</li>\n            <li rrk-automation-id=\"idempotency-and-errorpath-item\">Idempotency and error-path coverage</li>",
+      "snippet": "<ul class=\"tlist\" rrk-automation-id=\"pageobject-model-with-list\">"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 412,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Page-object model with clear targets",
+      "codeSnippet": "<li rrk-automation-id=\"pageobject-model-with-item\">Page-object model with clear targets</li>",
+      "existingLocator": "pageobject-model-with-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "  <!-- Testing -->\n  <section id=\"testing\" class=\"testing\" aria-labelledby=\"testing-h\">\n    <div class=\"container\">\n      <h2 id=\"testing-h\" style=\"font-size:2rem;font-weight:800\">Testing - across layers, by design</h2>\n      <p class=\"sub\" style=\"max-width:820px\">We test where bugs actually happen: web, API, mobile, and data checks. Visual status for leadership and developers.</p>\n\n      <div class=\"test-grid\">\n        <div class=\"tcard\" rrk-automation-id=\"web-and-ui-card\">\n          <h4>Web and UI</h4>\n          <ul class=\"tlist\" rrk-automation-id=\"pageobject-model-with-list\">\n            <li rrk-automation-id=\"pageobject-model-with-item\">Page-object model with clear targets</li>\n            <li rrk-automation-id=\"retries-and-resilient-item\">Retries and resilient selectors</li>\n            <li rrk-automation-id=\"visual-and-accessibility-item\">Visual and accessibility checks on key flows</li>\n          </ul>\n        </div>\n        <div class=\"tcard\">\n          <h4>API and contracts</h4>\n          <ul class=\"tlist\">\n            <li rrk-automation-id=\"schema-and-contract-item\">Schema and contract testing with fixtures</li>\n            <li rrk-automation-id=\"idempotency-and-errorpath-item\">Idempotency and error-path coverage</li>\n            <li rrk-automation-id=\"load-checks-for-item\">Load checks for critical endpoints</li>",
+      "snippet": "<li rrk-automation-id=\"pageobject-model-with-item\">Page-object model with clear targets</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 413,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Retries and resilient selectors",
+      "codeSnippet": "<li rrk-automation-id=\"retries-and-resilient-item\">Retries and resilient selectors</li>",
+      "existingLocator": "retries-and-resilient-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "  <section id=\"testing\" class=\"testing\" aria-labelledby=\"testing-h\">\n    <div class=\"container\">\n      <h2 id=\"testing-h\" style=\"font-size:2rem;font-weight:800\">Testing - across layers, by design</h2>\n      <p class=\"sub\" style=\"max-width:820px\">We test where bugs actually happen: web, API, mobile, and data checks. Visual status for leadership and developers.</p>\n\n      <div class=\"test-grid\">\n        <div class=\"tcard\" rrk-automation-id=\"web-and-ui-card\">\n          <h4>Web and UI</h4>\n          <ul class=\"tlist\" rrk-automation-id=\"pageobject-model-with-list\">\n            <li rrk-automation-id=\"pageobject-model-with-item\">Page-object model with clear targets</li>\n            <li rrk-automation-id=\"retries-and-resilient-item\">Retries and resilient selectors</li>\n            <li rrk-automation-id=\"visual-and-accessibility-item\">Visual and accessibility checks on key flows</li>\n          </ul>\n        </div>\n        <div class=\"tcard\">\n          <h4>API and contracts</h4>\n          <ul class=\"tlist\">\n            <li rrk-automation-id=\"schema-and-contract-item\">Schema and contract testing with fixtures</li>\n            <li rrk-automation-id=\"idempotency-and-errorpath-item\">Idempotency and error-path coverage</li>\n            <li rrk-automation-id=\"load-checks-for-item\">Load checks for critical endpoints</li>\n          </ul>",
+      "snippet": "<li rrk-automation-id=\"retries-and-resilient-item\">Retries and resilient selectors</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 414,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Visual and accessibility checks on key flows",
+      "codeSnippet": "<li rrk-automation-id=\"visual-and-accessibility-item\">Visual and accessibility checks on key flows</li>",
+      "existingLocator": "visual-and-accessibility-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "    <div class=\"container\">\n      <h2 id=\"testing-h\" style=\"font-size:2rem;font-weight:800\">Testing - across layers, by design</h2>\n      <p class=\"sub\" style=\"max-width:820px\">We test where bugs actually happen: web, API, mobile, and data checks. Visual status for leadership and developers.</p>\n\n      <div class=\"test-grid\">\n        <div class=\"tcard\" rrk-automation-id=\"web-and-ui-card\">\n          <h4>Web and UI</h4>\n          <ul class=\"tlist\" rrk-automation-id=\"pageobject-model-with-list\">\n            <li rrk-automation-id=\"pageobject-model-with-item\">Page-object model with clear targets</li>\n            <li rrk-automation-id=\"retries-and-resilient-item\">Retries and resilient selectors</li>\n            <li rrk-automation-id=\"visual-and-accessibility-item\">Visual and accessibility checks on key flows</li>\n          </ul>\n        </div>\n        <div class=\"tcard\">\n          <h4>API and contracts</h4>\n          <ul class=\"tlist\">\n            <li rrk-automation-id=\"schema-and-contract-item\">Schema and contract testing with fixtures</li>\n            <li rrk-automation-id=\"idempotency-and-errorpath-item\">Idempotency and error-path coverage</li>\n            <li rrk-automation-id=\"load-checks-for-item\">Load checks for critical endpoints</li>\n          </ul>\n        </div>",
+      "snippet": "<li rrk-automation-id=\"visual-and-accessibility-item\">Visual and accessibility checks on key flows</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 420,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Schema and contract testing with fixtures",
+      "codeSnippet": "<li rrk-automation-id=\"schema-and-contract-item\">Schema and contract testing with fixtures</li>",
+      "existingLocator": "schema-and-contract-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "          <h4>Web and UI</h4>\n          <ul class=\"tlist\" rrk-automation-id=\"pageobject-model-with-list\">\n            <li rrk-automation-id=\"pageobject-model-with-item\">Page-object model with clear targets</li>\n            <li rrk-automation-id=\"retries-and-resilient-item\">Retries and resilient selectors</li>\n            <li rrk-automation-id=\"visual-and-accessibility-item\">Visual and accessibility checks on key flows</li>\n          </ul>\n        </div>\n        <div class=\"tcard\">\n          <h4>API and contracts</h4>\n          <ul class=\"tlist\">\n            <li rrk-automation-id=\"schema-and-contract-item\">Schema and contract testing with fixtures</li>\n            <li rrk-automation-id=\"idempotency-and-errorpath-item\">Idempotency and error-path coverage</li>\n            <li rrk-automation-id=\"load-checks-for-item\">Load checks for critical endpoints</li>\n          </ul>\n        </div>\n        <div class=\"tcard\">\n          <h4>Mobile and codeless</h4>\n          <ul class=\"tlist\">\n            <li rrk-automation-id=\"mobile-flow-coverage-item\">Mobile flow coverage where needed</li>\n            <li rrk-automation-id=\"codeless-automation-tools-item\">Codeless automation tools for non-dev teams</li>\n            <li rrk-automation-id=\"status-dashboards-for-item\">Status dashboards for clarity</li>",
+      "snippet": "<li rrk-automation-id=\"schema-and-contract-item\">Schema and contract testing with fixtures</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 421,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Idempotency and error-path coverage",
+      "codeSnippet": "<li rrk-automation-id=\"idempotency-and-errorpath-item\">Idempotency and error-path coverage</li>",
+      "existingLocator": "idempotency-and-errorpath-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "          <ul class=\"tlist\" rrk-automation-id=\"pageobject-model-with-list\">\n            <li rrk-automation-id=\"pageobject-model-with-item\">Page-object model with clear targets</li>\n            <li rrk-automation-id=\"retries-and-resilient-item\">Retries and resilient selectors</li>\n            <li rrk-automation-id=\"visual-and-accessibility-item\">Visual and accessibility checks on key flows</li>\n          </ul>\n        </div>\n        <div class=\"tcard\">\n          <h4>API and contracts</h4>\n          <ul class=\"tlist\">\n            <li rrk-automation-id=\"schema-and-contract-item\">Schema and contract testing with fixtures</li>\n            <li rrk-automation-id=\"idempotency-and-errorpath-item\">Idempotency and error-path coverage</li>\n            <li rrk-automation-id=\"load-checks-for-item\">Load checks for critical endpoints</li>\n          </ul>\n        </div>\n        <div class=\"tcard\">\n          <h4>Mobile and codeless</h4>\n          <ul class=\"tlist\">\n            <li rrk-automation-id=\"mobile-flow-coverage-item\">Mobile flow coverage where needed</li>\n            <li rrk-automation-id=\"codeless-automation-tools-item\">Codeless automation tools for non-dev teams</li>\n            <li rrk-automation-id=\"status-dashboards-for-item\">Status dashboards for clarity</li>\n          </ul>",
+      "snippet": "<li rrk-automation-id=\"idempotency-and-errorpath-item\">Idempotency and error-path coverage</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 422,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Load checks for critical endpoints",
+      "codeSnippet": "<li rrk-automation-id=\"load-checks-for-item\">Load checks for critical endpoints</li>",
+      "existingLocator": "load-checks-for-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "            <li rrk-automation-id=\"pageobject-model-with-item\">Page-object model with clear targets</li>\n            <li rrk-automation-id=\"retries-and-resilient-item\">Retries and resilient selectors</li>\n            <li rrk-automation-id=\"visual-and-accessibility-item\">Visual and accessibility checks on key flows</li>\n          </ul>\n        </div>\n        <div class=\"tcard\">\n          <h4>API and contracts</h4>\n          <ul class=\"tlist\">\n            <li rrk-automation-id=\"schema-and-contract-item\">Schema and contract testing with fixtures</li>\n            <li rrk-automation-id=\"idempotency-and-errorpath-item\">Idempotency and error-path coverage</li>\n            <li rrk-automation-id=\"load-checks-for-item\">Load checks for critical endpoints</li>\n          </ul>\n        </div>\n        <div class=\"tcard\">\n          <h4>Mobile and codeless</h4>\n          <ul class=\"tlist\">\n            <li rrk-automation-id=\"mobile-flow-coverage-item\">Mobile flow coverage where needed</li>\n            <li rrk-automation-id=\"codeless-automation-tools-item\">Codeless automation tools for non-dev teams</li>\n            <li rrk-automation-id=\"status-dashboards-for-item\">Status dashboards for clarity</li>\n          </ul>\n        </div>",
+      "snippet": "<li rrk-automation-id=\"load-checks-for-item\">Load checks for critical endpoints</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 428,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Mobile flow coverage where needed",
+      "codeSnippet": "<li rrk-automation-id=\"mobile-flow-coverage-item\">Mobile flow coverage where needed</li>",
+      "existingLocator": "mobile-flow-coverage-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "          <h4>API and contracts</h4>\n          <ul class=\"tlist\">\n            <li rrk-automation-id=\"schema-and-contract-item\">Schema and contract testing with fixtures</li>\n            <li rrk-automation-id=\"idempotency-and-errorpath-item\">Idempotency and error-path coverage</li>\n            <li rrk-automation-id=\"load-checks-for-item\">Load checks for critical endpoints</li>\n          </ul>\n        </div>\n        <div class=\"tcard\">\n          <h4>Mobile and codeless</h4>\n          <ul class=\"tlist\">\n            <li rrk-automation-id=\"mobile-flow-coverage-item\">Mobile flow coverage where needed</li>\n            <li rrk-automation-id=\"codeless-automation-tools-item\">Codeless automation tools for non-dev teams</li>\n            <li rrk-automation-id=\"status-dashboards-for-item\">Status dashboards for clarity</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"tcard\" style=\"margin-top:22px\" rrk-automation-id=\"quality-pipeline-premerge-card\">\n        <h4>Quality pipeline</h4>\n        <ul class=\"tlist\">\n          <li rrk-automation-id=\"premerge-checks-with-item\">Pre-merge checks with gated CI</li>",
+      "snippet": "<li rrk-automation-id=\"mobile-flow-coverage-item\">Mobile flow coverage where needed</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 429,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Codeless automation tools for non-dev teams",
+      "codeSnippet": "<li rrk-automation-id=\"codeless-automation-tools-item\">Codeless automation tools for non-dev teams</li>",
+      "existingLocator": "codeless-automation-tools-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "          <ul class=\"tlist\">\n            <li rrk-automation-id=\"schema-and-contract-item\">Schema and contract testing with fixtures</li>\n            <li rrk-automation-id=\"idempotency-and-errorpath-item\">Idempotency and error-path coverage</li>\n            <li rrk-automation-id=\"load-checks-for-item\">Load checks for critical endpoints</li>\n          </ul>\n        </div>\n        <div class=\"tcard\">\n          <h4>Mobile and codeless</h4>\n          <ul class=\"tlist\">\n            <li rrk-automation-id=\"mobile-flow-coverage-item\">Mobile flow coverage where needed</li>\n            <li rrk-automation-id=\"codeless-automation-tools-item\">Codeless automation tools for non-dev teams</li>\n            <li rrk-automation-id=\"status-dashboards-for-item\">Status dashboards for clarity</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"tcard\" style=\"margin-top:22px\" rrk-automation-id=\"quality-pipeline-premerge-card\">\n        <h4>Quality pipeline</h4>\n        <ul class=\"tlist\">\n          <li rrk-automation-id=\"premerge-checks-with-item\">Pre-merge checks with gated CI</li>\n          <li rrk-automation-id=\"smoke-tests-on-item\">Smoke tests on deploy with rollback policy</li>",
+      "snippet": "<li rrk-automation-id=\"codeless-automation-tools-item\">Codeless automation tools for non-dev teams</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 430,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Status dashboards for clarity",
+      "codeSnippet": "<li rrk-automation-id=\"status-dashboards-for-item\">Status dashboards for clarity</li>",
+      "existingLocator": "status-dashboards-for-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "            <li rrk-automation-id=\"schema-and-contract-item\">Schema and contract testing with fixtures</li>\n            <li rrk-automation-id=\"idempotency-and-errorpath-item\">Idempotency and error-path coverage</li>\n            <li rrk-automation-id=\"load-checks-for-item\">Load checks for critical endpoints</li>\n          </ul>\n        </div>\n        <div class=\"tcard\">\n          <h4>Mobile and codeless</h4>\n          <ul class=\"tlist\">\n            <li rrk-automation-id=\"mobile-flow-coverage-item\">Mobile flow coverage where needed</li>\n            <li rrk-automation-id=\"codeless-automation-tools-item\">Codeless automation tools for non-dev teams</li>\n            <li rrk-automation-id=\"status-dashboards-for-item\">Status dashboards for clarity</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"tcard\" style=\"margin-top:22px\" rrk-automation-id=\"quality-pipeline-premerge-card\">\n        <h4>Quality pipeline</h4>\n        <ul class=\"tlist\">\n          <li rrk-automation-id=\"premerge-checks-with-item\">Pre-merge checks with gated CI</li>\n          <li rrk-automation-id=\"smoke-tests-on-item\">Smoke tests on deploy with rollback policy</li>\n          <li rrk-automation-id=\"health-checks-and-item\">Health checks and alerting tied to business metrics</li>",
+      "snippet": "<li rrk-automation-id=\"status-dashboards-for-item\">Status dashboards for clarity</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 435,
+      "column": 0,
+      "elementType": "card",
+      "textContent": "Quality pipeline\n        \n          Pre-merge checks with gated CI\n          Smoke tests on deploy w",
+      "codeSnippet": "<div class=\"tcard\" style=\"margin-top:22px\" rrk-automation-id=\"quality-pipeline-premerge-card\">",
+      "existingLocator": "quality-pipeline-premerge-card",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 70,
+        "method": "class-pattern"
+      },
+      "fileContext": "        <div class=\"tcard\">\n          <h4>Mobile and codeless</h4>\n          <ul class=\"tlist\">\n            <li rrk-automation-id=\"mobile-flow-coverage-item\">Mobile flow coverage where needed</li>\n            <li rrk-automation-id=\"codeless-automation-tools-item\">Codeless automation tools for non-dev teams</li>\n            <li rrk-automation-id=\"status-dashboards-for-item\">Status dashboards for clarity</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"tcard\" style=\"margin-top:22px\" rrk-automation-id=\"quality-pipeline-premerge-card\">\n        <h4>Quality pipeline</h4>\n        <ul class=\"tlist\">\n          <li rrk-automation-id=\"premerge-checks-with-item\">Pre-merge checks with gated CI</li>\n          <li rrk-automation-id=\"smoke-tests-on-item\">Smoke tests on deploy with rollback policy</li>\n          <li rrk-automation-id=\"health-checks-and-item\">Health checks and alerting tied to business metrics</li>\n        </ul>\n      </div>\n    </div>\n  </section>\n",
+      "snippet": "<div class=\"tcard\" style=\"margin-top:22px\" rrk-automation-id=\"quality-pipeline-premerge-card\">"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 438,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Pre-merge checks with gated CI",
+      "codeSnippet": "<li rrk-automation-id=\"premerge-checks-with-item\">Pre-merge checks with gated CI</li>",
+      "existingLocator": "premerge-checks-with-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "            <li rrk-automation-id=\"mobile-flow-coverage-item\">Mobile flow coverage where needed</li>\n            <li rrk-automation-id=\"codeless-automation-tools-item\">Codeless automation tools for non-dev teams</li>\n            <li rrk-automation-id=\"status-dashboards-for-item\">Status dashboards for clarity</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"tcard\" style=\"margin-top:22px\" rrk-automation-id=\"quality-pipeline-premerge-card\">\n        <h4>Quality pipeline</h4>\n        <ul class=\"tlist\">\n          <li rrk-automation-id=\"premerge-checks-with-item\">Pre-merge checks with gated CI</li>\n          <li rrk-automation-id=\"smoke-tests-on-item\">Smoke tests on deploy with rollback policy</li>\n          <li rrk-automation-id=\"health-checks-and-item\">Health checks and alerting tied to business metrics</li>\n        </ul>\n      </div>\n    </div>\n  </section>\n\n  <!-- Case study: Matics -->\n  <section id=\"case\" class=\"container\" aria-labelledby=\"case-h\">\n    <div style=\"text-align:center;margin-bottom:12px\">",
+      "snippet": "<li rrk-automation-id=\"premerge-checks-with-item\">Pre-merge checks with gated CI</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 439,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Smoke tests on deploy with rollback policy",
+      "codeSnippet": "<li rrk-automation-id=\"smoke-tests-on-item\">Smoke tests on deploy with rollback policy</li>",
+      "existingLocator": "smoke-tests-on-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "            <li rrk-automation-id=\"codeless-automation-tools-item\">Codeless automation tools for non-dev teams</li>\n            <li rrk-automation-id=\"status-dashboards-for-item\">Status dashboards for clarity</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"tcard\" style=\"margin-top:22px\" rrk-automation-id=\"quality-pipeline-premerge-card\">\n        <h4>Quality pipeline</h4>\n        <ul class=\"tlist\">\n          <li rrk-automation-id=\"premerge-checks-with-item\">Pre-merge checks with gated CI</li>\n          <li rrk-automation-id=\"smoke-tests-on-item\">Smoke tests on deploy with rollback policy</li>\n          <li rrk-automation-id=\"health-checks-and-item\">Health checks and alerting tied to business metrics</li>\n        </ul>\n      </div>\n    </div>\n  </section>\n\n  <!-- Case study: Matics -->\n  <section id=\"case\" class=\"container\" aria-labelledby=\"case-h\">\n    <div style=\"text-align:center;margin-bottom:12px\">\n      <span class=\"badge\">Case study</span>",
+      "snippet": "<li rrk-automation-id=\"smoke-tests-on-item\">Smoke tests on deploy with rollback policy</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 440,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Health checks and alerting tied to business metrics",
+      "codeSnippet": "<li rrk-automation-id=\"health-checks-and-item\">Health checks and alerting tied to business metrics</li>",
+      "existingLocator": "health-checks-and-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "            <li rrk-automation-id=\"status-dashboards-for-item\">Status dashboards for clarity</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"tcard\" style=\"margin-top:22px\" rrk-automation-id=\"quality-pipeline-premerge-card\">\n        <h4>Quality pipeline</h4>\n        <ul class=\"tlist\">\n          <li rrk-automation-id=\"premerge-checks-with-item\">Pre-merge checks with gated CI</li>\n          <li rrk-automation-id=\"smoke-tests-on-item\">Smoke tests on deploy with rollback policy</li>\n          <li rrk-automation-id=\"health-checks-and-item\">Health checks and alerting tied to business metrics</li>\n        </ul>\n      </div>\n    </div>\n  </section>\n\n  <!-- Case study: Matics -->\n  <section id=\"case\" class=\"container\" aria-labelledby=\"case-h\">\n    <div style=\"text-align:center;margin-bottom:12px\">\n      <span class=\"badge\">Case study</span>\n    </div>",
+      "snippet": "<li rrk-automation-id=\"health-checks-and-item\">Health checks and alerting tied to business metrics</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 458,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Unified framework with page-object targets",
+      "codeSnippet": "<li rrk-automation-id=\"unified-framework-with-item\">Unified framework with page-object targets</li>",
+      "existingLocator": "unified-framework-with-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "    <div style=\"text-align:center;margin-bottom:12px\">\n      <span class=\"badge\">Case study</span>\n    </div>\n    <h2 id=\"case-h\" style=\"font-size:2rem;font-weight:800;margin-bottom:8px\">In-house automation - Matics</h2>\n    <p class=\"sub\" style=\"max-width:820px\">Program focused on building an internal automation capability: framework, execution layer, and delivery standards teams can extend.</p>\n\n    <div class=\"case\" style=\"margin-top:22px\">\n      <div class=\"card\">\n        <h3 style=\"margin-bottom:8px\">Scope</h3>\n        <ul class=\"list\">\n          <li rrk-automation-id=\"unified-framework-with-item\">Unified framework with page-object targets</li>\n          <li rrk-automation-id=\"stable-execution-and-item\">Stable execution and environment controls</li>\n          <li rrk-automation-id=\"reporting-approach-based-item\">Reporting approach based on existing tools</li>\n          <li rrk-automation-id=\"playbooks-and-training-item\">Playbooks and training for internal teams</li>\n        </ul>\n        <div style=\"margin-top:16px;display:flex;gap:10px;flex-wrap:wrap\">\n          <a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"visit-matics-link\">Visit Matics</a>\n          <a class=\"btn btn-secondary\" href=\"#contact\" rrk-automation-id=\"work-with-rrk-link\">Work with RRK</a>\n        </div>\n      </div>\n",
+      "snippet": "<li rrk-automation-id=\"unified-framework-with-item\">Unified framework with page-object targets</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 459,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Stable execution and environment controls",
+      "codeSnippet": "<li rrk-automation-id=\"stable-execution-and-item\">Stable execution and environment controls</li>",
+      "existingLocator": "stable-execution-and-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "      <span class=\"badge\">Case study</span>\n    </div>\n    <h2 id=\"case-h\" style=\"font-size:2rem;font-weight:800;margin-bottom:8px\">In-house automation - Matics</h2>\n    <p class=\"sub\" style=\"max-width:820px\">Program focused on building an internal automation capability: framework, execution layer, and delivery standards teams can extend.</p>\n\n    <div class=\"case\" style=\"margin-top:22px\">\n      <div class=\"card\">\n        <h3 style=\"margin-bottom:8px\">Scope</h3>\n        <ul class=\"list\">\n          <li rrk-automation-id=\"unified-framework-with-item\">Unified framework with page-object targets</li>\n          <li rrk-automation-id=\"stable-execution-and-item\">Stable execution and environment controls</li>\n          <li rrk-automation-id=\"reporting-approach-based-item\">Reporting approach based on existing tools</li>\n          <li rrk-automation-id=\"playbooks-and-training-item\">Playbooks and training for internal teams</li>\n        </ul>\n        <div style=\"margin-top:16px;display:flex;gap:10px;flex-wrap:wrap\">\n          <a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"visit-matics-link\">Visit Matics</a>\n          <a class=\"btn btn-secondary\" href=\"#contact\" rrk-automation-id=\"work-with-rrk-link\">Work with RRK</a>\n        </div>\n      </div>\n\n      <div class=\"case-visual\" aria-label=\"Notes\">",
+      "snippet": "<li rrk-automation-id=\"stable-execution-and-item\">Stable execution and environment controls</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 460,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Reporting approach based on existing tools",
+      "codeSnippet": "<li rrk-automation-id=\"reporting-approach-based-item\">Reporting approach based on existing tools</li>",
+      "existingLocator": "reporting-approach-based-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "    </div>\n    <h2 id=\"case-h\" style=\"font-size:2rem;font-weight:800;margin-bottom:8px\">In-house automation - Matics</h2>\n    <p class=\"sub\" style=\"max-width:820px\">Program focused on building an internal automation capability: framework, execution layer, and delivery standards teams can extend.</p>\n\n    <div class=\"case\" style=\"margin-top:22px\">\n      <div class=\"card\">\n        <h3 style=\"margin-bottom:8px\">Scope</h3>\n        <ul class=\"list\">\n          <li rrk-automation-id=\"unified-framework-with-item\">Unified framework with page-object targets</li>\n          <li rrk-automation-id=\"stable-execution-and-item\">Stable execution and environment controls</li>\n          <li rrk-automation-id=\"reporting-approach-based-item\">Reporting approach based on existing tools</li>\n          <li rrk-automation-id=\"playbooks-and-training-item\">Playbooks and training for internal teams</li>\n        </ul>\n        <div style=\"margin-top:16px;display:flex;gap:10px;flex-wrap:wrap\">\n          <a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"visit-matics-link\">Visit Matics</a>\n          <a class=\"btn btn-secondary\" href=\"#contact\" rrk-automation-id=\"work-with-rrk-link\">Work with RRK</a>\n        </div>\n      </div>\n\n      <div class=\"case-visual\" aria-label=\"Notes\">\n        <p>Outcome: clearer structure, faster adoption, and easier handover. The focus was on standards and execution stability.</p>",
+      "snippet": "<li rrk-automation-id=\"reporting-approach-based-item\">Reporting approach based on existing tools</li>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 461,
+      "column": 0,
+      "elementType": "list-item",
+      "textContent": "Playbooks and training for internal teams",
+      "codeSnippet": "<li rrk-automation-id=\"playbooks-and-training-item\">Playbooks and training for internal teams</li>",
+      "existingLocator": "playbooks-and-training-item",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "    <h2 id=\"case-h\" style=\"font-size:2rem;font-weight:800;margin-bottom:8px\">In-house automation - Matics</h2>\n    <p class=\"sub\" style=\"max-width:820px\">Program focused on building an internal automation capability: framework, execution layer, and delivery standards teams can extend.</p>\n\n    <div class=\"case\" style=\"margin-top:22px\">\n      <div class=\"card\">\n        <h3 style=\"margin-bottom:8px\">Scope</h3>\n        <ul class=\"list\">\n          <li rrk-automation-id=\"unified-framework-with-item\">Unified framework with page-object targets</li>\n          <li rrk-automation-id=\"stable-execution-and-item\">Stable execution and environment controls</li>\n          <li rrk-automation-id=\"reporting-approach-based-item\">Reporting approach based on existing tools</li>\n          <li rrk-automation-id=\"playbooks-and-training-item\">Playbooks and training for internal teams</li>\n        </ul>\n        <div style=\"margin-top:16px;display:flex;gap:10px;flex-wrap:wrap\">\n          <a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"visit-matics-link\">Visit Matics</a>\n          <a class=\"btn btn-secondary\" href=\"#contact\" rrk-automation-id=\"work-with-rrk-link\">Work with RRK</a>\n        </div>\n      </div>\n\n      <div class=\"case-visual\" aria-label=\"Notes\">\n        <p>Outcome: clearer structure, faster adoption, and easier handover. The focus was on standards and execution stability.</p>\n        <div class=\"kpi\">",
+      "snippet": "<li rrk-automation-id=\"playbooks-and-training-item\">Playbooks and training for internal teams</li>"
     },
     {
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 464,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Visit Matics",
       "codeSnippet": "<a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"visit-matics-link\">Visit Matics</a>",
       "existingLocator": "visit-matics-link",
-      "fileContext": "    <div class=\"case\" style=\"margin-top:22px\">\n      <div class=\"card\">\n        <h3 style=\"margin-bottom:8px\">Scope</h3>\n        <ul class=\"list\">\n          <li>Unified framework with page-object targets</li>\n          <li>Stable execution and environment controls</li>\n          <li>Reporting approach based on existing tools</li>\n          <li>Playbooks and training for internal teams</li>\n        </ul>\n        <div style=\"margin-top:16px;display:flex;gap:10px;flex-wrap:wrap\">\n          <a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"visit-matics-link\">Visit Matics</a>\n          <a class=\"btn btn-secondary\" href=\"#contact\" rrk-automation-id=\"work-with-rrk-link\">Work with RRK</a>\n        </div>\n      </div>\n\n      <div class=\"case-visual\" aria-label=\"Notes\">\n        <p>Outcome: clearer structure, faster adoption, and easier handover. The focus was on standards and execution stability.</p>\n        <div class=\"kpi\">\n          <div class=\"box\"><div class=\"n\">Faster</div><div>Delivery cadence improved</div></div>\n          <div class=\"box\"><div class=\"n\">Fewer</div><div>Regressions through guardrails</div></div>\n          <div class=\"box\"><div class=\"n\">Smoother</div><div>Onboarding with playbooks</div></div>",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "    <div class=\"case\" style=\"margin-top:22px\">\n      <div class=\"card\">\n        <h3 style=\"margin-bottom:8px\">Scope</h3>\n        <ul class=\"list\">\n          <li rrk-automation-id=\"unified-framework-with-item\">Unified framework with page-object targets</li>\n          <li rrk-automation-id=\"stable-execution-and-item\">Stable execution and environment controls</li>\n          <li rrk-automation-id=\"reporting-approach-based-item\">Reporting approach based on existing tools</li>\n          <li rrk-automation-id=\"playbooks-and-training-item\">Playbooks and training for internal teams</li>\n        </ul>\n        <div style=\"margin-top:16px;display:flex;gap:10px;flex-wrap:wrap\">\n          <a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"visit-matics-link\">Visit Matics</a>\n          <a class=\"btn btn-secondary\" href=\"#contact\" rrk-automation-id=\"work-with-rrk-link\">Work with RRK</a>\n        </div>\n      </div>\n\n      <div class=\"case-visual\" aria-label=\"Notes\">\n        <p>Outcome: clearer structure, faster adoption, and easier handover. The focus was on standards and execution stability.</p>\n        <div class=\"kpi\">\n          <div class=\"box\"><div class=\"n\">Faster</div><div>Delivery cadence improved</div></div>\n          <div class=\"box\"><div class=\"n\">Fewer</div><div>Regressions through guardrails</div></div>\n          <div class=\"box\"><div class=\"n\">Smoother</div><div>Onboarding with playbooks</div></div>",
       "snippet": "<a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"visit-matics-link\">Visit Matics</a>"
     },
     {
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 465,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Work with RRK",
       "codeSnippet": "<a class=\"btn btn-secondary\" href=\"#contact\" rrk-automation-id=\"work-with-rrk-link\">Work with RRK</a>",
       "existingLocator": "work-with-rrk-link",
-      "fileContext": "      <div class=\"card\">\n        <h3 style=\"margin-bottom:8px\">Scope</h3>\n        <ul class=\"list\">\n          <li>Unified framework with page-object targets</li>\n          <li>Stable execution and environment controls</li>\n          <li>Reporting approach based on existing tools</li>\n          <li>Playbooks and training for internal teams</li>\n        </ul>\n        <div style=\"margin-top:16px;display:flex;gap:10px;flex-wrap:wrap\">\n          <a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"visit-matics-link\">Visit Matics</a>\n          <a class=\"btn btn-secondary\" href=\"#contact\" rrk-automation-id=\"work-with-rrk-link\">Work with RRK</a>\n        </div>\n      </div>\n\n      <div class=\"case-visual\" aria-label=\"Notes\">\n        <p>Outcome: clearer structure, faster adoption, and easier handover. The focus was on standards and execution stability.</p>\n        <div class=\"kpi\">\n          <div class=\"box\"><div class=\"n\">Faster</div><div>Delivery cadence improved</div></div>\n          <div class=\"box\"><div class=\"n\">Fewer</div><div>Regressions through guardrails</div></div>\n          <div class=\"box\"><div class=\"n\">Smoother</div><div>Onboarding with playbooks</div></div>\n        </div>",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "      <div class=\"card\">\n        <h3 style=\"margin-bottom:8px\">Scope</h3>\n        <ul class=\"list\">\n          <li rrk-automation-id=\"unified-framework-with-item\">Unified framework with page-object targets</li>\n          <li rrk-automation-id=\"stable-execution-and-item\">Stable execution and environment controls</li>\n          <li rrk-automation-id=\"reporting-approach-based-item\">Reporting approach based on existing tools</li>\n          <li rrk-automation-id=\"playbooks-and-training-item\">Playbooks and training for internal teams</li>\n        </ul>\n        <div style=\"margin-top:16px;display:flex;gap:10px;flex-wrap:wrap\">\n          <a class=\"btn btn-secondary\" href=\"https://matics.live/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"visit-matics-link\">Visit Matics</a>\n          <a class=\"btn btn-secondary\" href=\"#contact\" rrk-automation-id=\"work-with-rrk-link\">Work with RRK</a>\n        </div>\n      </div>\n\n      <div class=\"case-visual\" aria-label=\"Notes\">\n        <p>Outcome: clearer structure, faster adoption, and easier handover. The focus was on standards and execution stability.</p>\n        <div class=\"kpi\">\n          <div class=\"box\"><div class=\"n\">Faster</div><div>Delivery cadence improved</div></div>\n          <div class=\"box\"><div class=\"n\">Fewer</div><div>Regressions through guardrails</div></div>\n          <div class=\"box\"><div class=\"n\">Smoother</div><div>Onboarding with playbooks</div></div>\n        </div>",
       "snippet": "<a class=\"btn btn-secondary\" href=\"#contact\" rrk-automation-id=\"work-with-rrk-link\">Work with RRK</a>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 485,
+      "column": 0,
+      "elementType": "grid",
+      "textContent": "Web research engine\n        Load data via links, analyze, and synthesize. Useful for due-diligence, ",
+      "codeSnippet": "<div class=\"grid\" style=\"margin-top:22px\" rrk-automation-id=\"web-research-engine-grid\">",
+      "existingLocator": "web-research-engine-grid",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 70,
+        "method": "class-pattern"
+      },
+      "fileContext": "        </div>\n      </div>\n    </div>\n  </section>\n\n  <!-- Tools & IP -->\n  <section id=\"tools\" class=\"tools container\" aria-labelledby=\"tools-h\">\n    <h2 id=\"tools-h\" style=\"font-size:2rem;font-weight:800\">Tools and IP</h2>\n    <p class=\"sub\" style=\"max-width:820px\">Selected assets we can adapt to your use case.</p>\n\n    <div class=\"grid\" style=\"margin-top:22px\" rrk-automation-id=\"web-research-engine-grid\">\n      <div class=\"tool\">\n        <h4>Web research engine</h4>\n        <p class=\"sub\">Load data via links, analyze, and synthesize. Useful for due-diligence, market tracking, and ops research.</p>\n        <code>Ingest -> Normalize -> Segment -> Summarize -> Store (Supabase and pgvector)</code>\n      </div>\n      <div class=\"tool\">\n        <h4>Voice to prompt for Cursor and copilots</h4>\n        <p class=\"sub\">Speak intent and route to the right coding assistant. Reduces ambiguity and saves time.</p>\n        <code>Audio -> ASR -> Prompt template -> IDE or agent API</code>\n      </div>",
+      "snippet": "<div class=\"grid\" style=\"margin-top:22px\" rrk-automation-id=\"web-research-engine-grid\">"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 516,
+      "column": 0,
+      "elementType": "card",
+      "textContent": "What you get\n          \n            Daily clarity\nNews distilled to what matters for your names\n    ",
+      "codeSnippet": "<div class=\"stock-card\" rrk-automation-id=\"policy-and-disclaimer-card\">",
+      "existingLocator": "policy-and-disclaimer-card",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 70,
+        "method": "class-pattern"
+      },
+      "fileContext": "    </div>\n  </section>\n\n  <!-- StockLight -->\n  <section id=\"stocklight\" class=\"stock\" aria-labelledby=\"stocklight-h\">\n    <div class=\"container\">\n      <h2 id=\"stocklight-h\" style=\"font-size:2rem;font-weight:800\">StockLight - clear market signals</h2>\n      <p style=\"max-width:820px\">We translate market noise into usable understanding: daily briefs, watchlists, and narrative context you can act on.</p>\n\n      <div class=\"grid\" style=\"grid-template-columns:1.1fr .9fr;gap:22px;margin-top:22px\">\n        <div class=\"stock-card\" rrk-automation-id=\"policy-and-disclaimer-card\">\n          <h3 style=\"margin-bottom:8px\">What you get</h3>\n          <div class=\"features\">\n            <div class=\"feat\"><strong>Daily clarity</strong><br/>News distilled to what matters for your names</div>\n            <div class=\"feat\"><strong>Context</strong><br/>How events connect across sectors and factors</div>\n            <div class=\"feat\"><strong>Conversation ready</strong><br/>Insight you can explain to anyone</div>\n            <div class=\"feat\"><strong>Personalization</strong><br/>Roadmap for alerts, watchlists, and portfolios</div>\n          </div>\n          <div style=\"display:flex;gap:10px;flex-wrap:wrap;margin-top:6px\">\n            <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklightio-link\">Open stocklight.io</a>\n            <a class=\"btn btn-secondary\" href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"join-stocklight-community-link\">Join StockLight community</a>",
+      "snippet": "<div class=\"stock-card\" rrk-automation-id=\"policy-and-disclaimer-card\">"
     },
     {
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 525,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Open stocklight.io",
       "codeSnippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklightio-link\">Open stocklight.io</a>",
       "existingLocator": "open-stocklightio-link",
-      "fileContext": "      <div class=\"grid\" style=\"grid-template-columns:1.1fr .9fr;gap:22px;margin-top:22px\">\n        <div class=\"stock-card\">\n          <h3 style=\"margin-bottom:8px\">What you get</h3>\n          <div class=\"features\">\n            <div class=\"feat\"><strong>Daily clarity</strong><br/>News distilled to what matters for your names</div>\n            <div class=\"feat\"><strong>Context</strong><br/>How events connect across sectors and factors</div>\n            <div class=\"feat\"><strong>Conversation ready</strong><br/>Insight you can explain to anyone</div>\n            <div class=\"feat\"><strong>Personalization</strong><br/>Roadmap for alerts, watchlists, and portfolios</div>\n          </div>\n          <div style=\"display:flex;gap:10px;flex-wrap:wrap;margin-top:6px\">\n            <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklightio-link\">Open stocklight.io</a>\n            <a class=\"btn btn-secondary\" href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"join-stocklight-community-link\">Join StockLight community</a>\n          </div>\n        </div>\n        <div class=\"stock-card\">\n          <h3 style=\"margin-bottom:8px\">Policy and disclaimer</h3>\n          <p>Information is for educational purposes only and may include AI generated content. Not an investment advisor. Always do your own research.</p>\n          <p style=\"color:#94a3b8\">Provider: RRK Technologies Ltd. Contact: info@rrk-technologies.com</p>\n        </div>\n      </div>\n    </div>",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "      <div class=\"grid\" style=\"grid-template-columns:1.1fr .9fr;gap:22px;margin-top:22px\">\n        <div class=\"stock-card\" rrk-automation-id=\"policy-and-disclaimer-card\">\n          <h3 style=\"margin-bottom:8px\">What you get</h3>\n          <div class=\"features\">\n            <div class=\"feat\"><strong>Daily clarity</strong><br/>News distilled to what matters for your names</div>\n            <div class=\"feat\"><strong>Context</strong><br/>How events connect across sectors and factors</div>\n            <div class=\"feat\"><strong>Conversation ready</strong><br/>Insight you can explain to anyone</div>\n            <div class=\"feat\"><strong>Personalization</strong><br/>Roadmap for alerts, watchlists, and portfolios</div>\n          </div>\n          <div style=\"display:flex;gap:10px;flex-wrap:wrap;margin-top:6px\">\n            <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklightio-link\">Open stocklight.io</a>\n            <a class=\"btn btn-secondary\" href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"join-stocklight-community-link\">Join StockLight community</a>\n          </div>\n        </div>\n        <div class=\"stock-card\" rrk-automation-id=\"policy-and-disclaimer-card-1\">\n          <h3 style=\"margin-bottom:8px\">Policy and disclaimer</h3>\n          <p>Information is for educational purposes only and may include AI generated content. Not an investment advisor. Always do your own research.</p>\n          <p style=\"color:#94a3b8\">Provider: RRK Technologies Ltd. Contact: info@rrk-technologies.com</p>\n        </div>\n      </div>\n    </div>",
       "snippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklightio-link\">Open stocklight.io</a>"
     },
     {
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 526,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Join StockLight community",
       "codeSnippet": "<a class=\"btn btn-secondary\" href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"join-stocklight-community-link\">Join StockLight community</a>",
       "existingLocator": "join-stocklight-community-link",
-      "fileContext": "        <div class=\"stock-card\">\n          <h3 style=\"margin-bottom:8px\">What you get</h3>\n          <div class=\"features\">\n            <div class=\"feat\"><strong>Daily clarity</strong><br/>News distilled to what matters for your names</div>\n            <div class=\"feat\"><strong>Context</strong><br/>How events connect across sectors and factors</div>\n            <div class=\"feat\"><strong>Conversation ready</strong><br/>Insight you can explain to anyone</div>\n            <div class=\"feat\"><strong>Personalization</strong><br/>Roadmap for alerts, watchlists, and portfolios</div>\n          </div>\n          <div style=\"display:flex;gap:10px;flex-wrap:wrap;margin-top:6px\">\n            <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklightio-link\">Open stocklight.io</a>\n            <a class=\"btn btn-secondary\" href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"join-stocklight-community-link\">Join StockLight community</a>\n          </div>\n        </div>\n        <div class=\"stock-card\">\n          <h3 style=\"margin-bottom:8px\">Policy and disclaimer</h3>\n          <p>Information is for educational purposes only and may include AI generated content. Not an investment advisor. Always do your own research.</p>\n          <p style=\"color:#94a3b8\">Provider: RRK Technologies Ltd. Contact: info@rrk-technologies.com</p>\n        </div>\n      </div>\n    </div>\n  </section>",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
+      "fileContext": "        <div class=\"stock-card\" rrk-automation-id=\"policy-and-disclaimer-card\">\n          <h3 style=\"margin-bottom:8px\">What you get</h3>\n          <div class=\"features\">\n            <div class=\"feat\"><strong>Daily clarity</strong><br/>News distilled to what matters for your names</div>\n            <div class=\"feat\"><strong>Context</strong><br/>How events connect across sectors and factors</div>\n            <div class=\"feat\"><strong>Conversation ready</strong><br/>Insight you can explain to anyone</div>\n            <div class=\"feat\"><strong>Personalization</strong><br/>Roadmap for alerts, watchlists, and portfolios</div>\n          </div>\n          <div style=\"display:flex;gap:10px;flex-wrap:wrap;margin-top:6px\">\n            <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklightio-link\">Open stocklight.io</a>\n            <a class=\"btn btn-secondary\" href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"join-stocklight-community-link\">Join StockLight community</a>\n          </div>\n        </div>\n        <div class=\"stock-card\" rrk-automation-id=\"policy-and-disclaimer-card-1\">\n          <h3 style=\"margin-bottom:8px\">Policy and disclaimer</h3>\n          <p>Information is for educational purposes only and may include AI generated content. Not an investment advisor. Always do your own research.</p>\n          <p style=\"color:#94a3b8\">Provider: RRK Technologies Ltd. Contact: info@rrk-technologies.com</p>\n        </div>\n      </div>\n    </div>\n  </section>",
       "snippet": "<a class=\"btn btn-secondary\" href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"join-stocklight-community-link\">Join StockLight community</a>"
+    },
+    {
+      "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
+      "line": 529,
+      "column": 0,
+      "elementType": "card",
+      "textContent": "Policy and disclaimer\n          Information is for educational purposes only and may include AI gene",
+      "codeSnippet": "<div class=\"stock-card\" rrk-automation-id=\"policy-and-disclaimer-card-1\">",
+      "existingLocator": "policy-and-disclaimer-card-1",
+      "componentMetadata": {
+        "category": "data",
+        "priority": "medium",
+        "confidence": 70,
+        "method": "class-pattern"
+      },
+      "fileContext": "            <div class=\"feat\"><strong>Daily clarity</strong><br/>News distilled to what matters for your names</div>\n            <div class=\"feat\"><strong>Context</strong><br/>How events connect across sectors and factors</div>\n            <div class=\"feat\"><strong>Conversation ready</strong><br/>Insight you can explain to anyone</div>\n            <div class=\"feat\"><strong>Personalization</strong><br/>Roadmap for alerts, watchlists, and portfolios</div>\n          </div>\n          <div style=\"display:flex;gap:10px;flex-wrap:wrap;margin-top:6px\">\n            <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"open-stocklightio-link\">Open stocklight.io</a>\n            <a class=\"btn btn-secondary\" href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"join-stocklight-community-link\">Join StockLight community</a>\n          </div>\n        </div>\n        <div class=\"stock-card\" rrk-automation-id=\"policy-and-disclaimer-card-1\">\n          <h3 style=\"margin-bottom:8px\">Policy and disclaimer</h3>\n          <p>Information is for educational purposes only and may include AI generated content. Not an investment advisor. Always do your own research.</p>\n          <p style=\"color:#94a3b8\">Provider: RRK Technologies Ltd. Contact: info@rrk-technologies.com</p>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <!-- CTA / Contact -->\n  <section id=\"contact\" class=\"container cta-block\" aria-labelledby=\"cta-h\">",
+      "snippet": "<div class=\"stock-card\" rrk-automation-id=\"policy-and-disclaimer-card-1\">"
     },
     {
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 547,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Contact by email",
       "codeSnippet": "<a class=\"btn btn-secondary\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"contact-by-email-link\">Contact by email</a>",
       "existingLocator": "contact-by-email-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "\n  <!-- CTA / Contact -->\n  <section id=\"contact\" class=\"container cta-block\" aria-labelledby=\"cta-h\">\n    <h2 id=\"cta-h\" style=\"font-size:2rem;font-weight:800\">Ready to move from manual to meaningful</h2>\n    <p class=\"sub\" style=\"max-width:760px;margin:8px auto 0\">Start with a focused automation scope or try StockLight for clean market understanding.</p>\n\n    <div class=\"cta-cards\">\n      <div class=\"cta-item\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Work with RRK</h3>\n        <p>Book a discovery call. We will scope a compact, high impact automation track and ship a measurable result.</p>\n        <a class=\"btn btn-secondary\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"contact-by-email-link\">Contact by email</a>\n      </div>\n      <div class=\"cta-item\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Open StockLight</h3>\n        <p>See how we turn daily market noise into calm, useful context.</p>\n        <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"go-to-stocklightio-link\">Go to stocklight.io</a>\n      </div>\n    </div>\n\n    <div class=\"email-block\">\n      <a class=\"email\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link\">info@rrk-technologies.com</a>",
       "snippet": "<a class=\"btn btn-secondary\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"contact-by-email-link\">Contact by email</a>"
     },
@@ -205,10 +993,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 552,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Go to stocklight.io",
       "codeSnippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"go-to-stocklightio-link\">Go to stocklight.io</a>",
       "existingLocator": "go-to-stocklightio-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "\n    <div class=\"cta-cards\">\n      <div class=\"cta-item\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Work with RRK</h3>\n        <p>Book a discovery call. We will scope a compact, high impact automation track and ship a measurable result.</p>\n        <a class=\"btn btn-secondary\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"contact-by-email-link\">Contact by email</a>\n      </div>\n      <div class=\"cta-item\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Open StockLight</h3>\n        <p>See how we turn daily market noise into calm, useful context.</p>\n        <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"go-to-stocklightio-link\">Go to stocklight.io</a>\n      </div>\n    </div>\n\n    <div class=\"email-block\">\n      <a class=\"email\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link\">info@rrk-technologies.com</a>\n    </div>\n    \n    <form id=\"contact-form\" class=\"contact-form\" aria-label=\"Contact form\" rrk-automation-id=\"name-email-subject-form\">\n      <div class=\"form-row\">\n        <div class=\"field\">",
       "snippet": "<a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"go-to-stocklightio-link\">Go to stocklight.io</a>"
     },
@@ -216,10 +1010,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 557,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "info@rrk-technologies.com",
       "codeSnippet": "<a class=\"email\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link\">info@rrk-technologies.com</a>",
       "existingLocator": "inforrktechnologiescom-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "        <a class=\"btn btn-secondary\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"contact-by-email-link\">Contact by email</a>\n      </div>\n      <div class=\"cta-item\">\n        <h3 style=\"font-weight:700;margin-bottom:6px\">Open StockLight</h3>\n        <p>See how we turn daily market noise into calm, useful context.</p>\n        <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"go-to-stocklightio-link\">Go to stocklight.io</a>\n      </div>\n    </div>\n\n    <div class=\"email-block\">\n      <a class=\"email\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link\">info@rrk-technologies.com</a>\n    </div>\n    \n    <form id=\"contact-form\" class=\"contact-form\" aria-label=\"Contact form\" rrk-automation-id=\"name-email-subject-form\">\n      <div class=\"form-row\">\n        <div class=\"field\">\n          <label for=\"cf-name\">Name</label>\n          <input id=\"cf-name\" name=\"name\" type=\"text\" autocomplete=\"name\" required placeholder=\"Your name\" />\n        </div>\n        <div class=\"field\">\n          <label for=\"cf-email\">Email</label>",
       "snippet": "<a class=\"email\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link\">info@rrk-technologies.com</a>"
     },
@@ -231,6 +1031,12 @@
       "textContent": "Name\n          \n        \n        \n          Email\n          \n        \n      \n      \n        Subject\n",
       "codeSnippet": "<form id=\"contact-form\" class=\"contact-form\" aria-label=\"Contact form\" rrk-automation-id=\"name-email-subject-form\">",
       "existingLocator": "name-email-subject-form",
+      "componentMetadata": {
+        "category": "input",
+        "priority": "critical",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "        <h3 style=\"font-weight:700;margin-bottom:6px\">Open StockLight</h3>\n        <p>See how we turn daily market noise into calm, useful context.</p>\n        <a class=\"btn btn-primary\" href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"go-to-stocklightio-link\">Go to stocklight.io</a>\n      </div>\n    </div>\n\n    <div class=\"email-block\">\n      <a class=\"email\" href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link\">info@rrk-technologies.com</a>\n    </div>\n    \n    <form id=\"contact-form\" class=\"contact-form\" aria-label=\"Contact form\" rrk-automation-id=\"name-email-subject-form\">\n      <div class=\"form-row\">\n        <div class=\"field\">\n          <label for=\"cf-name\">Name</label>\n          <input id=\"cf-name\" name=\"name\" type=\"text\" autocomplete=\"name\" required placeholder=\"Your name\" />\n        </div>\n        <div class=\"field\">\n          <label for=\"cf-email\">Email</label>\n          <input id=\"cf-email\" name=\"email\" type=\"email\" autocomplete=\"email\" required placeholder=\"you@example.com\" />\n        </div>\n      </div>",
       "snippet": "<form id=\"contact-form\" class=\"contact-form\" aria-label=\"Contact form\" rrk-automation-id=\"name-email-subject-form\">"
     },
@@ -242,6 +1048,12 @@
       "textContent": "Send message",
       "codeSnippet": "<button type=\"submit\" class=\"btn btn-primary\" rrk-automation-id=\"send-message-btn\">Send message</button>",
       "existingLocator": "send-message-btn",
+      "componentMetadata": {
+        "category": "core-interactive",
+        "priority": "critical",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "      </div>\n      <div class=\"field\">\n        <label for=\"cf-subject\">Subject</label>\n        <input id=\"cf-subject\" name=\"subject\" type=\"text\" required placeholder=\"How can we help?\" />\n      </div>\n      <div class=\"field\">\n        <label for=\"cf-message\">Message</label>\n        <textarea id=\"cf-message\" name=\"message\" required placeholder=\"Tell us a bit about your needs\" rrk-automation-id=\"textarea\"></textarea>\n      </div>\n      <div class=\"form-actions\">\n        <button type=\"submit\" class=\"btn btn-primary\" rrk-automation-id=\"send-message-btn\">Send message</button>\n        <span class=\"note\">We reply from info@rrk-technologies.com</span>\n      </div>\n    </form>\n  </section>\n\n  <!-- Footer -->\n  <footer role=\"contentinfo\">\n    <div class=\"foot\">\n      <div>\n        <h5>RRK Technologies</h5>",
       "snippet": "<button type=\"submit\" class=\"btn btn-primary\" rrk-automation-id=\"send-message-btn\">Send message</button>"
     },
@@ -249,10 +1061,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 596,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "UI and API automation",
       "codeSnippet": "<a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a>",
       "existingLocator": "ui-and-api-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "  <!-- Footer -->\n  <footer role=\"contentinfo\">\n    <div class=\"foot\">\n      <div>\n        <h5>RRK Technologies</h5>\n        <p>We build systems that let teams do their best work: AI driven automation, multi cloud data pipelines, and full stack testing.</p>\n        <p style=\"margin-top:.5rem;font-weight:700\">Built with pragmatism, delivered with care.</p>\n      </div>\n      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a><br/>\n        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>",
       "snippet": "<a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a>"
     },
@@ -260,10 +1078,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 597,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "LLM and agents",
       "codeSnippet": "<a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a>",
       "existingLocator": "llm-and-agents-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "  <footer role=\"contentinfo\">\n    <div class=\"foot\">\n      <div>\n        <h5>RRK Technologies</h5>\n        <p>We build systems that let teams do their best work: AI driven automation, multi cloud data pipelines, and full stack testing.</p>\n        <p style=\"margin-top:.5rem;font-weight:700\">Built with pragmatism, delivered with care.</p>\n      </div>\n      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a><br/>\n        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>",
       "snippet": "<a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a>"
     },
@@ -271,10 +1095,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 598,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Cloud backends",
       "codeSnippet": "<a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a>",
       "existingLocator": "cloud-backends-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "    <div class=\"foot\">\n      <div>\n        <h5>RRK Technologies</h5>\n        <p>We build systems that let teams do their best work: AI driven automation, multi cloud data pipelines, and full stack testing.</p>\n        <p style=\"margin-top:.5rem;font-weight:700\">Built with pragmatism, delivered with care.</p>\n      </div>\n      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a><br/>\n        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>\n      <div>",
       "snippet": "<a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a>"
     },
@@ -282,10 +1112,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 599,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Data intelligence",
       "codeSnippet": "<a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a>",
       "existingLocator": "data-intelligence-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "      <div>\n        <h5>RRK Technologies</h5>\n        <p>We build systems that let teams do their best work: AI driven automation, multi cloud data pipelines, and full stack testing.</p>\n        <p style=\"margin-top:.5rem;font-weight:700\">Built with pragmatism, delivered with care.</p>\n      </div>\n      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a><br/>\n        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>",
       "snippet": "<a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a>"
     },
@@ -293,10 +1129,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 600,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Testing",
       "codeSnippet": "<a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>",
       "existingLocator": "testing-link-1",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "        <h5>RRK Technologies</h5>\n        <p>We build systems that let teams do their best work: AI driven automation, multi cloud data pipelines, and full stack testing.</p>\n        <p style=\"margin-top:.5rem;font-weight:700\">Built with pragmatism, delivered with care.</p>\n      </div>\n      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a><br/>\n        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link-1\">info@rrk-technologies.com</a><br/>",
       "snippet": "<a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>"
     },
@@ -304,10 +1146,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 604,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Overview",
       "codeSnippet": "<a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a>",
       "existingLocator": "overview-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "      <div>\n        <h5>Automation</h5>\n        <a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a><br/>\n        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link-1\">info@rrk-technologies.com</a><br/>\n        <a href=\"#contact\" rrk-automation-id=\"contact-form-link\">Contact form</a>\n      </div>\n    </div>\n    <div style=\"text-align:center;margin-top:18px;color:#94a3b8;border-top:1px solid #1f2937;padding-top:18px\">",
       "snippet": "<a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a>"
     },
@@ -315,10 +1163,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 605,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "stocklight.io",
       "codeSnippet": "<a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a>",
       "existingLocator": "stocklightio-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "        <h5>Automation</h5>\n        <a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a><br/>\n        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link-1\">info@rrk-technologies.com</a><br/>\n        <a href=\"#contact\" rrk-automation-id=\"contact-form-link\">Contact form</a>\n      </div>\n    </div>\n    <div style=\"text-align:center;margin-top:18px;color:#94a3b8;border-top:1px solid #1f2937;padding-top:18px\">\n      © 2025 RRK Technologies. All rights reserved.",
       "snippet": "<a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a>"
     },
@@ -326,10 +1180,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 606,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Community",
       "codeSnippet": "<a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>",
       "existingLocator": "community-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "        <a href=\"#services\" rrk-automation-id=\"ui-and-api-link\">UI and API automation</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"llm-and-agents-link\">LLM and agents</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"cloud-backends-link\">Cloud backends</a><br/>\n        <a href=\"#services\" rrk-automation-id=\"data-intelligence-link\">Data intelligence</a><br/>\n        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link-1\">info@rrk-technologies.com</a><br/>\n        <a href=\"#contact\" rrk-automation-id=\"contact-form-link\">Contact form</a>\n      </div>\n    </div>\n    <div style=\"text-align:center;margin-top:18px;color:#94a3b8;border-top:1px solid #1f2937;padding-top:18px\">\n      © 2025 RRK Technologies. All rights reserved.\n    </div>",
       "snippet": "<a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>"
     },
@@ -337,10 +1197,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 610,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "info@rrk-technologies.com",
       "codeSnippet": "<a href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link-1\">info@rrk-technologies.com</a>",
       "existingLocator": "inforrktechnologiescom-link-1",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "        <a href=\"#testing\" rrk-automation-id=\"testing-link-1\">Testing</a>\n      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link-1\">info@rrk-technologies.com</a><br/>\n        <a href=\"#contact\" rrk-automation-id=\"contact-form-link\">Contact form</a>\n      </div>\n    </div>\n    <div style=\"text-align:center;margin-top:18px;color:#94a3b8;border-top:1px solid #1f2937;padding-top:18px\">\n      © 2025 RRK Technologies. All rights reserved.\n    </div>\n  </footer>\n  <script>\n  (function(){\n    var form = document.getElementById('contact-form');",
       "snippet": "<a href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link-1\">info@rrk-technologies.com</a>"
     },
@@ -348,10 +1214,16 @@
       "filePath": "/Users/yossiarar/git/rrk-technologies-website/index.html",
       "line": 611,
       "column": 0,
-      "elementType": "a",
+      "elementType": "link",
       "textContent": "Contact form",
       "codeSnippet": "<a href=\"#contact\" rrk-automation-id=\"contact-form-link\">Contact form</a>",
       "existingLocator": "contact-form-link",
+      "componentMetadata": {
+        "category": "navigation",
+        "priority": "high",
+        "confidence": 90,
+        "method": "html-tag"
+      },
       "fileContext": "      </div>\n      <div>\n        <h5>StockLight</h5>\n        <a href=\"#stocklight\" rrk-automation-id=\"overview-link\">Overview</a><br/>\n        <a href=\"https://stocklight.io/\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"stocklightio-link\">stocklight.io</a><br/>\n        <a href=\"https://discord.gg/smAyYUf5\" target=\"_blank\" rel=\"noopener\" rrk-automation-id=\"community-link\">Community</a>\n      </div>\n      <div>\n        <h5>Contact</h5>\n        <a href=\"mailto:info@rrk-technologies.com\" rrk-automation-id=\"inforrktechnologiescom-link-1\">info@rrk-technologies.com</a><br/>\n        <a href=\"#contact\" rrk-automation-id=\"contact-form-link\">Contact form</a>\n      </div>\n    </div>\n    <div style=\"text-align:center;margin-top:18px;color:#94a3b8;border-top:1px solid #1f2937;padding-top:18px\">\n      © 2025 RRK Technologies. All rights reserved.\n    </div>\n  </footer>\n  <script>\n  (function(){\n    var form = document.getElementById('contact-form');\n    if(!form) return;",
       "snippet": "<a href=\"#contact\" rrk-automation-id=\"contact-form-link\">Contact form</a>"
     }
@@ -359,14 +1231,28 @@
   "missing": [],
   "locatorAttribute": "rrk-automation-id",
   "qualityStats": {
-    "totalScanned": 36,
-    "relevantElements": 32,
+    "totalScanned": 76,
+    "relevantElements": 72,
     "filteredOut": 4,
-    "withLocators": 32,
-    "excellent": 29,
-    "good": 2,
+    "withLocators": 72,
+    "excellent": 61,
+    "good": 3,
     "acceptable": 0,
-    "needsImprovement": 1
+    "needsImprovement": 8
   },
-  "qualityReport": "📊 Locator Quality Report\n========================\n\nTotal Elements Scanned: 36\nRelevant Elements: 32\nFiltered Out (Irrelevant): 4\n\n✅ Coverage:\n- Elements with Locators: 32/32 (100%)\n- Missing Locators: 0\n\n🏆 Quality Breakdown:\n- Excellent: 29 [█████████ ] 91%\n- Good: 2 [█         ] 6%\n- Acceptable: 0 [          ] 0%\n- Needs Improvement: 1 [          ] 3%\n\n⚠️ Top Issues to Address:\n  - Locator uses non-semantic or invalid pattern: 1 element\n\n🌟 Excellent Examples:\n  - rrk-automation-intelligence-link (a)\n  - menu-btn (button)\n  - what-we-do-link (a)\n\n💡 Recommendations:\n  - Improve 1 locators with poor naming patterns"
+  "qualityReport": "📊 Locator Quality Report\n========================\n\nTotal Elements Scanned: 76\nRelevant Elements: 72\nFiltered Out (Irrelevant): 4\n\n✅ Coverage:\n- Elements with Locators: 72/72 (100%)\n- Missing Locators: 0\n\n🏆 Quality Breakdown:\n- Excellent: 61 [████████  ] 85%\n- Good: 3 [          ] 4%\n- Acceptable: 0 [          ] 0%\n- Needs Improvement: 8 [█         ] 11%\n\n⚠️ Top Issues to Address:\n  - Locator uses non-semantic or invalid pattern: 8 elements\n\n🌟 Excellent Examples:\n  - rrk-automation-intelligence-link (link)\n  - menu-btn (button)\n  - what-we-do-link (link)\n\n💡 Recommendations:\n  - Improve 8 locators with poor naming patterns",
+  "bestPractices": {
+    "totalIssues": 0,
+    "byType": {
+      "accessibility": 0,
+      "security": 0,
+      "semantic": 0
+    },
+    "bySeverity": {
+      "error": 0,
+      "warning": 0,
+      "info": 0
+    },
+    "issues": []
+  }
 }

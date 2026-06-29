@@ -1,49 +1,20 @@
-<svg
-  width="64"
-  height="64"
-  viewBox="0 0 64 64"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <!-- Icon container -->
-  <rect
-    x="4"
-    y="4"
-    width="56"
-    height="56"
-    rx="16"
-    fill="#0F172A"
-  />
-
-  <!-- Top bar -->
-  <rect
-    x="18"
-    y="20"
-    width="28"
-    height="4"
-    rx="2"
-    fill="#22C55E"
-  />
-  <!-- Middle bar -->
-  <rect
-    x="18"
-    y="28"
-    width="22"
-    height="4"
-    rx="2"
-    fill="#38BDF8"
-  />
-  <!-- Bottom bar -->
-  <rect
-    x="18"
-    y="36"
-    width="16"
-    height="4"
-    rx="2"
-    fill="#A855F7"
-  />
-  <!-- Arrow -->
-  <path
-    d="M38 34 L44 30 L44 38 Z"
-    fill="#22C55E"
-  />
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RRK Technologies">
+  <!-- RRK Technologies favicon: layered full-stack mark with an intelligent blue core. -->
+  <defs>
+    <linearGradient id="fCore" x1="430" y1="210" x2="594" y2="380" gradientUnits="userSpaceOnUse"><stop stop-color="#38BDF8"/><stop offset="1" stop-color="#2563EB"/></linearGradient>
+    <linearGradient id="fNavy" x1="210" y1="120" x2="820" y2="720" gradientUnits="userSpaceOnUse"><stop stop-color="#4A5C7E"/><stop offset="1" stop-color="#2E3C56"/></linearGradient>
+    <linearGradient id="fSlate" x1="230" y1="390" x2="800" y2="640" gradientUnits="userSpaceOnUse"><stop stop-color="#64768F"/><stop offset="1" stop-color="#42536D"/></linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#0C1322"/>
+  <g transform="translate(-0.97 -1.55) scale(0.0644)">
+    <path d="M512 118C526 118 540 122 552 129L754 246C781 262 781 301 754 317L552 434C540 441 526 445 512 445C498 445 484 441 472 434L270 317C243 301 243 262 270 246L472 129C484 122 498 118 512 118Z" fill="url(#fNavy)"/>
+    <path d="M512 197C522 197 532 200 541 205L650 268C670 280 670 308 650 320L541 383C532 388 522 391 512 391C502 391 492 388 483 383L374 320C354 308 354 280 374 268L483 205C492 200 502 197 512 197Z" fill="#0C1322"/>
+    <path d="M512 249C520 249 528 251 535 255L590 287C605 296 605 318 590 327L535 359C528 363 520 365 512 365C504 365 496 363 489 359L434 327C419 318 419 296 434 287L489 255C496 251 504 249 512 249Z" fill="url(#fCore)"/>
+    <path d="M296 365L472 467C484 474 498 478 512 478C526 478 540 474 552 467L728 365L802 408C828 423 828 461 802 476L552 621C540 628 526 632 512 632C498 632 484 628 472 621L222 476C196 461 196 423 222 408L296 365Z" fill="#42526E"/>
+    <path d="M486 462C486 454 493 448 501 448H523C531 448 538 454 538 462V519C538 529 530 537 520 537H504C494 537 486 529 486 519V462Z" fill="url(#fCore)"/>
+    <path d="M256 520L472 645C484 652 498 656 512 656C526 656 540 652 552 645L768 520L816 548C842 563 842 601 816 616L552 769C540 776 526 780 512 780C498 780 484 776 472 769L208 616C182 601 182 563 208 548L256 520Z" fill="url(#fSlate)"/>
+    <path d="M486 641C486 633 493 627 501 627H523C531 627 538 633 538 641V698C538 708 530 716 520 716H504C494 716 486 708 486 698V641Z" fill="url(#fCore)"/>
+    <path d="M296 682L472 784C484 791 498 795 512 795C526 795 540 791 552 784L728 682L781 713C807 728 807 766 781 781L552 914C540 921 526 925 512 925C498 925 484 921 472 914L243 781C217 766 217 728 243 713L296 682Z" fill="url(#fNavy)"/>
+    <path d="M488 781C488 774 494 768 501 768H523C530 768 536 774 536 781V827C536 837 528 845 518 845H506C496 845 488 837 488 827V781Z" fill="url(#fCore)"/>
+  </g>
 </svg>

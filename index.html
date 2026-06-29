@@ -3,572 +3,309 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RRK Technologies - Full-Stack AI, Automation &amp; Cloud Systems</title>
+  <title>RRK Technologies — Trust your code before you ship it</title>
   <link rel="icon" type="image/svg+xml" href="./icon.svg" />
-  <meta name="description" content="RRK Technologies builds production-grade full-stack systems: backend APIs, frontend products, cloud infrastructure, data pipelines, AI agents, and QA intelligence." />
+  <meta name="description" content="RRK Technologies builds production-grade systems that turn noise into signal. Flagship: RRK Verify, a deterministic QA trust layer for AI-written code. Every finding comes with proof." />
   <link rel="canonical" href="https://rrk-technologies.com/" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <meta property="og:title" content="RRK Technologies - Full-Stack AI, Automation &amp; Cloud Systems">
-  <meta property="og:description" content="Production-grade full-stack systems: backend, frontend, cloud, data pipelines, AI agents, and QA intelligence.">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta property="og:title" content="RRK Technologies — Trust your code before you ship it">
+  <meta property="og:description" content="Flagship: RRK Verify, a deterministic QA trust layer for AI-written code. Every finding comes with proof.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://github.com/YossiArar/rrk-technologies-website/raw/main/rrk-technologies-logo.png">
-  <meta name="theme-color" content="#0a0a0f">
+  <meta name="theme-color" content="#F7F5EF">
 
   <style>
     :root{
-      /* ===== BACKGROUND COLORS (lifted to a richer deep navy — brighter, glossier) ===== */
-      --bg:#0b1018;
-      --bg-soft:#0e141f;
-      --panel:#141b29;
-      --panel-elevated:#19212f;
+      /* ===== WARM PAPER (light, evidence-on-paper) ===== */
+      --paper:#F7F5EF;
+      --paper-2:#FCFAF5;
+      --card:#FFFFFF;
 
-      /* ===== TEXT COLORS (Premium Typography System) ===== */
-      --text-primary:#F1F5F9;
-      --text-secondary:#D6DEEA;
-      --text-body:#A7B6CA;        /* AA contrast on the lifted background */
-      --text-muted:#8C9CB3;
+      /* ===== INK ===== */
+      --ink:#15181F;
+      --ink-2:#3D4554;
+      --ink-3:#646C7C;
+      --ink-4:#929AA9;
 
-      /* Legacy aliases for compatibility */
-      --ink:var(--text-primary);
-      --muted:var(--text-body);
+      /* ===== BLUE / GREEN (the product's accent) ===== */
+      --blue:#0969DA;
+      --blue-2:#0550AE;
+      --blue-soft:#DDF0FF;
+      --blue-glow:rgba(9,105,218,.16);
+      --green:#1A7F37;
+      --sev-crit:#CF222E;
+      --sev-med:#9A6700;
 
-      /* ===== ACCENT & BRAND COLORS (aligned to the logo's blue) ===== */
-      --primary:#5BB8F7;          /* brighter sky-blue for shine */
-      --primary-glow:rgba(91,184,247,0.18);
-      --secondary:#2563EB;        /* royal blue from the logo */
-      --accent:#5BB8F7;
-      --gold:#ffd700;
+      /* ===== LINES ===== */
+      --line:#E7E2D6;
+      --line-2:#EEEAE0;
+      --hair:rgba(40,64,110,.05);
 
-      /* ===== SURFACE / ACCENT TOKENS — neutral glass, blue accent on hover ===== */
-      --accent-line:rgba(255,255,255,0.09);
-      --accent-line-strong:rgba(123,179,247,0.42);
-      --accent-fill:rgba(255,255,255,0.035);
-      --accent-fill-hover:rgba(123,179,247,0.07);
-      --accent-fill-soft:rgba(255,255,255,0.022);
+      /* ===== RADIUS ===== */
+      --r-sm:8px; --r-md:12px; --r-lg:16px; --r-pill:999px;
 
-      /* ===== BORDER & LINE COLORS ===== */
-      --line:#243247;
-      --line-2:#172033;
+      /* ===== SHADOW (warm) ===== */
+      --shadow:0 1px 2px rgba(46,38,22,.05), 0 10px 26px -14px rgba(46,38,22,.20);
+      --shadow-lg:0 2px 6px rgba(46,38,22,.06), 0 34px 64px -26px rgba(30,40,70,.30);
+      --glow:0 0 0 4px var(--blue-glow);
 
-      /* ===== RADIUS SCALE ===== */
-      --r-sm:8px;
-      --r-md:12px;
-      --r-lg:16px;
-      --r-pill:999px;
+      /* ===== FONTS ===== */
+      --display:'Space Grotesk','Inter',system-ui,sans-serif;
+      --body:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+      --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
 
-      /* ===== SHADOWS ===== */
-      --shadow-sm:0 2px 6px rgba(0,0,0,.3);
-      --shadow:0 4px 12px rgba(0,0,0,.35);
-      --shadow-lg:0 8px 20px rgba(0,0,0,.4);
-      --shadow-lift:0 14px 36px rgba(0,0,0,.42), 0 0 0 1px rgba(91,184,247,.14);
-      --glow:0 0 16px rgba(91,184,247,.18);
-
-      /* ===== GRADIENTS ===== */
-      --grad-1:linear-gradient(135deg,#5BB8F7 0%,#2563EB 100%);
-      --grad-headline:linear-gradient(180deg,#FFFFFF 0%,#CFE0F4 100%);
-      /* clean single-hue heading gloss (replaces the multi-color "AI" gradient) */
-      --grad-heading:linear-gradient(180deg,#F8FBFF 0%,#9FC6F2 100%);
-      --grad-shine:linear-gradient(135deg,rgba(255,255,255,.10) 0%,rgba(255,255,255,.04) 100%);
-      --grad-accent-line:linear-gradient(90deg,transparent,rgba(91,184,247,.6),transparent);
-
-      /* ===== ANIMATION TIMING ===== */
-      --duration-fast:0.15s;
-      --duration-normal:0.3s;
-      --duration-entrance:0.6s;
-      --ease-smooth:cubic-bezier(0.34,1.56,0.64,1);
-      --ease-out:cubic-bezier(0.16,1,0.3,1);
+      --fast:.15s; --norm:.3s; --enter:.6s;
+      --ease:cubic-bezier(.16,1,.3,1);
     }
 
     *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;scroll-padding-top:80px}
+    html{scroll-behavior:smooth;scroll-padding-top:78px}
     html,body{height:100%}
     body{
-      font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      background:linear-gradient(135deg, rgba(11,16,24,.55) 0%, rgba(14,20,31,.62) 100%), url('./cover.svg') no-repeat center top, var(--bg);
-      background-size:cover, cover, auto;
-      background-attachment:scroll;
-      color:var(--text-body);
-      line-height:1.6;
+      font-family:var(--body);
+      background:
+        radial-gradient(48% 38% at 84% -4%, rgba(9,105,218,.07), transparent 70%),
+        radial-gradient(40% 32% at 8% 4%, rgba(28,127,190,.05), transparent 72%),
+        var(--paper);
+      color:var(--ink-3);
+      line-height:1.62;
       -webkit-font-smoothing:antialiased;
       overflow-x:hidden;
     }
-
-    /* Faint blueprint grid for depth — masked so it fades toward the page */
+    /* faint blueprint grid — the testability map, felt not read */
     body::before{
-      content:"";
-      position:fixed;
-      inset:0;
-      z-index:0;
-      pointer-events:none;
+      content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
       background-image:
-        linear-gradient(rgba(91,184,247,.03) 1px,transparent 1px),
-        linear-gradient(90deg,rgba(91,184,247,.03) 1px,transparent 1px);
-      background-size:52px 52px;
-      -webkit-mask-image:radial-gradient(ellipse 80% 60% at 50% 0%, #000 0%, transparent 75%);
-      mask-image:radial-gradient(ellipse 80% 60% at 50% 0%, #000 0%, transparent 75%);
+        linear-gradient(var(--hair) 1px,transparent 1px),
+        linear-gradient(90deg,var(--hair) 1px,transparent 1px);
+      background-size:68px 68px;
+      -webkit-mask-image:radial-gradient(ellipse 92% 56% at 50% 0%, #000 0%, transparent 70%);
+      mask-image:radial-gradient(ellipse 92% 56% at 50% 0%, #000 0%, transparent 70%);
     }
-
-    /* Keep real content above the grid layer */
     .header,.hero,section,footer{position:relative;z-index:1}
 
-    h1, h2, h3, h4, h5 {
-      color: var(--text-primary);
-      font-weight: 300;
-      letter-spacing: -0.015em;
-    }
+    /* ===== TYPE ===== */
+    h1,h2,h3{font-family:var(--display);color:var(--ink);font-weight:600;letter-spacing:-0.02em;line-height:1.08}
+    .eyebrow{display:inline-flex;align-items:center;gap:.7rem;font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}
+    .eyebrow::before{content:"";width:24px;height:1px;background:var(--blue);opacity:.5}
+    .note{font-family:var(--mono);font-size:.72rem;letter-spacing:.03em;color:var(--ink-4);display:inline-flex;align-items:center;gap:.5rem}
+    .note .dot{width:6px;height:6px;border-radius:50%;background:var(--sev-med);box-shadow:0 0 0 3px rgba(154,103,0,.12)}
 
-    /* ===== FOCUS VISIBILITY (keyboard a11y) ===== */
-    a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
-      outline:2px solid var(--primary);
-      outline-offset:2px;
-      border-radius:4px;
-    }
+    a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
 
-    /* ===== SCROLL REVEAL (GPU-safe: opacity + transform only) ===== */
-    .reveal{
-      opacity:0;
-      transform:translateY(22px);
-      transition:opacity var(--duration-entrance) var(--ease-out),
-                 transform var(--duration-entrance) var(--ease-out);
-    }
+    /* ===== REVEAL ===== */
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity var(--enter) var(--ease),transform var(--enter) var(--ease)}
     .reveal.in{opacity:1;transform:none}
-    /* Stagger children inside grids/pillars for a sequenced entrance */
-    .grid .reveal:nth-child(2),.pillars .reveal:nth-child(2){transition-delay:.06s}
-    .grid .reveal:nth-child(3),.pillars .reveal:nth-child(3){transition-delay:.12s}
-    .grid .reveal:nth-child(4){transition-delay:.18s}
-    .grid .reveal:nth-child(5){transition-delay:.24s}
-    .grid .reveal:nth-child(6){transition-delay:.30s}
-
-    /* Motion preferences — also ensures revealed content is visible */
-    @media (prefers-reduced-motion: reduce){
+    .d1{transition-delay:.06s}.d2{transition-delay:.12s}.d3{transition-delay:.18s}
+    @media (prefers-reduced-motion:reduce){
       *{animation:none!important;transition:none!important}
       .reveal{opacity:1!important;transform:none!important}
+      .aw-slide{opacity:0!important}.aw-slide:first-child{opacity:1!important}
     }
-
-    /* ===== SECTION HEADINGS — clean white→blue gloss ===== */
-    section h2{
-      background:var(--grad-heading);
-      -webkit-background-clip:text;
-      background-clip:text;
-      -webkit-text-fill-color:transparent;
-    }
-    .h2-md{font-size:2rem}
-
-    /* Status pill — "in active development" framing for emerging products */
-    .status-pill{
-      display:inline-flex;align-items:center;gap:.5rem;
-      background:rgba(255,184,77,0.08);
-      border:1px solid rgba(255,184,77,0.35);
-      color:#FFB84D;
-      padding:.4rem .8rem;border-radius:var(--r-pill);
-      font-weight:300;font-size:.8rem;letter-spacing:.02em;
-    }
-    .status-pill::before{content:"";width:7px;height:7px;border-radius:50%;background:#FFB84D;box-shadow:0 0 8px rgba(255,184,77,.6)}
 
     /* ===== BUTTONS ===== */
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
-      border:1px solid transparent;border-radius:11px;padding:.9rem 1.35rem;
-      font-weight:500;text-decoration:none;cursor:pointer;font-size:.95rem;letter-spacing:.01em;
-      position:relative;
-      transition:transform var(--duration-fast) var(--ease-out), box-shadow var(--duration-normal) ease, background var(--duration-normal) ease, border-color var(--duration-normal) ease;
-    }
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:var(--body);font-weight:600;font-size:.94rem;border:1px solid transparent;border-radius:9px;padding:.8rem 1.25rem;text-decoration:none;cursor:pointer;transition:transform var(--fast) var(--ease),box-shadow var(--norm) ease,background var(--norm) ease,border-color var(--norm) ease}
+    .btn-primary{background:var(--blue);color:#fff;box-shadow:0 1px 2px rgba(9,105,218,.3),0 8px 20px -8px rgba(9,105,218,.5)}
+    .btn-primary:hover{background:var(--blue-2);transform:translateY(-2px);box-shadow:0 2px 4px rgba(9,105,218,.32),0 14px 28px -8px rgba(9,105,218,.55)}
+    .btn-ghost{background:var(--card);border-color:var(--line);color:var(--ink)}
+    .btn-ghost:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px);box-shadow:var(--shadow)}
     .btn:active{transform:translateY(0)}
-    .btn-primary{
-      background:linear-gradient(180deg,#6BBEF8 0%,#3B82F6 48%,#2563EB 100%);
-      color:#ffffff;
-      border-color:rgba(125,182,250,.55);
-      box-shadow:inset 0 1px 0 rgba(255,255,255,.28), 0 6px 18px rgba(37,99,235,.32);
-    }
-    .btn-primary:hover{
-      transform:translateY(-2px);
-      box-shadow:inset 0 1px 0 rgba(255,255,255,.36), 0 12px 30px rgba(37,99,235,.48);
-    }
-    .btn-secondary{
-      background:rgba(255,255,255,.035);
-      border-color:rgba(255,255,255,.14);
-      color:var(--text-primary);
-      box-shadow:inset 0 1px 0 rgba(255,255,255,.06);
-    }
-    .btn-secondary:hover{
-      border-color:rgba(125,182,250,.45);
-      background:rgba(255,255,255,.06);
-      box-shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 8px 22px rgba(37,99,235,.18);
-      transform:translateY(-2px);
-    }
 
-    /* Header */
-    .header{
-      position:sticky;
-      top:0;
-      z-index:1000;
-      background:rgba(8,11,18,.7);
-      -webkit-backdrop-filter:blur(10px);
-      backdrop-filter:blur(10px);
-      border-bottom:1px solid rgba(70,200,255,0.1);
-      transition:background var(--duration-normal) ease, border-color var(--duration-normal) ease;
-    }
-    .header.scrolled{
-      border-bottom-color:rgba(70,200,255,0.2);
-      background:rgba(8,11,18,.92);
-      box-shadow:0 4px 24px rgba(0,0,0,.35);
-    }
-    .nav{max-width:1200px;margin:0 auto;height:80px;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
-    .logo{display:flex;gap:.6rem;align-items:center;text-decoration:none;color:var(--ink);font-weight:300}
-    /* Swap-ready: drop in a new <img> or inline <svg>; both size identically */
-    .logo img,.logo svg{height:48px;width:auto;max-width:260px;object-fit:contain;filter:drop-shadow(0 2px 8px rgba(0,217,255,.25))}
-    .nav-toggle{display:none;background:transparent;border:1px solid var(--line);color:var(--ink);padding:.5rem .7rem;border-radius:10px;font-weight:300}
-    .nav-links{display:flex;gap:1.6rem;align-items:center;list-style:none}
-    .nav-links a{
-      color:var(--text-body);
-      text-decoration:none;
-      font-weight:300;
-      font-size:.95rem;
-      position:relative;
-      transition:color var(--duration-fast) ease;
-    }
-    .nav-links a:not(.cta):after{
-      content:"";
-      position:absolute;
-      left:0;
-      right:0;
-      bottom:-6px;
-      height:2px;
-      transform:scaleX(0);
-      transform-origin:center;
-      background:var(--primary);
-      box-shadow:0 0 8px var(--primary-glow);
-      transition:transform 0.3s ease;
-    }
-    .nav-links a:hover{color:var(--text-primary)}
-    .nav-links a:not(.cta):hover:after{transform:scaleX(1)}
-    .cta{padding:.6rem 1.1rem;border-radius:9px;background:linear-gradient(180deg,#6BBEF8 0%,#3B82F6 48%,#2563EB 100%);color:#fff !important;text-decoration:none;font-weight:500;border:1px solid rgba(125,182,250,.5);box-shadow:inset 0 1px 0 rgba(255,255,255,.28), 0 4px 12px rgba(37,99,235,.3);position:relative;overflow:hidden;transition:box-shadow var(--duration-normal) ease, transform var(--duration-fast) var(--ease-out)}
-    .cta:before{content:"";position:absolute;inset:0;background:var(--grad-shine);opacity:0;transition:.3s}
-    .cta:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.36), 0 8px 20px rgba(37,99,235,.45);transform:translateY(-1px)}
-    .cta:hover:before{opacity:1}
+    /* ===== HEADER ===== */
+    .header{position:sticky;top:0;z-index:1000;background:rgba(247,245,239,.78);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color var(--norm) ease,background var(--norm) ease}
+    .header.scrolled{background:rgba(247,245,239,.92);border-bottom-color:var(--line);box-shadow:0 6px 24px -16px rgba(46,38,22,.4)}
+    .nav{max-width:1180px;margin:0 auto;height:78px;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+    .logo{display:flex;align-items:center;text-decoration:none}
+    .logo svg{height:46px;width:auto}
+    .nav-toggle{display:none;background:var(--card);border:1px solid var(--line);color:var(--ink);padding:.5rem .7rem;border-radius:9px;font-family:var(--mono);font-size:.8rem}
+    .nav-links{display:flex;gap:1.7rem;align-items:center;list-style:none}
+    .nav-links a{color:var(--ink-2);text-decoration:none;font-weight:500;font-size:.92rem;position:relative;transition:color var(--fast) ease}
+    .nav-links a:not(.cta)::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform var(--norm) var(--ease)}
+    .nav-links a:hover{color:var(--ink)}
+    .nav-links a:not(.cta):hover::after{transform:scaleX(1)}
+    .nav-links a.flagship{color:var(--blue)}
+    .cta{padding:.55rem 1.05rem;border-radius:9px;background:var(--blue);color:#fff!important;font-weight:600;box-shadow:0 1px 2px rgba(9,105,218,.3),0 6px 16px -8px rgba(9,105,218,.5);transition:transform var(--fast) var(--ease),background var(--norm) ease}
+    .cta:hover{transform:translateY(-1px);background:var(--blue-2)}
 
-    /* Hero */
-    .hero{
-      background:linear-gradient(180deg,rgba(2,4,8,0.3), rgba(3,6,16,0.35) 60%, rgba(3,6,16,0.35));
-      border-bottom:1px solid var(--line-2);
-      overflow:hidden;
-    }
-    .hero::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      z-index:-1;
-      background:radial-gradient(55% 55% at 72% 28%, rgba(91,184,247,.12), transparent 70%);
-      pointer-events:none;
-    }
-    .hero-inner{max-width:1200px;margin:0 auto;padding:60px 24px 100px;display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
-    .eyebrow{
-      display:inline-flex;align-items:center;gap:.5rem;
-      background:linear-gradient(135deg, rgba(91,184,247,.12) 0%, rgba(37,99,235,.12) 100%);
-      border:1px solid rgba(91,184,247,.35);
-      color:var(--primary);
-      padding:.45rem .9rem;border-radius:var(--r-pill);font-weight:300;font-size:.85rem;
-      box-shadow:0 0 22px rgba(91,184,247,.14);
-    }
-    h1{
-      font-size:clamp(40px,6vw,68px);
-      line-height:1.08;
-      margin:20px 0 16px;
-      font-weight:300;
-      letter-spacing:-0.02em;
-      background:var(--grad-headline);
-      -webkit-background-clip:text;
-      background-clip:text;
-      -webkit-text-fill-color:transparent;
-    }
-    .sub{
-      font-size:1.14rem;
-      color:var(--text-body);
-      max-width:680px;
-    }
-    .sub-sm{font-size:.98rem}
-    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-    .hero-card{
-      background:rgba(20,24,36,.4);
-      border:1px solid var(--accent-line);
-      border-radius:var(--r-lg);
-      padding:28px;
-      transition:border-color var(--duration-normal) ease, transform var(--duration-normal) ease, box-shadow var(--duration-normal) ease;
-      position:relative;
-    }
-    .hero-card:hover{border-color:var(--accent-line-strong);transform:translateY(-4px);box-shadow:var(--shadow-lift)}
-    .hero-card h3{font-weight:300;margin-bottom:6px}
-    .hero-highlight{
-      margin-top:16px;padding:12px;
-      background:rgba(91,184,247,0.07);
-      border:1px solid var(--accent-line);
-      border-radius:var(--r-sm);
-    }
-    .hero-highlight strong{display:block;color:var(--ink);font-size:.95rem}
+    /* ===== HERO ===== */
+    .hero{border-bottom:1px solid var(--line-2)}
+    .hero-inner{max-width:1180px;margin:0 auto;padding:78px 24px 92px;display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center}
+    h1{font-size:clamp(40px,5.6vw,64px);margin:22px 0 18px}
+    h1 .acc{color:var(--blue)}
+    .hero-sub{font-size:1.14rem;color:var(--ink-2);max-width:540px}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .proof{margin-top:30px;display:inline-flex;align-items:center;gap:.7rem;flex-wrap:wrap;font-family:var(--mono);font-size:.8rem;color:var(--ink-3);padding:.6rem .85rem;border:1px solid var(--line);border-radius:9px;background:var(--card)}
+    .proof .ok{color:var(--green);font-weight:600}
+    .proof .sep{color:var(--ink-4)}
+    .proof b{color:var(--ink);font-weight:600}
 
-    /* Sections */
-    section{padding:120px 24px}
-    .container{max-width:1200px;margin:0 auto}
-    .measure{max-width:820px}
-    .measure-center{max-width:780px;margin-left:auto;margin-right:auto}
-    .center{text-align:center}
-    .mt-1{margin-top:8px}
-    .mt-2{margin-top:22px}
-    .card-action{margin-top:24px}
+    /* ===== APP WINDOW (reticle-framed live product) ===== */
+    .stage{position:relative;padding:13px}
+    .stage .br{position:absolute;width:20px;height:20px;border:2px solid var(--blue);opacity:.55}
+    .stage .br.tl{top:0;left:0;border-right:none;border-bottom:none;border-radius:5px 0 0 0}
+    .stage .br.tr{top:0;right:0;border-left:none;border-bottom:none;border-radius:0 5px 0 0}
+    .stage .br.bl{bottom:0;left:0;border-right:none;border-top:none;border-radius:0 0 0 5px}
+    .stage .br.brr{bottom:0;right:0;border-left:none;border-top:none;border-radius:0 0 5px 0}
+    .app-window{border-radius:13px;overflow:hidden;border:1px solid var(--line);background:var(--card);box-shadow:var(--shadow-lg)}
+    .aw-bar{display:flex;align-items:center;gap:.5rem;padding:.6rem .9rem;background:var(--paper-2);border-bottom:1px solid var(--line-2)}
+    .aw-bar i{width:10px;height:10px;border-radius:50%;background:#D7D2C6;display:block}
+    .aw-url{font-family:var(--mono);font-size:.74rem;color:var(--ink-4);margin-left:.6rem}
+    .aw-live{margin-left:auto;font-family:var(--mono);font-size:.72rem;color:var(--blue);display:inline-flex;align-items:center;gap:.4rem}
+    .aw-live::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 3px var(--blue-glow);animation:pulse 1.9s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+    .aw-screen{position:relative;aspect-ratio:2.02/1;background:#F6F4EF}
+    .aw-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;opacity:0;animation:awfade 18s infinite}
+    .aw-slide:nth-child(1){animation-delay:0s}.aw-slide:nth-child(2){animation-delay:3s}.aw-slide:nth-child(3){animation-delay:6s}
+    .aw-slide:nth-child(4){animation-delay:9s}.aw-slide:nth-child(5){animation-delay:12s}.aw-slide:nth-child(6){animation-delay:15s}
+    @keyframes awfade{0%{opacity:0}1.2%{opacity:1}14%{opacity:1}16.5%{opacity:0}100%{opacity:0}}
 
-    /* Shared surface card depth (card / service / flow / case / cta) */
-    .card,.service,.flow,.case-visual,.cta-item{
-      position:relative;
-      overflow:hidden;
-      transition:border-color var(--duration-normal) ease, background var(--duration-normal) ease,
-                 transform var(--duration-normal) ease, box-shadow var(--duration-normal) ease;
-    }
-    .card::before,.service::before,.flow::before,.case-visual::before,.cta-item::before{
-      content:"";
-      position:absolute;top:0;left:0;right:0;height:1px;
-      background:var(--grad-accent-line);
-      opacity:0;
-      transition:opacity var(--duration-normal) ease;
-    }
-    .card:hover,.service:hover,.flow:hover,.case-visual:hover,.cta-item:hover{
-      transform:translateY(-4px);
-      box-shadow:var(--shadow-lift);
-    }
-    .card:hover::before,.service:hover::before,.flow:hover::before,.case-visual:hover::before,.cta-item:hover::before{opacity:1}
+    /* ===== SECTIONS ===== */
+    section{padding:112px 24px}
+    .wrap{max-width:1180px;margin:0 auto}
+    .measure{max-width:660px}
+    .mt-s{margin-top:10px}.mt-m{margin-top:18px}.mt-l{margin-top:28px}
+    h2{font-size:clamp(28px,3.3vw,42px)}
+    h2 .acc{color:var(--blue)}
+    .lead{font-size:1.1rem;color:var(--ink-2)}
 
-    /* Pillars */
-    .pillars{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:32px}
-    .card{
-      background:var(--accent-fill);
-      border:1px solid var(--accent-line);
-      border-radius:14px;
-      padding:28px;
-    }
-    .card:hover{border-color:var(--accent-line-strong);background:var(--accent-fill-hover)}
-    .card h3{font-size:1.25rem;margin-bottom:12px;color:var(--text-primary)}
-    .card h3:not(:first-child){margin-top:20px}
-    .card p{color:var(--text-body);margin-bottom:14px}
-    .card p:last-child{margin-bottom:0}
-    .lead{color:var(--text-secondary);font-size:1.05rem}
-    .list{margin-top:14px;display:grid;gap:10px}
-    .list li{
-      list-style:none;
-      padding-left:26px;
-      position:relative;
-      color:var(--text-body);
-      margin-bottom:0;
-      transition:color var(--duration-fast) ease;
-    }
-    .list li:hover{color:var(--text-primary)}
-    .list li:before{content:"";position:absolute;left:0;top:.46rem;width:6px;height:6px;border-radius:50%;background:var(--primary);box-shadow:0 0 8px var(--primary-glow)}
+    /* ===== FLAGSHIP ===== */
+    .flagship{border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2);background:linear-gradient(180deg,rgba(255,255,255,.5),transparent 40%)}
+    .fl-head{display:flex;flex-direction:column;gap:16px;max-width:780px}
+    .verify-lockup{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+    .verify-lockup img{height:42px;width:auto;display:block}
+    .verify-claim{font-size:clamp(26px,3.1vw,40px)}
+    .verify-claim .acc{color:var(--blue)}
 
-    /* Services */
-    .section-alt{background:rgba(16,23,35,0.55);border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:32px}
-    .service{
-      background:var(--accent-fill-soft);
-      border:1px solid var(--accent-line);
-      border-radius:var(--r-md);
-      padding:28px;
-    }
-    .service:hover{border-color:var(--accent-line-strong);background:var(--accent-fill-hover)}
-    .service h4{font-size:1.05rem;margin-bottom:.4rem;color:var(--text-primary)}
-    .service p{color:var(--text-body);font-size:.98rem}
+    /* numbered pipeline (real sequence) */
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:46px}
+    .step{position:relative;padding:24px 22px;border-radius:var(--r-md);background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);transition:transform var(--norm) ease,box-shadow var(--norm) ease,border-color var(--norm) ease}
+    .step:hover{transform:translateY(-4px);border-color:var(--blue);box-shadow:var(--shadow-lg)}
+    .step .idx{font-family:var(--mono);font-size:.78rem;color:var(--blue);letter-spacing:.1em}
+    .step h3{font-family:var(--display);font-size:1.08rem;font-weight:600;margin:12px 0 8px;color:var(--ink)}
+    .step p{font-size:.92rem;color:var(--ink-3)}
 
-    /* Pipelines */
-    .pipeline{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;margin-top:32px}
-    .flow{
-      background:var(--accent-fill-soft);
-      border:1px solid var(--accent-line);
-      border-radius:14px;
-      padding:28px;
-    }
-    .flow:hover{border-color:var(--accent-line-strong);background:var(--accent-fill-hover)}
-    .flow h3{margin-bottom:8px}
-    .flow ul{list-style:none;display:grid;gap:10px}
-    .flow li{display:flex;align-items:flex-start;gap:10px}
-    .step{
-      width:22px;height:22px;border-radius:6px;
-      background:linear-gradient(135deg,rgba(91,184,247,.20),rgba(37,99,235,.10));
-      border:1px solid rgba(91,184,247,.45);
-      display:flex;align-items:center;justify-content:center;
-      font-weight:300;color:var(--primary);font-size:.85rem;flex-shrink:0;
-      box-shadow:0 0 12px rgba(91,184,247,.22);
-    }
-    .code{
-      font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-      font-size:.9rem;
-      background:var(--bg-soft);
-      color:var(--text-body);
-      border-radius:10px;
-      padding:12px;
-      display:block;
-      overflow:auto;
-      border:1px solid var(--line);
-    }
+    /* ===== MARQUEE ===== */
+    .marquee{margin-top:50px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+    .mq-track{display:flex;gap:20px;width:max-content;animation:mq 56s linear infinite}
+    .marquee:hover .mq-track{animation-play-state:paused}
+    @keyframes mq{to{transform:translateX(-50%)}}
+    .mq-shot{flex:0 0 auto;width:clamp(300px,40vw,470px);border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--card);box-shadow:var(--shadow)}
+    .mq-shot img{width:100%;height:auto;display:block}
 
-    /* CTA / Contact */
-    .cta-block{text-align:center}
-    .cta-narrow{max-width:600px;margin:32px auto 0}
-    .cta-item{
-      background:var(--accent-fill-soft);
-      border:1px solid var(--accent-line);
-      border-radius:14px;
-      padding:40px 28px;
-    }
-    .cta-item:hover{border-color:var(--accent-line-strong);background:var(--accent-fill-hover)}
-    .cta-item h3{font-weight:300;margin-bottom:6px}
-    .cta-item p{color:var(--text-body);margin:12px 0 16px}
-    .email-block{margin-top:32px}
-    .email{
-      display:inline-block;font-weight:300;color:var(--primary);
-      padding:.6rem 1rem;border-radius:var(--r-sm);
-      background:transparent;border:1px solid var(--primary);
-      transition:background var(--duration-normal) ease, box-shadow var(--duration-normal) ease;
-      text-decoration:none;
-    }
-    .email:hover{background:rgba(70,200,255,0.1);box-shadow:var(--glow)}
+    /* ===== CARDS ===== */
+    .cols{display:grid;gap:22px;margin-top:34px}
+    .cols-2{grid-template-columns:1fr 1fr}
+    .cols-3{grid-template-columns:repeat(3,1fr)}
+    .card{padding:26px;border-radius:var(--r-md);background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);transition:transform var(--norm) ease,box-shadow var(--norm) ease,border-color var(--norm) ease}
+    .card:hover{transform:translateY(-4px);border-color:var(--blue);box-shadow:var(--shadow-lg)}
+    .card h3{font-family:var(--display);font-size:1.08rem;font-weight:600;color:var(--ink);margin-bottom:8px}
+    .card h3:not(:first-child){margin-top:18px}
+    .card p{color:var(--ink-3);font-size:.96rem}
 
-    /* Contact form */
-    .contact-form{
-      max-width:760px;margin:32px auto 0;text-align:left;
-      background:var(--accent-fill-soft);
-      border:1px solid var(--accent-line);
-      border-radius:14px;padding:28px;
-    }
-    .field{display:grid;gap:6px;margin-bottom:12px}
-    .field label{font-weight:300;color:var(--text-primary)}
-    .field input,.field textarea{
-      width:100%;padding:.8rem 1rem;
-      border:1px solid var(--accent-line);
-      border-radius:10px;
-      background:rgba(0,0,0,0.3);
-      color:var(--text-primary);
-      transition:border-color var(--duration-fast) ease, background var(--duration-fast) ease, box-shadow var(--duration-fast) ease;
-    }
-    .field input::placeholder,.field textarea::placeholder{color:var(--text-muted)}
-    .field input:focus,.field textarea:focus{
-      outline:none;
-      border-color:rgba(70,200,255,0.4);
-      background:rgba(0,0,0,0.4);
-      box-shadow:0 0 0 3px rgba(70,200,255,0.1);
-    }
+    /* ===== STOCKLIGHT ===== */
+    .alt{background:var(--paper-2);border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
+    .sl-head{display:flex;align-items:center;gap:.9rem;flex-wrap:wrap}
+    .sl-tile{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow)}
+    .sl-tile img{width:30px;height:30px;display:block}
+
+    /* ===== PIPELINE ===== */
+    .flow-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:start;margin-top:34px}
+    .flow-list{list-style:none;display:grid;gap:13px}
+    .flow-list li{display:flex;gap:12px;align-items:flex-start;color:var(--ink-2);font-size:.98rem}
+    .flow-list .n{flex:0 0 auto;width:24px;height:24px;border-radius:7px;background:var(--blue-soft);border:1px solid rgba(9,105,218,.25);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.78rem;color:var(--blue)}
+    .flow-list b{color:var(--ink);font-weight:600}
+    .code{font-family:var(--mono);font-size:.85rem;background:var(--ink);color:#E9EDF4;border-radius:10px;padding:16px;display:block;overflow:auto;line-height:1.8}
+
+    /* ===== CONTACT ===== */
+    .contact{text-align:center}
+    .contact .measure{margin:10px auto 0}
+    .form{max-width:680px;margin:34px auto 0;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);box-shadow:var(--shadow);padding:28px}
+    .field{display:grid;gap:6px;margin-bottom:14px}
+    .field label{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+    .field input,.field textarea{width:100%;padding:.8rem 1rem;border:1px solid var(--line);border-radius:9px;background:var(--paper-2);color:var(--ink);font-family:var(--body);transition:border-color var(--fast) ease,box-shadow var(--fast) ease}
+    .field input::placeholder,.field textarea::placeholder{color:var(--ink-4)}
+    .field input:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:var(--glow)}
     .field textarea{min-height:120px;resize:vertical}
-    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .form-actions{display:flex;gap:10px;align-items:center;margin-top:6px}
-    .note{color:var(--muted);font-size:.9rem}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .form-actions{display:flex;gap:12px;align-items:center;margin-top:6px;flex-wrap:wrap}
+    .email{display:inline-block;font-family:var(--mono);font-size:.9rem;color:var(--blue);padding:.55rem .9rem;border:1px solid var(--line);border-radius:9px;text-decoration:none;margin-top:28px;background:var(--card);transition:border-color var(--norm) ease,box-shadow var(--norm) ease}
+    .email:hover{border-color:var(--blue);box-shadow:var(--shadow)}
 
-    /* Footer */
-    footer{
-      background:var(--bg-soft);
-      color:var(--text-body);
-      padding:56px 24px;
-      border-top:1px solid var(--line);
-    }
-    .foot{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:24px}
-    footer h5{color:var(--text-primary);margin-bottom:.5rem;font-weight:300}
-    footer a{color:var(--text-body);text-decoration:none;transition:color var(--duration-fast) ease}
-    footer a:hover{color:var(--text-primary)}
-    .foot-tag{margin-top:.5rem;font-weight:300}
-    .foot-note{font-size:.85rem;color:var(--text-muted)}
-    .foot-base{text-align:center;margin-top:18px;color:var(--text-muted);border-top:1px solid #1f2937;padding-top:18px}
+    /* ===== FOOTER ===== */
+    footer{background:var(--paper-2);padding:54px 24px;border-top:1px solid var(--line)}
+    .foot{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:24px}
+    footer h5{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin-bottom:.8rem}
+    footer a{display:block;color:var(--ink-3);text-decoration:none;font-size:.94rem;margin-bottom:.4rem;transition:color var(--fast) ease}
+    footer a:hover{color:var(--blue)}
+    .foot p{font-size:.94rem;color:var(--ink-3)}
+    .foot-note{font-family:var(--mono);font-size:.72rem;color:var(--ink-4)}
+    .foot-base{max-width:1180px;margin:26px auto 0;padding-top:20px;border-top:1px solid var(--line);text-align:center;font-family:var(--mono);font-size:.74rem;color:var(--ink-4)}
 
-    /* Responsive */
-    @media (max-width:1024px){
-      .hero-inner{grid-template-columns:1fr}
-      .pillars,.grid,.case,.pipeline{grid-template-columns:1fr}
-      section{padding:100px 24px}
+    /* ===== RESPONSIVE ===== */
+    @media (max-width:980px){
+      .hero-inner{grid-template-columns:1fr;gap:38px}
+      .steps{grid-template-columns:1fr 1fr}
+      .cols-3{grid-template-columns:1fr 1fr}
+      .flow-grid{grid-template-columns:1fr}
+      section{padding:88px 24px}
     }
     @media (max-width:640px){
-      html,body{overflow-x:hidden;max-width:100vw}
-      .nav{height:72px;padding:0 16px;position:relative}
-      .logo svg,.logo img{height:38px;width:auto}
+      .nav{height:66px;padding:0 16px;position:relative}
+      .logo svg{height:38px}
       .nav-toggle{display:inline-block}
-      .nav-links{position:absolute;top:72px;left:0;right:0;display:none;flex-direction:column;gap:12px;background:var(--panel);border-top:1px solid var(--line);padding:12px 16px}
+      .nav-links{position:absolute;top:66px;left:0;right:0;display:none;flex-direction:column;gap:14px;background:var(--card);border-top:1px solid var(--line);padding:16px;box-shadow:var(--shadow)}
       .nav.is-open .nav-links{display:flex}
-      .nav-links a{font-size:.95rem;white-space:normal;padding:6px 0}
-      .hero-inner{padding:40px 16px 60px;gap:20px}
-      .hero-cta{gap:8px}
-      .btn{width:100%;justify-content:center;padding:.9rem 1rem}
-      section{padding:60px 16px}
-      /* extra separation so Products/StockLight isn't crammed against the pipeline section above */
-      #stocklight{padding-top:88px}
-      .eyebrow + .h2-md{margin-top:14px}
-      .container{padding:0 16px;max-width:100%}
-      h1{font-size:28px}
-      h2{font-size:1.5rem!important}
-      .form-row{grid-template-columns:1fr}
-      .pillars,.grid,.case,.pipeline{gap:20px}
-      .hero-card,.card,.service,.flow,.cta-item,.contact-form{max-width:100%;overflow:hidden}
-      .code{overflow-x:auto;max-width:100%}
-      body{background:linear-gradient(rgba(11,16,24,.55), rgba(14,20,31,.62)), url('./cover.svg') no-repeat center top, var(--bg);background-size:cover, cover, auto;background-attachment:scroll;overflow-x:hidden}
-      body::before{background-size:40px 40px}
+      .hero-inner{padding:44px 16px 56px}
+      .hero-cta{gap:8px}.btn{width:100%}
+      section{padding:62px 16px}
+      .steps,.cols-2,.cols-3,.form-row{grid-template-columns:1fr;gap:14px}
+      .mq-shot{width:80vw}
+      .foot{grid-template-columns:1fr 1fr;gap:20px}
+      .proof{font-size:.72rem}
+      body::before{background-size:46px 46px}
     }
   </style>
 
-  <!-- Schema -->
   <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"RRK Technologies",
-    "url":"https://rrk-technologies.com/",
-    "logo":"https://rrk-technologies.com/logo.svg",
-    "description":"Builder-led technology company delivering production-grade full-stack systems: backend, frontend, cloud, data pipelines, AI agents, and QA intelligence."
-  }
+  {"@context":"https://schema.org","@type":"Organization","name":"RRK Technologies","url":"https://rrk-technologies.com/","logo":"https://rrk-technologies.com/logo.svg","description":"Builder-led technology company. Flagship product RRK Verify is a deterministic QA trust layer for AI-written code. Also: StockLight market clarity, full-stack, cloud, data and AI engineering."}
   </script>
 </head>
 <body>
-  <!-- Header -->
   <header class="header" role="banner">
     <nav class="nav" aria-label="Primary">
-      <!-- RRK Technologies header lockup: exact brand mark (your 1024 SVG paths) on a light app-icon tile,
-           so the navy mark stays legible on the dark header. Wordmark in light type beside it. -->
       <a class="logo" href="#top" aria-label="RRK Technologies home" rrk-automation-id="rrk-logo-link">
-        <svg width="206" height="64" viewBox="0 0 206 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rrk-title rrk-desc">
+        <svg width="206" height="64" viewBox="0 0 206 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rrk-title">
           <title id="rrk-title">RRK Technologies</title>
-          <desc id="rrk-desc">RRK Technologies logo: layered full-stack system mark with an intelligent blue core.</desc>
           <defs>
-            <linearGradient id="rrkCore" x1="430" y1="210" x2="594" y2="380" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#38BDF8"/><stop offset="1" stop-color="#2563EB"/>
-            </linearGradient>
-            <!-- navy layers lightened to slate so the mark reads on the dark header (no tile) -->
-            <linearGradient id="rrkNavy" x1="210" y1="120" x2="820" y2="720" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#46587A"/><stop offset="1" stop-color="#2C3A54"/>
-            </linearGradient>
-            <linearGradient id="rrkSlate" x1="230" y1="390" x2="800" y2="640" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#64768F"/><stop offset="1" stop-color="#42536D"/>
-            </linearGradient>
+            <linearGradient id="rrkCore" x1="430" y1="210" x2="594" y2="380" gradientUnits="userSpaceOnUse"><stop stop-color="#2F8FE0"/><stop offset="1" stop-color="#0969DA"/></linearGradient>
+            <linearGradient id="rrkNavy" x1="210" y1="120" x2="820" y2="720" gradientUnits="userSpaceOnUse"><stop stop-color="#3C4A66"/><stop offset="1" stop-color="#222D43"/></linearGradient>
+            <linearGradient id="rrkSlate" x1="230" y1="390" x2="800" y2="640" gradientUnits="userSpaceOnUse"><stop stop-color="#586981"/><stop offset="1" stop-color="#3A485F"/></linearGradient>
           </defs>
-
-          <!-- exact mark, recolored for the dark header (blends with the app background) -->
           <g transform="translate(3.88 7.44) scale(0.0471)">
             <path d="M512 118C526 118 540 122 552 129L754 246C781 262 781 301 754 317L552 434C540 441 526 445 512 445C498 445 484 441 472 434L270 317C243 301 243 262 270 246L472 129C484 122 498 118 512 118Z" fill="url(#rrkNavy)"/>
-            <path d="M512 197C522 197 532 200 541 205L650 268C670 280 670 308 650 320L541 383C532 388 522 391 512 391C502 391 492 388 483 383L374 320C354 308 354 280 374 268L483 205C492 200 502 197 512 197Z" fill="#0E141F"/>
+            <path d="M512 197C522 197 532 200 541 205L650 268C670 280 670 308 650 320L541 383C532 388 522 391 512 391C502 391 492 388 483 383L374 320C354 308 354 280 374 268L483 205C492 200 502 197 512 197Z" fill="#F7F5EF"/>
             <path d="M512 249C520 249 528 251 535 255L590 287C605 296 605 318 590 327L535 359C528 363 520 365 512 365C504 365 496 363 489 359L434 327C419 318 419 296 434 287L489 255C496 251 504 249 512 249Z" fill="url(#rrkCore)"/>
-            <path d="M296 365L472 467C484 474 498 478 512 478C526 478 540 474 552 467L728 365L802 408C828 423 828 461 802 476L552 621C540 628 526 632 512 632C498 632 484 628 472 621L222 476C196 461 196 423 222 408L296 365Z" fill="#3A4965"/>
+            <path d="M296 365L472 467C484 474 498 478 512 478C526 478 540 474 552 467L728 365L802 408C828 423 828 461 802 476L552 621C540 628 526 632 512 632C498 632 484 628 472 621L222 476C196 461 196 423 222 408L296 365Z" fill="#42526E"/>
             <path d="M486 462C486 454 493 448 501 448H523C531 448 538 454 538 462V519C538 529 530 537 520 537H504C494 537 486 529 486 519V462Z" fill="url(#rrkCore)"/>
             <path d="M256 520L472 645C484 652 498 656 512 656C526 656 540 652 552 645L768 520L816 548C842 563 842 601 816 616L552 769C540 776 526 780 512 780C498 780 484 776 472 769L208 616C182 601 182 563 208 548L256 520Z" fill="url(#rrkSlate)"/>
             <path d="M486 641C486 633 493 627 501 627H523C531 627 538 633 538 641V698C538 708 530 716 520 716H504C494 716 486 708 486 698V641Z" fill="url(#rrkCore)"/>
             <path d="M296 682L472 784C484 791 498 795 512 795C526 795 540 791 552 784L728 682L781 713C807 728 807 766 781 781L552 914C540 921 526 925 512 925C498 925 484 921 472 914L243 781C217 766 217 728 243 713L296 682Z" fill="url(#rrkNavy)"/>
             <path d="M488 781C488 774 494 768 501 768H523C530 768 536 774 536 781V827C536 837 528 845 518 845H506C496 845 488 837 488 827V781Z" fill="url(#rrkCore)"/>
           </g>
-
-          <!-- Wordmark (light type for dark header) -->
           <g>
-            <text x="62" y="31" fill="#F1F5F9" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="800" letter-spacing="-0.01em">RRK</text>
-            <text x="63" y="46" fill="#9FB0C4" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8.5" font-weight="600" letter-spacing="0.3em">TECHNOLOGIES</text>
+            <text x="62" y="31" fill="#15181F" font-family="'Space Grotesk',Inter,sans-serif" font-size="22" font-weight="700" letter-spacing="-0.01em">RRK</text>
+            <text x="63" y="46" fill="#646C7C" font-family="'JetBrains Mono',monospace" font-size="8" font-weight="500" letter-spacing="0.28em">TECHNOLOGIES</text>
           </g>
         </svg>
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-controls="primary-nav" aria-expanded="false" rrk-automation-id="nav-toggle-btn">Menu</button>
       <ul class="nav-links" id="primary-nav">
-        <li><a href="#pipeline" rrk-automation-id="pipeline-nav-link">Data Pipelines</a></li>
-        <li><a href="#stocklight" rrk-automation-id="products-nav-link">Products</a></li>
+        <li><a href="#verify" class="flagship" rrk-automation-id="verify-nav-link">RRK Verify</a></li>
+        <li><a href="#products" rrk-automation-id="products-nav-link">Products</a></li>
         <li><a href="#services" rrk-automation-id="services-nav-link">Services</a></li>
-        <li><a href="#verify" rrk-automation-id="verify-nav-link">RRK Verify</a></li>
+        <li><a href="#pipeline" rrk-automation-id="pipeline-nav-link">Pipelines</a></li>
         <li><a href="#contact" class="cta" rrk-automation-id="contact-nav-link">Contact</a></li>
       </ul>
     </nav>
@@ -578,294 +315,203 @@
   <section id="top" class="hero" aria-label="Hero">
     <div class="hero-inner">
       <div class="reveal">
-        <span class="eyebrow">Full&#8209;Stack · Automation · Cloud · AI</span>
-        <h1>Full-stack AI, automation &amp; cloud systems.</h1>
-        <p class="sub">
-          We build production-grade backend, frontend, automation, data, and AI systems for teams that need real outcomes — not experiments.
-        </p>
+        <span class="eyebrow">RRK Technologies</span>
+        <h1>Trust your code <span class="acc">before</span> you ship it.</h1>
+        <p class="hero-sub">We build production-grade systems that turn fragile tests, messy data, and market noise into one clear, trustworthy signal. Proof over hype.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#contact" rrk-automation-id="start-project-btn">Start a project</a>
+          <a class="btn btn-primary" href="#verify" rrk-automation-id="meet-verify-btn">Meet RRK Verify</a>
+          <a class="btn btn-ghost" href="#contact" rrk-automation-id="start-project-btn">Start a project</a>
         </div>
+        <div class="proof"><span class="ok">scan ✓</span><span class="sep">/</span><span>120 findings</span><span class="sep">·</span><span>every one cites <b>file:line</b></span></div>
       </div>
 
-      <div class="hero-card reveal" aria-label="Summary">
-        <h3>One connected system</h3>
-        <p class="sub sub-sm">Backend, frontend, cloud, data, AI agents, and QA intelligence — scoped, built, and shipped as one stack.</p>
-        <div class="hero-highlight">
-          <strong>Clear scope → Build → Measurable results</strong>
+      <div class="stage reveal d1">
+        <span class="br tl"></span><span class="br tr"></span><span class="br bl"></span><span class="br brr"></span>
+        <div class="app-window" aria-label="RRK Verify product preview">
+          <div class="aw-bar"><i></i><i></i><i></i><span class="aw-url">rrk verify</span><span class="aw-live">live scan</span></div>
+          <div class="aw-screen">
+            <img class="aw-slide" src="./assets/verify/shots/03-overview.png" alt="RRK Verify overview: testability score, project loader, and top findings." loading="eager" decoding="async" />
+            <img class="aw-slide" src="./assets/verify/shots/04-testability-map.png" alt="RRK Verify testability map with ranked top fixes and a findings table." loading="lazy" decoding="async" />
+            <img class="aw-slide" src="./assets/verify/shots/05-finding-detail.png" alt="RRK Verify finding detail with code evidence and a copyable locator." loading="lazy" decoding="async" />
+            <img class="aw-slide" src="./assets/verify/shots/11-reports.png" alt="RRK Verify reports view." loading="lazy" decoding="async" />
+            <img class="aw-slide" src="./assets/verify/shots/08-test-runs.png" alt="RRK Verify test runs view." loading="lazy" decoding="async" />
+            <img class="aw-slide" src="./assets/verify/shots/06-recorder.png" alt="RRK Verify recorder capturing a real browser flow." loading="lazy" decoding="async" />
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Data Pipelines -->
-  <section id="pipeline" class="container" aria-labelledby="pipeline-h">
-    <h2 id="pipeline-h" class="h2-md reveal">Data pipelines - ingestion to intelligence</h2>
-    <p class="sub measure reveal">From ingestion through analysis to delivery. Built for StockLight. Applied to client systems: finance ops, marketing, support.</p>
+  <!-- RRK Verify flagship -->
+  <section id="verify" class="flagship" aria-labelledby="verify-h">
+    <div class="wrap">
+      <div class="fl-head reveal">
+        <div class="verify-lockup">
+          <img src="./assets/verify/verify-logo.svg" width="240" height="72" alt="RRK Verify" />
+          <span class="note"><span class="dot"></span>In active development</span>
+        </div>
+        <span class="eyebrow">Flagship product</span>
+        <h2 id="verify-h" class="verify-claim">A deterministic QA trust layer for the AI-coding era. <span class="acc">Every finding comes with proof.</span></h2>
+        <p class="lead measure">As AI writes more of your code, the hard part shifts from writing it to trusting it. RRK Verify scans your repo, scores its testability, and shows the exact evidence behind every finding, so your team can act without guessing. Your source stays on your machine.</p>
+      </div>
 
-    <div class="pipeline">
-      <div class="flow reveal">
-        <h3>Reference pipeline</h3>
-        <ul>
-          <li><span class="step">1</span><div><strong>Ingest</strong> - RSS, APIs, scrapers, uploads, webhooks</div></li>
-          <li><span class="step">2</span><div><strong>Normalize</strong> - schema mapping, dedup, enrichment</div></li>
-          <li><span class="step">3</span><div><strong>Store</strong> - Database tables, vector embeddings, partitions</div></li>
-          <li><span class="step">4</span><div><strong>Analyze</strong> - AI signals, topic modeling, entity linking</div></li>
-          <li><span class="step">5</span><div><strong>Agents</strong> - decision units that select tools and produce outputs</div></li>
-          <li><span class="step">6</span><div><strong>Deliver</strong> - APIs, dashboards, alerts, exports</div></li>
-        </ul>
+      <div class="steps">
+        <div class="step reveal"><span class="idx">01</span><h3>Scan</h3><p>A read-only scan flags fragile selectors, missing and duplicate test-ids, and coverage gaps. Same input, same result.</p></div>
+        <div class="step reveal d1"><span class="idx">02</span><h3>Map</h3><p>A testability score and ranked fixes, built from a deterministic rule pack with no model in the decision path.</p></div>
+        <div class="step reveal d2"><span class="idx">03</span><h3>Evidence</h3><p>Every finding cites file, line, and a copyable locator. "Unclear" is a valid answer, never a false pass.</p></div>
+        <div class="step reveal d3"><span class="idx">04</span><h3>Verify</h3><p>Record a real flow, generate a Playwright draft, run it, and only on your approval write the test into your repo.</p></div>
       </div>
-      <div class="flow reveal">
-        <h3>StockLight style snippet</h3>
-        <pre class="code">symbols -> events -> features -> narrative
-alerts -> watchlists -> personalization
-api -> web -> discord/telegram</pre>
-        <p class="sub sub-sm mt-1">We productize this for finance, ops, marketing, and support use cases.</p>
+
+      <div class="marquee reveal" aria-label="RRK Verify product screens">
+        <div class="mq-track">
+          <div class="mq-shot"><img src="./assets/verify/shots/03-overview.png" alt="Overview" loading="lazy"/></div>
+          <div class="mq-shot"><img src="./assets/verify/shots/04-testability-map.png" alt="Testability map" loading="lazy"/></div>
+          <div class="mq-shot"><img src="./assets/verify/shots/05-finding-detail.png" alt="Finding detail" loading="lazy"/></div>
+          <div class="mq-shot"><img src="./assets/verify/shots/06-recorder.png" alt="Recorder" loading="lazy"/></div>
+          <div class="mq-shot"><img src="./assets/verify/shots/08-test-runs.png" alt="Test runs" loading="lazy"/></div>
+          <div class="mq-shot"><img src="./assets/verify/shots/09-saved-tests.png" alt="Saved tests" loading="lazy"/></div>
+          <div class="mq-shot"><img src="./assets/verify/shots/11-reports.png" alt="Reports" loading="lazy"/></div>
+          <div class="mq-shot"><img src="./assets/verify/shots/12-agent-verification.png" alt="Agent verification" loading="lazy"/></div>
+          <div class="mq-shot" aria-hidden="true"><img src="./assets/verify/shots/03-overview.png" alt="" loading="lazy"/></div>
+          <div class="mq-shot" aria-hidden="true"><img src="./assets/verify/shots/04-testability-map.png" alt="" loading="lazy"/></div>
+          <div class="mq-shot" aria-hidden="true"><img src="./assets/verify/shots/05-finding-detail.png" alt="" loading="lazy"/></div>
+          <div class="mq-shot" aria-hidden="true"><img src="./assets/verify/shots/06-recorder.png" alt="" loading="lazy"/></div>
+          <div class="mq-shot" aria-hidden="true"><img src="./assets/verify/shots/08-test-runs.png" alt="" loading="lazy"/></div>
+          <div class="mq-shot" aria-hidden="true"><img src="./assets/verify/shots/09-saved-tests.png" alt="" loading="lazy"/></div>
+          <div class="mq-shot" aria-hidden="true"><img src="./assets/verify/shots/11-reports.png" alt="" loading="lazy"/></div>
+          <div class="mq-shot" aria-hidden="true"><img src="./assets/verify/shots/12-agent-verification.png" alt="" loading="lazy"/></div>
+        </div>
       </div>
+
+      <div class="mt-l reveal"><a class="btn btn-primary" href="#contact" rrk-automation-id="verify-cta-btn">Talk to us about RRK Verify</a></div>
     </div>
   </section>
 
-  <!-- StockLight Product -->
-  <section id="stocklight" class="container" aria-labelledby="stocklight-h">
-    <span class="eyebrow reveal">Products · StockLight</span>
-    <h2 id="stocklight-h" class="h2-md mt-1 reveal">Market clarity for people who think before they act</h2>
-    <p class="sub measure reveal">StockLight helps you understand what actually changed in the market, why it matters, and whether you should care.</p>
-
-    <div class="pillars">
-      <div class="card reveal">
-        <h3>Daily clarity</h3>
-        <p>Short, structured briefs that explain what happened and why it matters.</p>
-
-        <h3>Context over headlines</h3>
-        <p>Events are connected across symbols and sectors so you see the bigger picture.</p>
-
-        <h3>Decision-ready insight</h3>
-        <p>Insights you can explain in one sentence, to yourself or to someone else.</p>
+  <!-- StockLight -->
+  <section id="products" class="alt" aria-labelledby="sl-h">
+    <div class="wrap">
+      <div class="sl-head reveal">
+        <span class="sl-tile"><img src="./assets/stocklight/stocklight-mark.svg" width="30" height="30" alt="StockLight" loading="lazy" /></span>
+        <span class="eyebrow">Product · StockLight</span>
+      </div>
+      <h2 id="sl-h" class="mt-m reveal">Market clarity for people who think before they act.</h2>
+      <p class="lead measure mt-s reveal">The same idea, applied to markets. StockLight cuts the noise and tells you what actually changed, why it matters, and whether you should care.</p>
+      <div class="cols cols-2">
+        <div class="card reveal">
+          <h3>Daily clarity</h3><p>Short, structured briefs that explain what happened and why it matters.</p>
+          <h3>Context over headlines</h3><p>Events are connected across symbols and sectors, so you see the bigger picture.</p>
+          <h3>Decision-ready</h3><p>Insight you can explain in one sentence, to yourself or to someone else.</p>
+        </div>
+        <div class="card reveal d1">
+          <h3>Personal relevance</h3><p>You see what matters to your names, not everything that happened.</p>
+          <h3>Where you already are</h3><p>Read it on web, Discord, or Telegram. No new habits required.</p>
+          <h3>What we leave out</h3><p>No price targets. No hype. No buy or sell signals. We never replace your judgment.</p>
+          <div class="mt-m"><a class="btn btn-ghost" href="https://stocklight.io/" target="_blank" rel="noopener" rrk-automation-id="visit-stocklight-btn">Explore StockLight</a></div>
+        </div>
       </div>
 
-      <div class="card reveal">
-        <h3>Personal relevance</h3>
-        <p>You see what matters to your names, not everything that happened.</p>
-
-        <h3>Delivered where you are</h3>
-        <p>Access insights via web, Discord, or Telegram. No new habits required.</p>
-
-        <h3>What we don't do</h3>
-        <p>No price targets. No hype. No buy/sell signals. No replacing your judgment.</p>
-
-        <div class="card-action">
-          <a href="https://stocklight.io/" class="btn btn-primary" target="_blank" rel="noopener" rrk-automation-id="visit-stocklight-btn">Explore StockLight</a>
+      <div class="marquee reveal" aria-label="StockLight product screens">
+        <div class="mq-track">
+          <div class="mq-shot"><img src="./assets/stocklight/shots/nerrative_analysis.png" alt="StockLight narrative analysis for a stock with deep analysis and evidence." loading="lazy"/></div>
+          <div class="mq-shot"><img src="./assets/stocklight/shots/world_layer.png" alt="StockLight power score and key indicators for a company." loading="lazy"/></div>
+          <div class="mq-shot"><img src="./assets/stocklight/shots/market-nerrative-forcast.png" alt="StockLight market narrative timeline and prediction markets." loading="lazy"/></div>
+          <div class="mq-shot"><img src="./assets/stocklight/shots/stock-timeline-nerrative.png" alt="StockLight stock timeline narrative." loading="lazy"/></div>
+          <div class="mq-shot"><img src="./assets/stocklight/shots/nerrative_hub.png" alt="StockLight narrative hub." loading="lazy"/></div>
+          <div class="mq-shot"><img src="./assets/stocklight/shots/ai_chat.png" alt="StockLight AI copilot chat." loading="lazy"/></div>
+          <div class="mq-shot" aria-hidden="true"><img src="./assets/stocklight/shots/nerrative_analysis.png" alt="" loading="lazy"/></div>
+          <div class="mq-shot" aria-hidden="true"><img src="./assets/stocklight/shots/world_layer.png" alt="" loading="lazy"/></div>
+          <div class="mq-shot" aria-hidden="true"><img src="./assets/stocklight/shots/market-nerrative-forcast.png" alt="" loading="lazy"/></div>
+          <div class="mq-shot" aria-hidden="true"><img src="./assets/stocklight/shots/stock-timeline-nerrative.png" alt="" loading="lazy"/></div>
+          <div class="mq-shot" aria-hidden="true"><img src="./assets/stocklight/shots/nerrative_hub.png" alt="" loading="lazy"/></div>
+          <div class="mq-shot" aria-hidden="true"><img src="./assets/stocklight/shots/ai_chat.png" alt="" loading="lazy"/></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Services -->
-  <section id="services" class="section-alt" aria-labelledby="services-h">
-    <div class="container">
-      <div class="center reveal">
-        <span class="eyebrow">What We Build</span>
-        <h2 id="services-h" class="h2-md mt-1">Full-stack product development</h2>
-        <p class="sub measure-center mt-1">Backend services, frontend applications, dashboards, databases, auth flows, APIs, integrations, and deployment pipelines — built as one connected system.</p>
-      </div>
-
-      <div class="grid">
-        <div class="service reveal">
-          <h4>Full-stack products</h4>
-          <p>Backend, frontend, APIs, dashboards, auth, databases, and integrations.</p>
-        </div>
-        <div class="service reveal">
-          <h4>AI agents &amp; automation</h4>
-          <p>Agents that understand intent, use tools, run workflows, and stay inside guardrails.</p>
-        </div>
-        <div class="service reveal">
-          <h4>Cloud backends</h4>
-          <p>GCP, AWS, Azure, Docker, queues, schedulers, observability, and cost-aware architecture.</p>
-        </div>
-        <div class="service reveal">
-          <h4>Data pipelines</h4>
-          <p>Ingest, normalize, store, enrich, analyze, and deliver insights through APIs and products.</p>
-        </div>
-        <div class="service reveal">
-          <h4>QA intelligence</h4>
-          <p>Testability maps, selector risk detection, test layer awareness, CI quality gates, and verification workflows.</p>
-        </div>
-        <div class="service reveal">
-          <h4>Technical delivery</h4>
-          <p>Scope, build, ship, measure, and improve with clear ownership.</p>
-        </div>
+  <section id="services" aria-labelledby="svc-h">
+    <div class="wrap">
+      <span class="eyebrow reveal">What we build</span>
+      <h2 id="svc-h" class="mt-m reveal">Full-stack product engineering.</h2>
+      <p class="lead measure mt-s reveal">Backend services, frontend apps, dashboards, databases, auth, APIs, integrations, and deployment, built as one connected system.</p>
+      <div class="cols cols-3">
+        <div class="card reveal"><h3>Full-stack products</h3><p>Backend, frontend, APIs, dashboards, auth, databases, and integrations.</p></div>
+        <div class="card reveal d1"><h3>AI agents &amp; automation</h3><p>Agents that understand intent, use tools, run workflows, and stay inside guardrails.</p></div>
+        <div class="card reveal d2"><h3>Cloud backends</h3><p>GCP, AWS, Azure, Docker, queues, schedulers, observability, and cost-aware architecture.</p></div>
+        <div class="card reveal"><h3>Data pipelines</h3><p>Ingest, normalize, store, enrich, analyze, and deliver insight through APIs and products.</p></div>
+        <div class="card reveal d1"><h3>QA intelligence</h3><p>Testability maps, selector risk, test-layer awareness, CI quality gates, and verification.</p></div>
+        <div class="card reveal d2"><h3>Technical delivery</h3><p>Scope, build, ship, measure, and improve, with clear ownership throughout.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- RRK Verify (product direction — in active development) -->
-  <section id="verify" class="container" aria-labelledby="verify-h">
-    <span class="status-pill reveal">In active development · Internal build</span>
-    <h2 id="verify-h" class="h2-md mt-1 reveal">RRK Verify</h2>
-    <p class="sub measure reveal">QA intelligence for modern software teams and AI agents.</p>
-    <p class="sub measure reveal">RRK Verify scans software projects, maps testability risks, detects fragile selectors, understands test layers, and gives teams evidence-based recommendations before AI writes or changes tests.</p>
-
-    <div class="pillars">
-      <div class="card reveal">
-        <h3>What it does</h3>
-        <ul class="list">
-          <li>Maps testability risk across a project</li>
-          <li>Detects fragile selectors before they break</li>
-          <li>Understands test layers — unit, API, UI, data</li>
-          <li>Evidence-based recommendations before AI writes or changes tests</li>
+  <!-- Pipeline -->
+  <section id="pipeline" class="alt" aria-labelledby="pl-h">
+    <div class="wrap">
+      <span class="eyebrow reveal">Data pipelines</span>
+      <h2 id="pl-h" class="mt-m reveal">From ingestion to intelligence.</h2>
+      <p class="lead measure mt-s reveal">From raw inputs through analysis to delivery. Built for StockLight, applied to client systems in finance ops, marketing, and support.</p>
+      <div class="flow-grid">
+        <ul class="flow-list reveal">
+          <li><span class="n">1</span><div><b>Ingest.</b> RSS, APIs, scrapers, uploads, and webhooks.</div></li>
+          <li><span class="n">2</span><div><b>Normalize.</b> Schema mapping, dedup, and enrichment.</div></li>
+          <li><span class="n">3</span><div><b>Store.</b> Tables, vector embeddings, and partitions.</div></li>
+          <li><span class="n">4</span><div><b>Analyze.</b> Signals, topic modeling, and entity linking.</div></li>
+          <li><span class="n">5</span><div><b>Agents.</b> Decision units that select tools and produce output.</div></li>
+          <li><span class="n">6</span><div><b>Deliver.</b> APIs, dashboards, alerts, and exports.</div></li>
         </ul>
-        <div class="card-action">
-          <a class="btn btn-secondary" href="#contact" rrk-automation-id="verify-cta-btn">Talk to us about RRK Verify</a>
+        <div class="reveal d1">
+          <pre class="code">symbols  ->  events  ->  features  ->  narrative
+alerts   ->  watchlists  ->  personalization
+api      ->  web  ->  discord / telegram</pre>
+          <p class="mt-m" style="font-size:.94rem;color:var(--ink-3)">We productize this for finance, ops, marketing, and support.</p>
         </div>
-      </div>
-
-      <div class="card reveal">
-        <h3>Where it comes from</h3>
-        <p>A product direction inside RRK Technologies, built from real QA infrastructure work — not a rebrand of a single tool.</p>
-
-        <h3>Honest status</h3>
-        <p>RRK Verify is an internal, private build in active development. It is not a fully launched or fully autonomous product. We are shaping it against real codebases.</p>
       </div>
     </div>
   </section>
 
-  <!-- CTA / Contact -->
-  <section id="contact" class="container cta-block" aria-labelledby="cta-h">
-    <h2 id="cta-h" class="h2-md reveal">Let's build something better</h2>
-    <p class="sub measure-center mt-1 reveal">Book a discovery call. We will scope a compact, high impact automation track and ship a measurable result.</p>
-
-    <div class="cta-narrow reveal">
-      <div class="cta-item">
-        <h3>Work with RRK</h3>
-        <p>Scope an automation project and get a measurable outcome.</p>
-        <a class="btn btn-primary" href="mailto:info@rrk-technologies.com" rrk-automation-id="contact-email-btn">Contact by email</a>
-      </div>
-    </div>
-
-    <div class="email-block reveal">
-      <a class="email" href="mailto:info@rrk-technologies.com" rrk-automation-id="email-link">info@rrk-technologies.com</a>
-    </div>
-
-    <form id="contact-form" class="contact-form reveal" aria-label="Contact form" rrk-automation-id="contact-form">
-      <div class="form-row">
-        <div class="field">
-          <label for="cf-name">Name</label>
-          <input id="cf-name" name="name" type="text" autocomplete="name" required placeholder="Your name" rrk-automation-id="name-input" />
+  <!-- Contact -->
+  <section id="contact" class="contact" aria-labelledby="ct-h">
+    <div class="wrap">
+      <span class="eyebrow reveal" style="justify-content:center">Work with RRK</span>
+      <h2 id="ct-h" class="mt-m reveal">Let's build something you can trust.</h2>
+      <p class="lead measure mt-s reveal">Book a discovery call. We scope a compact, high-impact track and ship a measurable result.</p>
+      <a class="email reveal" href="mailto:info@rrk-technologies.com" rrk-automation-id="email-link">info@rrk-technologies.com</a>
+      <form id="contact-form" class="form reveal" aria-label="Contact form" rrk-automation-id="contact-form">
+        <div class="form-row">
+          <div class="field"><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" autocomplete="name" required placeholder="Your name" rrk-automation-id="name-input" /></div>
+          <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" rrk-automation-id="email-input" /></div>
         </div>
-        <div class="field">
-          <label for="cf-email">Email</label>
-          <input id="cf-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" rrk-automation-id="email-input" />
+        <div class="field"><label for="cf-subject">Subject</label><input id="cf-subject" name="subject" type="text" required placeholder="How can we help?" rrk-automation-id="subject-input" /></div>
+        <div class="field"><label for="cf-message">Message</label><textarea id="cf-message" name="message" required placeholder="Tell us a bit about your needs" rrk-automation-id="message-textarea"></textarea></div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" rrk-automation-id="submit-form-btn">Send message</button>
+          <span class="note">We reply from info@rrk-technologies.com</span>
         </div>
-      </div>
-      <div class="field">
-        <label for="cf-subject">Subject</label>
-        <input id="cf-subject" name="subject" type="text" required placeholder="How can we help?" rrk-automation-id="subject-input" />
-      </div>
-      <div class="field">
-        <label for="cf-message">Message</label>
-        <textarea id="cf-message" name="message" required placeholder="Tell us a bit about your needs" rrk-automation-id="message-textarea"></textarea>
-      </div>
-      <div class="form-actions">
-        <button type="submit" class="btn btn-primary" rrk-automation-id="submit-form-btn">Send message</button>
-        <span class="note">We reply from info@rrk-technologies.com</span>
-      </div>
-    </form>
+      </form>
+    </div>
   </section>
 
-  <!-- Footer -->
   <footer role="contentinfo">
     <div class="foot">
       <div>
         <h5>RRK Technologies</h5>
-        <p>We build production-grade full-stack systems: backend services, frontend products, cloud infrastructure, data pipelines, AI agents, and QA intelligence.</p>
-        <p class="foot-tag">Builder-led and independent — operating since January 2022.</p>
+        <p>Production-grade systems that turn noise into signal: QA trust, market clarity, full-stack products, cloud, data, and AI.</p>
+        <p class="foot-note mt-s">Builder-led and independent. Operating since January 2022.</p>
       </div>
-      <div>
-        <h5>Services</h5>
-        <a href="#services" rrk-automation-id="footer-fullstack-link">Full-stack development</a><br/>
-        <a href="#services" rrk-automation-id="footer-automation-link">Automation</a><br/>
-        <a href="#services" rrk-automation-id="footer-cloud-link">Cloud</a><br/>
-        <a href="#services" rrk-automation-id="footer-ai-link">AI agents</a><br/>
-        <a href="#pipeline" rrk-automation-id="footer-pipelines-link">Data pipelines</a><br/>
-        <a href="#verify" rrk-automation-id="footer-qa-link">QA intelligence</a>
-      </div>
-      <div>
-        <h5>Products</h5>
-        <a href="https://stocklight.io/" target="_blank" rel="noopener" rrk-automation-id="footer-stocklight-link">StockLight</a><br/>
-        <a href="#verify" rrk-automation-id="footer-verify-link">RRK Verify</a><br/>
-        <span class="foot-note">In active development</span>
-      </div>
-      <div>
-        <h5>Contact</h5>
-        <a href="mailto:info@rrk-technologies.com" rrk-automation-id="footer-email-link">info@rrk-technologies.com</a><br/>
-        <a href="#contact" rrk-automation-id="footer-contact-link">Contact form</a>
-      </div>
+      <div><h5>Products</h5><a href="#verify" rrk-automation-id="footer-verify-link">RRK Verify</a><a href="https://stocklight.io/" target="_blank" rel="noopener" rrk-automation-id="footer-stocklight-link">StockLight</a></div>
+      <div><h5>Build</h5><a href="#services" rrk-automation-id="footer-fullstack-link">Full-stack</a><a href="#services" rrk-automation-id="footer-ai-link">AI agents</a><a href="#services" rrk-automation-id="footer-cloud-link">Cloud</a><a href="#pipeline" rrk-automation-id="footer-pipelines-link">Data pipelines</a></div>
+      <div><h5>Contact</h5><a href="mailto:info@rrk-technologies.com" rrk-automation-id="footer-email-link">info@rrk-technologies.com</a><a href="#contact" rrk-automation-id="footer-contact-link">Contact form</a></div>
     </div>
-    <div class="foot-base">
-      © 2022–2026 RRK Technologies. All rights reserved.
-    </div>
+    <div class="foot-base">© 2022–2026 RRK Technologies. All rights reserved.</div>
   </footer>
+
   <script>
-  (function(){
-    var form = document.getElementById('contact-form');
-    if(!form) return;
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      var name = document.getElementById('cf-name').value.trim();
-      var fromEmail = document.getElementById('cf-email').value.trim();
-      var subject = document.getElementById('cf-subject').value.trim();
-      var message = document.getElementById('cf-message').value.trim();
-      var to = 'info@rrk-technologies.com';
-      var fullSubject = subject || 'Website contact form';
-      var body = 'Name: ' + name + '\nEmail: ' + fromEmail + '\n\n' + message;
-      var mailto = 'mailto:' + encodeURIComponent(to) + '?subject=' + encodeURIComponent(fullSubject) + '&body=' + encodeURIComponent(body);
-      window.location.href = mailto;
-    });
-  })();
-
-  (function(){
-    var nav = document.querySelector('.nav');
-    var toggle = document.getElementById('nav-toggle');
-    if(!toggle || !nav) return;
-    toggle.addEventListener('click', function(){
-      var open = nav.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  })();
-
-  /* ===== Header shadow on scroll ===== */
-  (function(){
-    var header = document.querySelector('.header');
-    if(!header) return;
-    var ticking = false;
-    function update(){
-      header.classList.toggle('scrolled', window.scrollY > 8);
-      ticking = false;
-    }
-    window.addEventListener('scroll', function(){
-      if(!ticking){ window.requestAnimationFrame(update); ticking = true; }
-    }, { passive: true });
-    update();
-  })();
-
-  /* ===== Scroll reveal (GPU-safe, one-shot via IntersectionObserver) ===== */
-  (function(){
-    var els = document.querySelectorAll('.reveal');
-    if(!els.length) return;
-    if(!('IntersectionObserver' in window)){
-      els.forEach(function(el){ el.classList.add('in'); });
-      return;
-    }
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){
-        if(en.isIntersecting){
-          en.target.classList.add('in');
-          io.unobserve(en.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    els.forEach(function(el){ io.observe(el); });
-  })();
+  (function(){var form=document.getElementById('contact-form');if(!form)return;form.addEventListener('submit',function(e){e.preventDefault();var n=document.getElementById('cf-name').value.trim(),fe=document.getElementById('cf-email').value.trim(),s=document.getElementById('cf-subject').value.trim(),m=document.getElementById('cf-message').value.trim();var body='Name: '+n+'\nEmail: '+fe+'\n\n'+m;window.location.href='mailto:info@rrk-technologies.com?subject='+encodeURIComponent(s||'Website contact form')+'&body='+encodeURIComponent(body);});})();
+  (function(){var nav=document.querySelector('.nav'),t=document.getElementById('nav-toggle');if(!t||!nav)return;t.addEventListener('click',function(){var o=nav.classList.toggle('is-open');t.setAttribute('aria-expanded',o?'true':'false');});})();
+  (function(){var h=document.querySelector('.header');if(!h)return;var k=false;function u(){h.classList.toggle('scrolled',window.scrollY>8);k=false;}window.addEventListener('scroll',function(){if(!k){requestAnimationFrame(u);k=true;}},{passive:true});u();})();
+  (function(){var els=document.querySelectorAll('.reveal');if(!els.length)return;if(!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('in');});return;}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});els.forEach(function(el){io.observe(el);});})();
   </script>
 </body>
 </html>
